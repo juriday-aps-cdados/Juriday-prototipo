@@ -1,0 +1,10 @@
+{
+  "name": "juriday",
+  "version": "0.1.0",
+  "description": "Juriday: monitor de carteira processual com dados públicos do DataJud (CNJ). Projeto acadêmico, Insper 2026.",
+  "type": "module",
+  "scripts": {
+    "coletar": "node scripts/coletar.mjs",
+    "site": "node scripts/servir.mjs"
+  }
+}

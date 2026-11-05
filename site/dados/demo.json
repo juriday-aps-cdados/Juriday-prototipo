@@ -1,0 +1,55 @@
+[
+  {
+    "numeroProcesso": "00000010020268260100",
+    "classe": { "codigo": 7, "nome": "Procedimento Comum Cível" },
+    "tribunal": "TJSP",
+    "grau": "G1",
+    "orgaoJulgador": { "nome": "1ª Vara Cível (fictícia)" },
+    "assuntos": [{ "nome": "Inadimplemento" }],
+    "dataAjuizamento": "2026-03-10T00:00:00.000Z",
+    "movimentos": [
+      { "codigo": 26, "nome": "Distribuição", "dataHora": "2026-03-10T10:00:00.000Z" },
+      { "codigo": 51, "nome": "Citação", "dataHora": "2026-05-12T10:00:00.000Z" },
+      { "codigo": 60, "nome": "Juntada de Contestação", "dataHora": "2026-10-20T10:00:00.000Z" }
+    ]
+  },
+  {
+    "numeroProcesso": "00000020020268260100",
+    "classe": { "codigo": 436, "nome": "Procedimento do Juizado Especial Cível" },
+    "tribunal": "TJSP",
+    "grau": "G1",
+    "orgaoJulgador": { "nome": "2º Juizado Especial (fictício)" },
+    "assuntos": [{ "nome": "Indenização por Dano Moral" }],
+    "dataAjuizamento": "2026-06-01T00:00:00.000Z",
+    "movimentos": [
+      { "codigo": 26, "nome": "Distribuição", "dataHora": "2026-06-01T10:00:00.000Z" },
+      { "codigo": 970, "nome": "Audiência de conciliação realizada", "dataHora": "2026-09-14T10:00:00.000Z" }
+    ]
+  },
+  {
+    "numeroProcesso": "00000030020264030000",
+    "classe": { "codigo": 1116, "nome": "Execução Fiscal" },
+    "tribunal": "TRF3",
+    "grau": "G1",
+    "orgaoJulgador": { "nome": "Vara de Execuções Fiscais (fictícia)" },
+    "assuntos": [{ "nome": "Dívida Ativa" }],
+    "dataAjuizamento": "2026-01-15T00:00:00.000Z",
+    "movimentos": [
+      { "codigo": 26, "nome": "Distribuição", "dataHora": "2026-01-15T10:00:00.000Z" },
+      { "codigo": 123, "nome": "Suspensão do processo", "dataHora": "2026-07-30T10:00:00.000Z" }
+    ]
+  },
+  {
+    "numeroProcesso": "00000040020265020000",
+    "classe": { "codigo": 1000, "nome": "Reclamação Trabalhista" },
+    "tribunal": "TRT2",
+    "grau": "G1",
+    "orgaoJulgador": { "nome": "10ª Vara do Trabalho (fictícia)" },
+    "assuntos": [{ "nome": "Horas Extras" }],
+    "dataAjuizamento": "2026-08-20T00:00:00.000Z",
+    "movimentos": [
+      { "codigo": 26, "nome": "Distribuição", "dataHora": "2026-08-20T10:00:00.000Z" },
+      { "codigo": 193, "nome": "Conclusos para despacho", "dataHora": "2026-11-03T10:00:00.000Z" }
+    ]
+  }
+]

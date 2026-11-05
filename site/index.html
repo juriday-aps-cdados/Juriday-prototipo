@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juriday</title>
+<style>
+  :root { --marinho:#0E2440; --agua:#14B8A6; --fundo:#F6F7F8; --alerta:#B45309; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Inter, system-ui, sans-serif; background:var(--fundo); color:var(--marinho); }
+  header { padding:24px 16px; background:var(--marinho); color:#fff; }
+  header h1 { margin:0; font-size:1.4rem; }
+  header p { margin:4px 0 0; opacity:.8; font-size:.95rem; }
+  main { max-width:960px; margin:0 auto; padding:16px; }
+  .aviso { background:#fff; border-left:4px solid var(--agua); padding:12px 16px; border-radius:8px; margin-bottom:16px; font-size:.9rem; }
+  .card { background:#fff; border-radius:12px; padding:16px; margin-bottom:12px; box-shadow:0 1px 3px rgba(14,36,64,.08); }
+  .card h2 { margin:0 0 4px; font-size:1rem; }
+  .meta { font-size:.85rem; opacity:.75; }
+  .alerta { margin-top:10px; padding:8px 12px; border-radius:8px; background:#FEF3C7; color:var(--alerta); font-size:.9rem; }
+  .ok { margin-top:10px; padding:8px 12px; border-radius:8px; background:#CCFBF1; color:#0F766E; font-size:.9rem; }
+</style>
+</head>
+<body>
+<header><h1>Juriday</h1><p>Seu dia jurídico, organizado para a sua função.</p></header>
+<main>
+  <div class="aviso" id="fonte">Carregando…</div>
+  <div id="lista"></div>
+</main>
+<script>
+const LIMITE_PARADO = 30; // dias sem movimentação para gerar alerta
+const dias = (iso) => Math.floor((Date.now() - new Date(iso)) / 86400000);
+const fmt = (iso) => new Date(iso).toLocaleDateString('pt-BR');
+const formataCNJ = (n) => n.replace(/^(\d{7})(\d{2})(\d{4})(\d)(\d{2})(\d{4})$/, '$1-$2.$3.$4.$5.$6');
+
+async function carregar() {
+  for (const [arquivo, rotulo] of [['dados/processos.json', 'Dados reais do DataJud (CNJ)'], ['dados/demo.json', 'Dados de demonstração (processos fictícios)']]) {
+    try {
+      const r = await fetch(arquivo);
+      if (!r.ok) continue;
+      const dados = await r.json();
+      if (dados.length) return { dados, rotulo };
+    } catch (e) {}
+  }
+  return { dados: [], rotulo: 'Sem dados' };
+}
+
+(async () => {
+  const { dados, rotulo } = await carregar();
+  document.getElementById('fonte').textContent = rotulo + ' · protótipo acadêmico';
+  const lista = document.getElementById('lista');
+  const ordenados = dados.map(p => {
+    const mov = [...(p.movimentos || [])].sort((a, b) => new Date(b.dataHora) - new Date(a.dataHora))[0];
+    return { p, mov, parado: mov ? dias(mov.dataHora) : null };
+  }).sort((a, b) => (b.parado ?? 0) - (a.parado ?? 0));
+
+  for (const { p, mov, parado } of ordenados) {
+    const div = document.createElement('div');
+    div.className = 'card';
+    const alerta = parado >= LIMITE_PARADO
+      ? `<div class="alerta">Atenção: parado há ${parado} dias. Motivo do alerta: a última movimentação (${mov.nome}) foi em ${fmt(mov.dataHora)}, e o limite é de ${LIMITE_PARADO} dias.</div>`
+      : `<div class="ok">Em andamento: última movimentação há ${parado} dias.</div>`;
+    div.innerHTML = `<h2>${formataCNJ(p.numeroProcesso)}</h2>
+      <div class="meta">${p.tribunal} · ${p.classe?.nome ?? ''} · ${p.orgaoJulgador?.nome ?? ''}</div>
+      <div class="meta">Última movimentação: ${mov ? mov.nome + ' (' + fmt(mov.dataHora) + ')' : 'nenhuma'}</div>${alerta}`;
+    lista.appendChild(div);
+  }
+})();
+</script>
+</body>
+</html>
