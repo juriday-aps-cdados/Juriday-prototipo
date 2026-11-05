@@ -1,0 +1,457 @@
+{
+  "id": "TRF3_G1_00035491820084036111",
+  "tribunal": "TRF3",
+  "grau": "G1",
+  "numeroProcesso": "00035491820084036111",
+  "dataAjuizamento": "20080717210000",
+  "nivelSigilo": 0,
+  "orgaoJulgador": {
+    "codigo": 14007,
+    "nome": "09ª VARA FEDERAL DE RIBEIRÃO PRETO",
+    "codigoMunicipioIBGE": 3543402
+  },
+  "classe": {
+    "codigo": 1116,
+    "nome": "Execução Fiscal"
+  },
+  "sistema": {
+    "codigo": 1,
+    "nome": "PJe"
+  },
+  "formato": {
+    "codigo": 1,
+    "nome": "Eletrônico"
+  },
+  "dataHoraUltimaAtualizacao": "2026-10-26T13:04:01.153000Z",
+  "@timestamp": "2026-10-26T13:04:01.153000Z",
+  "movimentos": [
+    {
+      "codigo": 26,
+      "dataHora": "2008-07-18T18:48:04.000Z",
+      "nome": "Distribuição",
+      "complementosTabelados": [
+        {
+          "codigo": 2,
+          "descricao": "tipo_de_distribuicao_redistribuicao",
+          "valor": 2,
+          "nome": "sorteio"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2008-07-21T18:13:44.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 5,
+          "nome": "para despacho"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2008-09-16T15:36:15.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 57,
+          "nome": "Petição (outras)"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2008-09-17T15:48:15.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 5,
+          "nome": "para despacho"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2009-04-15T14:50:14.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 57,
+          "nome": "Petição (outras)"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2009-04-16T14:16:15.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 5,
+          "nome": "para despacho"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2009-09-16T17:46:57.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 5,
+          "nome": "para despacho"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2010-02-05T13:54:13.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 57,
+          "nome": "Petição (outras)"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2010-02-05T14:26:40.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 5,
+          "nome": "para despacho"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2010-03-01T14:34:14.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 57,
+          "nome": "Petição (outras)"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2010-03-01T15:09:15.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 5,
+          "nome": "para despacho"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2010-03-09T14:09:14.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 57,
+          "nome": "Petição (outras)"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 123,
+      "dataHora": "2010-05-19T14:14:00.000Z",
+      "nome": "Remessa",
+      "complementosTabelados": [
+        {
+          "codigo": 18,
+          "descricao": "motivo_da_remessa",
+          "valor": 40,
+          "nome": "outros motivos"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 123,
+      "dataHora": "2012-08-14T13:34:00.000Z",
+      "nome": "Remessa",
+      "complementosTabelados": [
+        {
+          "codigo": 18,
+          "descricao": "motivo_da_remessa",
+          "valor": 40,
+          "nome": "outros motivos"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 36,
+      "dataHora": "2026-09-18T14:48:32.000Z",
+      "nome": "Redistribuição",
+      "complementosTabelados": [
+        {
+          "codigo": 2,
+          "descricao": "tipo_de_distribuicao_redistribuicao",
+          "valor": 2,
+          "nome": "sorteio"
+        },
+        {
+          "codigo": 17,
+          "descricao": "motivo_da_redistribuicao",
+          "valor": 84,
+          "nome": "alteração de competência do Ã³rgÃ£o"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "14007",
+        "nome": "09ª VARA FEDERAL DE RIBEIRÃO PRETO"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2026-09-29T19:21:42.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 36,
+          "nome": "para julgamento"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "14007",
+        "nome": "09ª VARA FEDERAL DE RIBEIRÃO PRETO"
+      }
+    },
+    {
+      "codigo": 493,
+      "dataHora": "2008-11-14T13:16:25.000Z",
+      "nome": "Entrega em carga/vista",
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 132,
+      "dataHora": "2009-04-14T14:43:42.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 493,
+      "dataHora": "2010-02-02T18:42:11.000Z",
+      "nome": "Entrega em carga/vista",
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 132,
+      "dataHora": "2010-02-02T18:42:14.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 493,
+      "dataHora": "2010-02-18T18:12:18.000Z",
+      "nome": "Entrega em carga/vista",
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 132,
+      "dataHora": "2010-02-26T16:52:48.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 898,
+      "dataHora": "2010-03-24T18:49:33.000Z",
+      "nome": "Por decisão judicial",
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 12066,
+      "dataHora": "2023-08-16T14:33:23.000Z",
+      "nome": "Cumprimento de Levantamento da Suspensão ",
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 12068,
+      "dataHora": "2023-08-16T14:33:24.000Z",
+      "nome": "Levantamento da Suspensão ou Dessobrestamento",
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 898,
+      "dataHora": "2023-08-21T15:19:48.000Z",
+      "nome": "Por decisão judicial",
+      "orgaoJulgador": {
+        "codigo": "12490",
+        "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 12066,
+      "dataHora": "2026-09-29T19:21:40.000Z",
+      "nome": "Cumprimento de Levantamento da Suspensão ",
+      "orgaoJulgador": {
+        "codigo": "14007",
+        "nome": "09ª VARA FEDERAL DE RIBEIRÃO PRETO"
+      }
+    },
+    {
+      "codigo": 12066,
+      "dataHora": "2026-09-29T19:21:41.000Z",
+      "nome": "Cumprimento de Levantamento da Suspensão ",
+      "orgaoJulgador": {
+        "codigo": "14007",
+        "nome": "09ª VARA FEDERAL DE RIBEIRÃO PRETO"
+      }
+    },
+    {
+      "codigo": 12066,
+      "dataHora": "2026-10-19T19:09:21.000Z",
+      "nome": "Cumprimento de Levantamento da Suspensão ",
+      "orgaoJulgador": {
+        "codigo": "14007",
+        "nome": "09ª VARA FEDERAL DE RIBEIRÃO PRETO"
+      }
+    },
+    {
+      "codigo": 12298,
+      "dataHora": "2026-10-19T19:09:22.000Z",
+      "nome": "Cancelamento de Dívida Ativa",
+      "orgaoJulgador": {
+        "codigo": "14007",
+        "nome": "09ª VARA FEDERAL DE RIBEIRÃO PRETO"
+      }
+    },
+    {
+      "codigo": 1061,
+      "dataHora": "2026-10-20T07:00:00.000Z",
+      "nome": "Disponibilização no Diário da Justiça Eletrônico",
+      "orgaoJulgador": {
+        "codigo": "14007",
+        "nome": "09ª VARA FEDERAL DE RIBEIRÃO PRETO"
+      }
+    },
+    {
+      "codigo": 92,
+      "dataHora": "2026-10-21T07:00:00.000Z",
+      "nome": "Publicação",
+      "orgaoJulgador": {
+        "codigo": "14007",
+        "nome": "09ª VARA FEDERAL DE RIBEIRÃO PRETO"
+      }
+    }
+  ],
+  "assuntos": [
+    {
+      "codigo": 10653,
+      "nome": "Competência da Justiça Federal"
+    }
+  ]
+}

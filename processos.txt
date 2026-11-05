@@ -1,4 +1,6 @@
-# Coloque aqui os números de processo (formato CNJ), um por linha.
-# Linhas que começam com # são ignoradas.
-# Exemplo (troque por números reais e públicos):
-# 0000832-35.2018.4.01.3202
+# Processos reais e públicos sorteados no DataJud (trf3) em 05/11/2026.
+# Um por linha. Linhas com # são ignoradas.
+0003549-18.2008.4.03.6111
+0003495-75.2014.4.03.6003
+0004104-37.2015.4.03.6128
+0004057-97.2014.4.03.6128
