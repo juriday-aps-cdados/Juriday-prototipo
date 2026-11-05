@@ -1,0 +1,140 @@
+{
+  "id": "TRF3_G1_50296215720264036100",
+  "tribunal": "TRF3",
+  "grau": "G1",
+  "numeroProcesso": "50296215720264036100",
+  "dataAjuizamento": "20260924233839",
+  "nivelSigilo": 0,
+  "orgaoJulgador": {
+    "codigo": 12946,
+    "nome": "21ª VARA FEDERAL CÍVEL DE SÃO PAULO",
+    "codigoMunicipioIBGE": 3550308
+  },
+  "classe": {
+    "codigo": 120,
+    "nome": "Mandado de Segurança Cível"
+  },
+  "sistema": {
+    "codigo": 1,
+    "nome": "PJe"
+  },
+  "formato": {
+    "codigo": 1,
+    "nome": "Eletrônico"
+  },
+  "dataHoraUltimaAtualizacao": "2026-10-26T12:52:35.909000Z",
+  "@timestamp": "2026-10-26T12:52:35.909000Z",
+  "movimentos": [
+    {
+      "codigo": 26,
+      "dataHora": "2026-09-24T23:38:39.000Z",
+      "nome": "Distribuição",
+      "complementosTabelados": [
+        {
+          "codigo": 2,
+          "descricao": "tipo_de_distribuicao_redistribuicao",
+          "valor": 2,
+          "nome": "sorteio"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12946",
+        "nome": "21ª VARA FEDERAL CÍVEL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 982,
+      "dataHora": "2026-09-25T08:40:24.000Z",
+      "nome": "Remessa",
+      "complementosTabelados": [
+        {
+          "codigo": 18,
+          "descricao": "motivo_da_remessa",
+          "valor": 40,
+          "nome": "outros motivos"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12946",
+        "nome": "21ª VARA FEDERAL CÍVEL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2026-10-23T12:43:03.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 6,
+          "nome": "para decisão"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12946",
+        "nome": "21ª VARA FEDERAL CÍVEL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 981,
+      "dataHora": "2026-09-24T23:38:40.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12946",
+        "nome": "21ª VARA FEDERAL CÍVEL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 132,
+      "dataHora": "2026-09-25T08:40:24.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12946",
+        "nome": "21ª VARA FEDERAL CÍVEL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 1061,
+      "dataHora": "2026-09-29T07:00:00.000Z",
+      "nome": "Disponibilização no Diário da Justiça Eletrônico",
+      "orgaoJulgador": {
+        "codigo": "12946",
+        "nome": "21ª VARA FEDERAL CÍVEL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 92,
+      "dataHora": "2026-09-30T07:00:00.000Z",
+      "nome": "Publicação",
+      "orgaoJulgador": {
+        "codigo": "12946",
+        "nome": "21ª VARA FEDERAL CÍVEL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 941,
+      "dataHora": "2026-10-23T15:01:42.000Z",
+      "nome": "Incompetência",
+      "orgaoJulgador": {
+        "codigo": "12946",
+        "nome": "21ª VARA FEDERAL CÍVEL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 12265,
+      "dataHora": "2026-10-25T23:22:59.000Z",
+      "nome": "Expedida/certificada",
+      "orgaoJulgador": {
+        "codigo": "12946",
+        "nome": "21ª VARA FEDERAL CÍVEL DE SÃO PAULO"
+      }
+    }
+  ],
+  "assuntos": [
+    {
+      "codigo": 14996,
+      "nome": "Redução de Alíquota IR/CSLL - Serviços Hospitalares"
+    }
+  ]
+}

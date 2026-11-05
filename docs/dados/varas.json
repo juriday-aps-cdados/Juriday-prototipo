@@ -1,0 +1,395 @@
+{
+ "campo": "orgaoJulgador.nome.keyword",
+ "lista": [
+  {
+   "chave": "05ª VARA FEDERAL DE CAMPINAS",
+   "total": 63630,
+   "nome": "05ª VARA FEDERAL DE CAMPINAS",
+   "feita": true
+  },
+  {
+   "chave": "03ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "total": 50168,
+   "nome": "03ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "02ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "total": 48953,
+   "nome": "02ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "total": 48402,
+   "nome": "01ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "06ª VARA FEDERAL DE CAMPO GRANDE",
+   "total": 48323,
+   "nome": "06ª VARA FEDERAL DE CAMPO GRANDE",
+   "feita": true
+  },
+  {
+   "chave": "04ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "total": 46575,
+   "nome": "04ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "07ª VARA FEDERAL DE SANTOS",
+   "total": 43805,
+   "nome": "07ª VARA FEDERAL DE SANTOS",
+   "feita": true
+  },
+  {
+   "chave": "04ª VARA FEDERAL DE SÃO JOSÉ DOS CAMPOS",
+   "total": 43286,
+   "nome": "04ª VARA FEDERAL DE SÃO JOSÉ DOS CAMPOS",
+   "feita": true
+  },
+  {
+   "chave": "13ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "total": 40997,
+   "nome": "13ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "12ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "total": 39407,
+   "nome": "12ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "05ª VARA FEDERAL DE SÃO JOSÉ DO RIO PRETO",
+   "total": 39194,
+   "nome": "05ª VARA FEDERAL DE SÃO JOSÉ DO RIO PRETO",
+   "feita": true
+  },
+  {
+   "chave": "05ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "total": 39147,
+   "nome": "05ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "07ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "total": 39102,
+   "nome": "07ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "09ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "total": 38500,
+   "nome": "09ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "04ª VARA FEDERAL DE PIRACICABA",
+   "total": 37594,
+   "nome": "04ª VARA FEDERAL DE PIRACICABA",
+   "feita": true
+  },
+  {
+   "chave": "10ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "total": 37488,
+   "nome": "10ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE RIBEIRÃO PRETO",
+   "total": 36426,
+   "nome": "01ª VARA FEDERAL DE RIBEIRÃO PRETO",
+   "feita": true
+  },
+  {
+   "chave": "08ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "total": 35977,
+   "nome": "08ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "09ª VARA FEDERAL DE RIBEIRÃO PRETO",
+   "total": 34636,
+   "nome": "09ª VARA FEDERAL DE RIBEIRÃO PRETO",
+   "feita": true
+  },
+  {
+   "chave": "02ª VARA FEDERAL DE SÃO BERNARDO DO CAMPO",
+   "total": 32957,
+   "nome": "02ª VARA FEDERAL DE SÃO BERNARDO DO CAMPO",
+   "feita": true
+  },
+  {
+   "chave": "03ª VARA FEDERAL DE GUARULHOS",
+   "total": 30362,
+   "nome": "03ª VARA FEDERAL DE GUARULHOS",
+   "feita": true
+  },
+  {
+   "chave": "03ª VARA FEDERAL DE SANTOS",
+   "total": 19763,
+   "nome": "03ª VARA FEDERAL DE SANTOS",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE SANTOS",
+   "total": 19153,
+   "nome": "01ª VARA FEDERAL DE SANTOS",
+   "feita": true
+  },
+  {
+   "chave": "04ª VARA FEDERAL DE SANTOS",
+   "total": 19103,
+   "nome": "04ª VARA FEDERAL DE SANTOS",
+   "feita": true
+  },
+  {
+   "chave": "02ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "total": 17682,
+   "nome": "02ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "09ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "total": 17077,
+   "nome": "09ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "04ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "total": 16933,
+   "nome": "04ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "07ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "total": 16871,
+   "nome": "07ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "06ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "total": 16853,
+   "nome": "06ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "03ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "total": 16729,
+   "nome": "03ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "05ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "total": 16415,
+   "nome": "05ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE AMERICANA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 15726,
+   "nome": "01ª VARA FEDERAL DE AMERICANA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "08ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "total": 15595,
+   "nome": "08ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "10ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "total": 15171,
+   "nome": "10ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "02ª VARA FEDERAL DE PIRACICABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 14750,
+   "nome": "02ª VARA FEDERAL DE PIRACICABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "02ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO",
+   "total": 14621,
+   "nome": "02ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO",
+   "total": 14568,
+   "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "06ª VARA FEDERAL DE CAMPINAS",
+   "total": 14271,
+   "nome": "06ª VARA FEDERAL DE CAMPINAS",
+   "feita": true
+  },
+  {
+   "chave": "08ª VARA FEDERAL DE CAMPINAS",
+   "total": 14072,
+   "nome": "08ª VARA FEDERAL DE CAMPINAS",
+   "feita": true
+  },
+  {
+   "chave": "04ª VARA FEDERAL DE CAMPINAS",
+   "total": 14009,
+   "nome": "04ª VARA FEDERAL DE CAMPINAS",
+   "feita": true
+  },
+  {
+   "chave": "03ª VARA FEDERAL DE SOROCABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 13942,
+   "nome": "03ª VARA FEDERAL DE SOROCABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE SÃO BERNARDO DO CAMPO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 13932,
+   "nome": "01ª VARA FEDERAL DE SÃO BERNARDO DO CAMPO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "02ª VARA FEDERAL DE CAMPINAS",
+   "total": 13589,
+   "nome": "02ª VARA FEDERAL DE CAMPINAS",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE LIMEIRA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 13218,
+   "nome": "01ª VARA FEDERAL DE LIMEIRA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE SÃO JOÃO DA BOA VISTA COM JUIZADO ESPECIAL ADJUNTO CÍVEL E PREVIDENCIÁRIO",
+   "total": 12862,
+   "nome": "01ª VARA FEDERAL DE SÃO JOÃO DA BOA VISTA COM JUIZADO ESPECIAL ADJUNTO CÍVEL E PREVIDENCIÁRIO",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE SOROCABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 12849,
+   "nome": "01ª VARA FEDERAL DE SOROCABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "04ª VARA FEDERAL DE SOROCABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 12609,
+   "nome": "04ª VARA FEDERAL DE SOROCABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE SANTO ANDRÉ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 12364,
+   "nome": "01ª VARA FEDERAL DE SANTO ANDRÉ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "03ª VARA FEDERAL DE SÃO BERNARDO DO CAMPO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 11877,
+   "nome": "03ª VARA FEDERAL DE SÃO BERNARDO DO CAMPO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE PIRACICABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 11772,
+   "nome": "01ª VARA FEDERAL DE PIRACICABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "08ª VARA FEDERAL CÍVEL DE SÃO PAULO",
+   "total": 11729,
+   "nome": "08ª VARA FEDERAL CÍVEL DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "03ª VARA FEDERAL DE SANTO ANDRÉ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 11465,
+   "nome": "03ª VARA FEDERAL DE SANTO ANDRÉ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "04ª VARA FEDERAL DE RIBEIRÃO PRETO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 11358,
+   "nome": "04ª VARA FEDERAL DE RIBEIRÃO PRETO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "02ª VARA FEDERAL DE SANTO ANDRÉ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 11341,
+   "nome": "02ª VARA FEDERAL DE SANTO ANDRÉ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE SÃO JOSÉ DOS CAMPOS COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 11099,
+   "nome": "01ª VARA FEDERAL DE SÃO JOSÉ DOS CAMPOS COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE OSASCO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 10838,
+   "nome": "01ª VARA FEDERAL DE OSASCO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "02ª VARA FEDERAL DE OSASCO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 10838,
+   "nome": "02ª VARA FEDERAL DE OSASCO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "07ª VARA FEDERAL DE RIBEIRÃO PRETO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 10364,
+   "nome": "07ª VARA FEDERAL DE RIBEIRÃO PRETO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE SÃO VICENTE COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 10262,
+   "nome": "01ª VARA FEDERAL DE SÃO VICENTE COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE JAHU COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO",
+   "total": 10197,
+   "nome": "01ª VARA FEDERAL DE JAHU COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "06ª VARA FEDERAL DE RIBEIRÃO PRETO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 10178,
+   "nome": "06ª VARA FEDERAL DE RIBEIRÃO PRETO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "02ª VARA FEDERAL DE JUNDIAÍ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 10075,
+   "nome": "02ª VARA FEDERAL DE JUNDIAÍ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "10ª VARA FEDERAL CÍVEL DE SÃO PAULO",
+   "total": 9844,
+   "nome": "10ª VARA FEDERAL CÍVEL DE SÃO PAULO",
+   "feita": true
+  },
+  {
+   "chave": "02ª VARA FEDERAL DE SÃO JOSÉ DOS CAMPOS COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 9651,
+   "nome": "02ª VARA FEDERAL DE SÃO JOSÉ DOS CAMPOS COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  },
+  {
+   "chave": "01ª VARA FEDERAL DE JUNDIAÍ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "total": 9452,
+   "nome": "01ª VARA FEDERAL DE JUNDIAÍ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "feita": true
+  }
+ ]
+}

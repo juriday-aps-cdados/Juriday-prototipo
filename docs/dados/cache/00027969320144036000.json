@@ -1,0 +1,634 @@
+{
+  "id": "TRF3_G1_00027969320144036000",
+  "tribunal": "TRF3",
+  "grau": "G1",
+  "numeroProcesso": "00027969320144036000",
+  "dataAjuizamento": "20140331000000",
+  "nivelSigilo": 0,
+  "orgaoJulgador": {
+    "codigo": 12963,
+    "nome": "04ª VARA FEDERAL DE CAMPO GRANDE",
+    "codigoMunicipioIBGE": 5002704
+  },
+  "classe": {
+    "codigo": 7,
+    "nome": "Procedimento Comum Cível"
+  },
+  "sistema": {
+    "codigo": 1,
+    "nome": "PJe"
+  },
+  "formato": {
+    "codigo": 1,
+    "nome": "Eletrônico"
+  },
+  "dataHoraUltimaAtualizacao": "2026-10-26T13:04:02.975000Z",
+  "@timestamp": "2026-10-26T13:04:02.975000Z",
+  "movimentos": [
+    {
+      "codigo": 26,
+      "dataHora": "2014-03-31T15:26:00.000Z",
+      "nome": "Distribuição",
+      "complementosTabelados": [
+        {
+          "codigo": 2,
+          "descricao": "tipo_de_distribuicao_redistribuicao",
+          "valor": 2,
+          "nome": "sorteio"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2014-03-31T17:41:01.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 5,
+          "nome": "para despacho"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2014-09-02T15:08:00.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 45,
+          "nome": "Contestação"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2014-10-14T14:55:00.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 70,
+          "nome": "Replica"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2015-01-15T14:35:00.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 70,
+          "nome": "Replica"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2015-01-23T17:23:04.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 5,
+          "nome": "para despacho"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2015-10-06T10:23:09.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 5,
+          "nome": "para despacho"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2016-07-14T12:24:35.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 5,
+          "nome": "para despacho"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2016-10-04T16:02:26.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 57,
+          "nome": "Petição (outras)"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2016-11-08T17:09:27.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 57,
+          "nome": "Petição (outras)"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2017-02-21T16:22:33.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 57,
+          "nome": "Petição (outras)"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2017-03-03T15:49:39.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 57,
+          "nome": "Petição (outras)"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2017-03-23T14:21:00.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 57,
+          "nome": "Petição (outras)"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2017-04-07T16:58:49.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 57,
+          "nome": "Petição (outras)"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2017-04-27T13:53:34.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 57,
+          "nome": "Petição (outras)"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2018-03-02T17:02:52.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 5,
+          "nome": "para despacho"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2019-10-07T09:21:04.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 36,
+          "nome": "para julgamento"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 982,
+      "dataHora": "2019-10-23T18:36:21.000Z",
+      "nome": "Remessa",
+      "complementosTabelados": [
+        {
+          "codigo": 18,
+          "descricao": "motivo_da_remessa",
+          "valor": 40,
+          "nome": "outros motivos"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2020-04-19T00:16:26.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 36,
+          "nome": "para julgamento"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2020-10-07T16:13:03.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 36,
+          "nome": "para julgamento"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2020-12-08T16:16:15.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 44,
+          "nome": "Apelação"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 123,
+      "dataHora": "2022-03-04T16:07:01.000Z",
+      "nome": "Remessa",
+      "complementosTabelados": [
+        {
+          "codigo": 18,
+          "descricao": "motivo_da_remessa",
+          "valor": 38,
+          "nome": "em grau de recurso"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 493,
+      "dataHora": "2014-07-30T16:32:12.000Z",
+      "nome": "Entrega em carga/vista",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 132,
+      "dataHora": "2014-08-06T12:44:14.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 493,
+      "dataHora": "2015-10-02T08:37:22.000Z",
+      "nome": "Entrega em carga/vista",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 132,
+      "dataHora": "2015-10-06T10:12:09.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 493,
+      "dataHora": "2016-10-21T09:20:33.000Z",
+      "nome": "Entrega em carga/vista",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 132,
+      "dataHora": "2016-11-04T16:40:46.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 493,
+      "dataHora": "2017-03-24T09:06:05.000Z",
+      "nome": "Entrega em carga/vista",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 132,
+      "dataHora": "2017-04-05T11:43:47.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 11010,
+      "dataHora": "2018-10-02T10:39:21.000Z",
+      "nome": "Mero expediente",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 493,
+      "dataHora": "2019-08-15T10:59:55.000Z",
+      "nome": "Entrega em carga/vista",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 132,
+      "dataHora": "2019-08-30T15:29:50.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 14732,
+      "dataHora": "2019-10-15T18:34:21.000Z",
+      "nome": "Conversão de Autos Físicos em Eletrônicos",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 12265,
+      "dataHora": "2020-04-19T00:16:00.000Z",
+      "nome": "Expedida/certificada",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 1061,
+      "dataHora": "2020-04-24T07:00:00.000Z",
+      "nome": "Disponibilização no Diário da Justiça Eletrônico",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 92,
+      "dataHora": "2020-05-04T07:00:00.000Z",
+      "nome": "Publicação",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 11010,
+      "dataHora": "2020-09-14T13:19:12.000Z",
+      "nome": "Mero expediente",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 221,
+      "dataHora": "2020-10-19T13:25:25.000Z",
+      "nome": "Procedência em Parte",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 12265,
+      "dataHora": "2020-10-19T14:51:52.000Z",
+      "nome": "Expedida/certificada",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 92,
+      "dataHora": "2020-10-22T07:00:00.000Z",
+      "nome": "Publicação",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 1061,
+      "dataHora": "2020-10-22T07:00:00.000Z",
+      "nome": "Disponibilização no Diário da Justiça Eletrônico",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 11383,
+      "dataHora": "2021-05-18T19:59:42.000Z",
+      "nome": "Ato ordinatório",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 1061,
+      "dataHora": "2021-08-24T07:00:00.000Z",
+      "nome": "Disponibilização no Diário da Justiça Eletrônico",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 92,
+      "dataHora": "2021-08-25T07:00:00.000Z",
+      "nome": "Publicação",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 132,
+      "dataHora": "2026-10-22T15:24:43.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    },
+    {
+      "codigo": 12265,
+      "dataHora": "2026-10-25T18:02:12.000Z",
+      "nome": "Expedida/certificada",
+      "orgaoJulgador": {
+        "codigo": "12963",
+        "nome": "04ª VARA FEDERAL DE CAMPO GRANDE"
+      }
+    }
+  ],
+  "assuntos": [
+    {
+      "codigo": 10328,
+      "nome": "Reintegração"
+    }
+  ]
+}

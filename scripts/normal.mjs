@@ -3,7 +3,7 @@
 // Uso: npm run normal
 import { readFile, writeFile } from 'node:fs/promises';
 
-const ARQUIVOS = ['docs/dados/base.json', 'docs/dados/base-recentes.json'];
+const ARQUIVOS = ['docs/dados/base.json', 'docs/dados/base-recentes.json', 'docs/dados/base-varas.json'];
 const vistos = new Set();
 const por = {};
 for (const arq of ARQUIVOS) {

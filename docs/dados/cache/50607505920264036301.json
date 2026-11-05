@@ -1,0 +1,139 @@
+{
+  "id": "TRF3_JE_50607505920264036301",
+  "tribunal": "TRF3",
+  "grau": "JE",
+  "numeroProcesso": "50607505920264036301",
+  "dataAjuizamento": "20260922102623",
+  "nivelSigilo": 0,
+  "orgaoJulgador": {
+    "codigo": 14051,
+    "nome": "11ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE SÃO PAULO",
+    "codigoMunicipioIBGE": 3550308
+  },
+  "classe": {
+    "codigo": 156,
+    "nome": "Cumprimento de sentença"
+  },
+  "sistema": {
+    "codigo": 1,
+    "nome": "PJe"
+  },
+  "formato": {
+    "codigo": 1,
+    "nome": "Eletrônico"
+  },
+  "dataHoraUltimaAtualizacao": "2026-10-26T12:41:39.663000Z",
+  "@timestamp": "2026-10-26T12:41:39.663000Z",
+  "movimentos": [
+    {
+      "codigo": 26,
+      "dataHora": "2026-09-22T10:26:24.000Z",
+      "nome": "Distribuição",
+      "complementosTabelados": [
+        {
+          "codigo": 2,
+          "descricao": "tipo_de_distribuicao_redistribuicao",
+          "valor": 4,
+          "nome": "dependência"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "14051",
+        "nome": "11ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 982,
+      "dataHora": "2026-10-05T16:29:22.000Z",
+      "nome": "Remessa",
+      "complementosTabelados": [
+        {
+          "codigo": 18,
+          "descricao": "motivo_da_remessa",
+          "valor": 40,
+          "nome": "outros motivos"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "14051",
+        "nome": "11ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2026-10-06T10:59:46.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 5,
+          "nome": "para despacho"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "14051",
+        "nome": "11ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 14738,
+      "dataHora": "2026-10-02T19:27:10.000Z",
+      "nome": "Retificação de Classe Processual",
+      "complementosTabelados": [
+        {
+          "codigo": 26,
+          "descricao": "classe_anterior",
+          "valor": 156,
+          "nome": "Requisição de tratamento psiquiátrico"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "14051",
+        "nome": "11ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 1061,
+      "dataHora": "2026-10-24T07:33:41.000Z",
+      "nome": "Disponibilização no Diário da Justiça Eletrônico",
+      "orgaoJulgador": {
+        "codigo": "14051",
+        "nome": "11ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 981,
+      "dataHora": "2026-09-22T10:26:24.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "14051",
+        "nome": "11ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 132,
+      "dataHora": "2026-10-05T16:29:23.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "14051",
+        "nome": "11ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE SÃO PAULO"
+      }
+    },
+    {
+      "codigo": 461,
+      "dataHora": "2026-10-21T21:42:39.000Z",
+      "nome": "Ausência das condições da ação",
+      "orgaoJulgador": {
+        "codigo": "14051",
+        "nome": "11ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE SÃO PAULO"
+      }
+    }
+  ],
+  "assuntos": [
+    {
+      "codigo": 9607,
+      "nome": "Contratos Bancários"
+    }
+  ]
+}

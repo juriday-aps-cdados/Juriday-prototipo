@@ -1,0 +1,157 @@
+{
+  "id": "TRF3_G1_50015827820264036123",
+  "tribunal": "TRF3",
+  "grau": "G1",
+  "numeroProcesso": "50015827820264036123",
+  "dataAjuizamento": "20260923172309",
+  "nivelSigilo": 0,
+  "orgaoJulgador": {
+    "codigo": 12528,
+    "nome": "01ª VARA FEDERAL DE BRAGANÇA PAULISTA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+    "codigoMunicipioIBGE": 3507605
+  },
+  "classe": {
+    "codigo": 120,
+    "nome": "Mandado de Segurança Cível"
+  },
+  "sistema": {
+    "codigo": 1,
+    "nome": "PJe"
+  },
+  "formato": {
+    "codigo": 1,
+    "nome": "Eletrônico"
+  },
+  "dataHoraUltimaAtualizacao": "2026-10-26T12:52:34.559000Z",
+  "@timestamp": "2026-10-26T12:52:34.559000Z",
+  "movimentos": [
+    {
+      "codigo": 26,
+      "dataHora": "2026-09-23T17:23:10.000Z",
+      "nome": "Distribuição",
+      "complementosTabelados": [
+        {
+          "codigo": 2,
+          "descricao": "tipo_de_distribuicao_redistribuicao",
+          "valor": 2,
+          "nome": "sorteio"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12528",
+        "nome": "01ª VARA FEDERAL DE BRAGANÇA PAULISTA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 982,
+      "dataHora": "2026-09-23T17:45:13.000Z",
+      "nome": "Remessa",
+      "complementosTabelados": [
+        {
+          "codigo": 18,
+          "descricao": "motivo_da_remessa",
+          "valor": 40,
+          "nome": "outros motivos"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12528",
+        "nome": "01ª VARA FEDERAL DE BRAGANÇA PAULISTA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2026-09-28T11:01:54.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 6,
+          "nome": "para decisão"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12528",
+        "nome": "01ª VARA FEDERAL DE BRAGANÇA PAULISTA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2026-10-23T16:40:31.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 6,
+          "nome": "para decisão"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12528",
+        "nome": "01ª VARA FEDERAL DE BRAGANÇA PAULISTA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 981,
+      "dataHora": "2026-09-23T17:23:10.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12528",
+        "nome": "01ª VARA FEDERAL DE BRAGANÇA PAULISTA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 132,
+      "dataHora": "2026-09-23T17:45:13.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12528",
+        "nome": "01ª VARA FEDERAL DE BRAGANÇA PAULISTA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 12185,
+      "dataHora": "2026-09-28T11:05:06.000Z",
+      "nome": "Decisão Interlocutória de Mérito",
+      "orgaoJulgador": {
+        "codigo": "12528",
+        "nome": "01ª VARA FEDERAL DE BRAGANÇA PAULISTA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 1061,
+      "dataHora": "2026-09-29T07:00:00.000Z",
+      "nome": "Disponibilização no Diário da Justiça Eletrônico",
+      "orgaoJulgador": {
+        "codigo": "12528",
+        "nome": "01ª VARA FEDERAL DE BRAGANÇA PAULISTA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 92,
+      "dataHora": "2026-09-30T07:00:00.000Z",
+      "nome": "Publicação",
+      "orgaoJulgador": {
+        "codigo": "12528",
+        "nome": "01ª VARA FEDERAL DE BRAGANÇA PAULISTA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO"
+      }
+    },
+    {
+      "codigo": 12185,
+      "dataHora": "2026-10-25T10:15:36.000Z",
+      "nome": "Decisão Interlocutória de Mérito",
+      "orgaoJulgador": {
+        "codigo": "12528",
+        "nome": "01ª VARA FEDERAL DE BRAGANÇA PAULISTA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO"
+      }
+    }
+  ],
+  "assuntos": [
+    {
+      "codigo": 5983,
+      "nome": "CNPJ/Cadastro Nacional de Pessoas Jurídicas"
+    }
+  ]
+}

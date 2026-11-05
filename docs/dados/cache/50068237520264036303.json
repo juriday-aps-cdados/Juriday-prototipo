@@ -1,0 +1,182 @@
+{
+  "id": "TRF3_JE_50068237520264036303",
+  "tribunal": "TRF3",
+  "grau": "JE",
+  "numeroProcesso": "50068237520264036303",
+  "dataAjuizamento": "20260527135923",
+  "nivelSigilo": 0,
+  "orgaoJulgador": {
+    "codigo": 14021,
+    "nome": "01ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE CAMPINAS",
+    "codigoMunicipioIBGE": 3509502
+  },
+  "classe": {
+    "codigo": 156,
+    "nome": "Cumprimento de sentença"
+  },
+  "sistema": {
+    "codigo": 1,
+    "nome": "PJe"
+  },
+  "formato": {
+    "codigo": 1,
+    "nome": "Eletrônico"
+  },
+  "dataHoraUltimaAtualizacao": "2026-10-26T12:37:40.876000Z",
+  "@timestamp": "2026-10-26T12:37:40.876000Z",
+  "movimentos": [
+    {
+      "codigo": 26,
+      "dataHora": "2026-05-27T13:59:23.000Z",
+      "nome": "Distribuição",
+      "complementosTabelados": [
+        {
+          "codigo": 2,
+          "descricao": "tipo_de_distribuicao_redistribuicao",
+          "valor": 2,
+          "nome": "sorteio"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "14021",
+        "nome": "01ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 982,
+      "dataHora": "2026-07-21T16:12:02.000Z",
+      "nome": "Remessa",
+      "complementosTabelados": [
+        {
+          "codigo": 18,
+          "descricao": "motivo_da_remessa",
+          "valor": 40,
+          "nome": "outros motivos"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "14021",
+        "nome": "01ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2026-10-16T13:48:11.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 6,
+          "nome": "para decisão"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "14021",
+        "nome": "01ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 12265,
+      "dataHora": "2026-10-16T15:51:50.000Z",
+      "nome": "Expedida/certificada",
+      "complementosTabelados": [
+        {
+          "codigo": 4,
+          "descricao": "tipo_de_documento",
+          "valor": 80,
+          "nome": "Outros documentos"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "14021",
+        "nome": "01ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 85,
+      "dataHora": "2026-10-25T11:05:51.000Z",
+      "nome": "Petição",
+      "complementosTabelados": [
+        {
+          "codigo": 19,
+          "descricao": "tipo_de_peticao",
+          "valor": 45,
+          "nome": "Contestação"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "14021",
+        "nome": "01ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 14738,
+      "dataHora": "2026-06-15T13:33:12.000Z",
+      "nome": "Retificação de Classe Processual",
+      "complementosTabelados": [
+        {
+          "codigo": 26,
+          "descricao": "classe_anterior",
+          "valor": 156,
+          "nome": "Requisição de tratamento psiquiátrico"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "14021",
+        "nome": "01ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 92,
+      "dataHora": "2026-10-20T01:49:46.000Z",
+      "nome": "Publicação",
+      "orgaoJulgador": {
+        "codigo": "14021",
+        "nome": "01ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 1061,
+      "dataHora": "2026-10-20T08:49:46.000Z",
+      "nome": "Disponibilização no Diário da Justiça Eletrônico",
+      "orgaoJulgador": {
+        "codigo": "14021",
+        "nome": "01ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 981,
+      "dataHora": "2026-05-27T13:59:24.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "14021",
+        "nome": "01ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 132,
+      "dataHora": "2026-07-21T16:12:02.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "14021",
+        "nome": "01ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 12185,
+      "dataHora": "2026-10-16T15:51:47.000Z",
+      "nome": "Decisão Interlocutória de Mérito",
+      "orgaoJulgador": {
+        "codigo": "14021",
+        "nome": "01ª VARA-GABINETE DO JUIZADO ESPECIAL FEDERAL DE CAMPINAS"
+      }
+    }
+  ],
+  "assuntos": [
+    {
+      "codigo": 6188,
+      "nome": "Averbação/Cômputo de tempo de serviço urbano"
+    }
+  ]
+}

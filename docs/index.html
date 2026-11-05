@@ -125,9 +125,15 @@ function termometro(p) {
   const { n, parado, nivel } = s;
   if (nivel === 'arquivado') return '';
   const frase = { ok: 'dentro do normal', atencao: 'acima do normal', fora: 'fora do normal' }[nivel];
+  const tipo = esc(n.nome);
+  const texto = {
+    ok: `Parado há ${parado} dias. Em processos de ${tipo}, é comum passar até ${n.p75} dias sem andamento.`,
+    atencao: `Parado há ${parado} dias. Em processos de ${tipo}, 3 de cada 4 andam em até ${n.p75} dias. Este passou disso.`,
+    fora: `Parado há ${parado} dias. Em processos de ${tipo}, só 1 em cada 10 fica mais de ${n.p90} dias sem andamento. Este está entre os mais parados.`,
+  }[nivel];
   const max = Math.max(n.p90 * 2, 1);
   const pos = (v) => Math.min(100, (v / max) * 100);
-  return `<div class="termo t-${nivel}"><b>Termômetro: ${frase}.</b> Parado há ${parado} dias. Em processos de ${esc(n.nome)}, em 3 de cada 4 vezes o próximo andamento vem em até ${n.p75} dias, e em 9 de cada 10, em até ${n.p90} dias.
+  return `<div class="termo t-${nivel}"><b>Termômetro: ${frase}.</b> ${texto}
     <div class="barra"><div class="enche" style="width:${pos(parado)}%"></div><div class="marca" style="left:${pos(n.p75)}%"></div><div class="marca" style="left:${pos(n.p90)}%"></div></div>
     <div class="nota-t">Referência: ${n.intervalos.toLocaleString('pt-BR')} intervalos entre andamentos, em ${n.processos} processos reais do TRF3. É um apoio; o advogado avalia cada caso.</div></div>`;
 }

@@ -1,0 +1,154 @@
+{
+  "id": "TRF3_G1_50076474620264036105",
+  "tribunal": "TRF3",
+  "grau": "G1",
+  "numeroProcesso": "50076474620264036105",
+  "dataAjuizamento": "20260702153427",
+  "nivelSigilo": 0,
+  "orgaoJulgador": {
+    "codigo": 12955,
+    "nome": "06ª VARA FEDERAL DE CAMPINAS",
+    "codigoMunicipioIBGE": 3509502
+  },
+  "classe": {
+    "codigo": 156,
+    "nome": "Cumprimento de sentença"
+  },
+  "sistema": {
+    "codigo": 1,
+    "nome": "PJe"
+  },
+  "formato": {
+    "codigo": 1,
+    "nome": "Eletrônico"
+  },
+  "dataHoraUltimaAtualizacao": "2026-10-26T12:35:13.251000Z",
+  "@timestamp": "2026-10-26T12:35:13.251000Z",
+  "movimentos": [
+    {
+      "codigo": 26,
+      "dataHora": "2026-07-02T15:34:28.000Z",
+      "nome": "Distribuição",
+      "complementosTabelados": [
+        {
+          "codigo": 2,
+          "descricao": "tipo_de_distribuicao_redistribuicao",
+          "valor": 2,
+          "nome": "sorteio"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12952",
+        "nome": "02ª VARA FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 36,
+      "dataHora": "2026-07-02T16:05:55.000Z",
+      "nome": "Redistribuição",
+      "complementosTabelados": [
+        {
+          "codigo": 2,
+          "descricao": "tipo_de_distribuicao_redistribuicao",
+          "valor": 3,
+          "nome": "prevenção"
+        },
+        {
+          "codigo": 17,
+          "descricao": "motivo_da_redistribuicao",
+          "valor": 84,
+          "nome": "alteração de competência do Ã³rgÃ£o"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12955",
+        "nome": "06ª VARA FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 982,
+      "dataHora": "2026-07-02T16:08:15.000Z",
+      "nome": "Remessa",
+      "complementosTabelados": [
+        {
+          "codigo": 18,
+          "descricao": "motivo_da_remessa",
+          "valor": 40,
+          "nome": "outros motivos"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12955",
+        "nome": "06ª VARA FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 51,
+      "dataHora": "2026-09-02T16:46:22.000Z",
+      "nome": "Conclusão",
+      "complementosTabelados": [
+        {
+          "codigo": 3,
+          "descricao": "tipo_de_conclusao",
+          "valor": 5,
+          "nome": "para despacho"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12955",
+        "nome": "06ª VARA FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 14738,
+      "dataHora": "2026-07-02T16:05:55.000Z",
+      "nome": "Retificação de Classe Processual",
+      "complementosTabelados": [
+        {
+          "codigo": 26,
+          "descricao": "classe_anterior",
+          "valor": 156,
+          "nome": "Requisição de tratamento psiquiátrico"
+        },
+        {
+          "codigo": 27,
+          "descricao": "classe_nova",
+          "valor": 157,
+          "nome": "Requisição de tratamento psiquiátrico em regime hospitalar"
+        }
+      ],
+      "orgaoJulgador": {
+        "codigo": "12955",
+        "nome": "06ª VARA FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 981,
+      "dataHora": "2026-07-02T15:34:28.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12952",
+        "nome": "02ª VARA FEDERAL DE CAMPINAS"
+      }
+    },
+    {
+      "codigo": 132,
+      "dataHora": "2026-07-02T16:08:15.000Z",
+      "nome": "Recebimento",
+      "orgaoJulgador": {
+        "codigo": "12955",
+        "nome": "06ª VARA FEDERAL DE CAMPINAS"
+      }
+    }
+  ],
+  "assuntos": [
+    {
+      "codigo": 6118,
+      "nome": "Aposentadoria por Tempo de Contribuição (Art. 55/6)"
+    },
+    {
+      "codigo": 10009,
+      "nome": "Inquérito / Processo / Recurso Administrativo"
+    }
+  ]
+}
