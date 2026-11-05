@@ -6,6 +6,7 @@
   "scripts": {
     "coletar": "node scripts/coletar.mjs",
     "site": "node scripts/servir.mjs",
-    "testar": "node scripts/testar-prazos.mjs"
+    "testar": "node scripts/testar-prazos.mjs",
+    "testar-api": "node scripts/testar-api.mjs"
   }
 }
