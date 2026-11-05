@@ -12,18 +12,50 @@
   header h1 { margin:0; font-size:1.4rem; }
   header p { margin:4px 0 0; opacity:.8; font-size:.95rem; }
   main { max-width:960px; margin:0 auto; padding:16px; }
-  .aviso { background:#fff; border-left:4px solid var(--agua); padding:12px 16px; border-radius:8px; margin-bottom:16px; font-size:.9rem; }
+  .aviso { background:#fff; border-left:4px solid var(--agua); padding:12px 16px; border-radius:8px; margin-bottom:12px; font-size:.9rem; }
+  .resumo { background:#fff; border-radius:12px; padding:14px 16px; margin-bottom:12px; box-shadow:0 1px 3px rgba(14,36,64,.08); display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; justify-content:space-between; }
+  .resumo strong { font-size:1rem; }
+  .resumo label { font-size:.9rem; cursor:pointer; }
   .card { background:#fff; border-radius:12px; padding:16px; margin-bottom:12px; box-shadow:0 1px 3px rgba(14,36,64,.08); }
   .card h2 { margin:0 0 4px; font-size:1rem; }
   .meta { font-size:.85rem; opacity:.75; }
   .alerta { margin-top:10px; padding:8px 12px; border-radius:8px; background:#FEF3C7; color:var(--alerta); font-size:.9rem; }
   .ok { margin-top:10px; padding:8px 12px; border-radius:8px; background:#CCFBF1; color:#0F766E; font-size:.9rem; }
+  .mudou { margin-top:10px; padding:10px 12px; border-radius:8px; border:1px solid var(--agua); font-size:.9rem; }
+  .mudou b { color:#0F766E; }
+  .mudou ul { margin:6px 0 0; padding-left:18px; }
+  .tag { display:inline-block; background:var(--agua); color:#fff; border-radius:999px; padding:1px 8px; font-size:.75rem; margin-left:6px; vertical-align:middle; }
+  .calc h2 { margin:0 0 8px; font-size:1rem; }
+  .calc .linha { display:flex; flex-wrap:wrap; gap:10px 14px; align-items:end; }
+  .calc label { display:flex; flex-direction:column; font-size:.85rem; gap:4px; }
+  .calc input, .calc select { font:inherit; padding:8px 10px; border:1px solid #cbd5e1; border-radius:8px; background:#fff; color:var(--marinho); }
+  .calc .check { flex-direction:row; align-items:center; gap:6px; }
+  .calc button { font:inherit; padding:9px 16px; border:0; border-radius:8px; background:var(--agua); color:#fff; font-weight:600; cursor:pointer; }
+  .calc .resultado { margin-top:12px; padding:12px; border-radius:8px; background:#F0FDFA; border:1px solid var(--agua); font-size:.92rem; }
+  .calc .resultado strong { font-size:1.05rem; }
+  .calc .resultado ul { margin:6px 0 0; padding-left:18px; }
+  .calc .erro { margin-top:12px; padding:10px 12px; border-radius:8px; background:#FEF3C7; color:var(--alerta); font-size:.9rem; }
+  .calc .nota { margin-top:10px; font-size:.8rem; opacity:.75; }
 </style>
 </head>
 <body>
 <header><h1>Juriday</h1><p>Seu dia jurídico, organizado para a sua função.</p></header>
 <main>
   <div class="aviso" id="fonte">Carregando…</div>
+  <div class="resumo" id="resumo" hidden></div>
+  <section class="card calc" id="calc">
+    <h2>Calculadora de prazo</h2>
+    <div class="linha">
+      <label>Data da publicação<input type="date" id="c-data"></label>
+      <label>Prazo (dias úteis)
+        <select id="c-dias"><option>5</option><option>10</option><option selected>15</option><option>30</option></select>
+      </label>
+      <label class="check"><input type="checkbox" id="c-dobro"> Prazo em dobro</label>
+      <button type="button" id="c-calcular">Calcular</button>
+    </div>
+    <div id="c-saida"></div>
+    <div class="nota">Considera dias úteis, feriados nacionais e o recesso de 20/12 a 20/01 (CPC). Não considera feriados estaduais ou municipais nem suspensões decretadas por tribunais. O advogado confere sempre.</div>
+  </section>
   <div id="lista"></div>
 </main>
 <script>
@@ -31,40 +63,100 @@ const LIMITE_PARADO = 30; // dias sem movimentação para gerar alerta
 const dias = (iso) => Math.floor((Date.now() - new Date(iso)) / 86400000);
 const fmt = (iso) => new Date(iso).toLocaleDateString('pt-BR');
 const formataCNJ = (n) => n.replace(/^(\d{7})(\d{2})(\d{4})(\d)(\d{2})(\d{4})$/, '$1-$2.$3.$4.$5.$6');
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const chaveMov = (m) => m.codigo + '|' + m.dataHora;
 
+async function lerJson(arquivo) {
+  try { const r = await fetch(arquivo); return r.ok ? await r.json() : null; } catch (e) { return null; }
+}
+
+// Escolhe a fonte: dados reais coletados do DataJud, ou a demonstração (duas coletas fictícias).
 async function carregar() {
-  for (const [arquivo, rotulo] of [['dados/processos.json', 'Dados reais do DataJud (CNJ)'], ['dados/demo.json', 'Dados de demonstração (processos fictícios)']]) {
-    try {
-      const r = await fetch(arquivo);
-      if (!r.ok) continue;
-      const dados = await r.json();
-      if (dados.length) return { dados, rotulo };
-    } catch (e) {}
+  const real = await lerJson('dados/processos.json');
+  if (real && real.length) {
+    return { atual: real, anterior: (await lerJson('dados/processos-anterior.json')) || [], rotulo: 'Dados reais do DataJud (CNJ)' };
   }
-  return { dados: [], rotulo: 'Sem dados' };
+  const nova = await lerJson('dados/demo-nova.json');
+  const antiga = await lerJson('dados/demo.json');
+  return { atual: nova || antiga || [], anterior: nova ? (antiga || []) : [], rotulo: 'Dados de demonstração (processos fictícios)' };
+}
+
+// O "diff" do processo: movimentações que existem agora e não existiam na coleta anterior.
+function novidades(atual, anterior) {
+  const antes = new Map(anterior.map((p) => [p.numeroProcesso, new Set((p.movimentos || []).map(chaveMov))]));
+  return atual.map((p) => {
+    const vistos = antes.get(p.numeroProcesso);
+    const novas = vistos ? (p.movimentos || []).filter((m) => !vistos.has(chaveMov(m))) : [];
+    return { p, novas, primeiraColeta: !vistos };
+  });
+}
+
+function desenhar(itens, soNovidades) {
+  const lista = document.getElementById('lista');
+  lista.innerHTML = '';
+  const visiveis = itens.filter((i) => !soNovidades || i.novas.length);
+  if (!visiveis.length) { lista.innerHTML = '<div class="aviso">Nenhum processo com novidades desde a coleta anterior.</div>'; return; }
+  for (const { p, novas, primeiraColeta } of visiveis) {
+    const mov = [...(p.movimentos || [])].sort((a, b) => new Date(b.dataHora) - new Date(a.dataHora))[0];
+    const parado = mov ? dias(mov.dataHora) : null;
+    const alerta = parado !== null && parado >= LIMITE_PARADO
+      ? `<div class="alerta">Atenção: parado há ${parado} dias. Motivo do alerta: a última movimentação (${esc(mov.nome)}) foi em ${fmt(mov.dataHora)}, e o limite é de ${LIMITE_PARADO} dias.</div>`
+      : `<div class="ok">Em andamento: última movimentação há ${parado} dias.</div>`;
+    const mudou = novas.length
+      ? `<div class="mudou"><b>O que mudou desde a coleta anterior (${novas.length} nova${novas.length > 1 ? 's' : ''}):</b><ul>${[...novas].sort((a, b) => new Date(b.dataHora) - new Date(a.dataHora)).map((m) => `<li>${fmt(m.dataHora)}: ${esc(m.nome)}</li>`).join('')}</ul></div>`
+      : '';
+    const div = document.createElement('div');
+    div.className = 'card';
+    div.innerHTML = `<h2>${formataCNJ(p.numeroProcesso)}${novas.length ? '<span class="tag">novidade</span>' : ''}${primeiraColeta ? '<span class="tag" style="background:#64748b">primeira coleta</span>' : ''}</h2>
+      <div class="meta">${esc(p.tribunal)} · ${esc(p.classe?.nome)} · ${esc(p.orgaoJulgador?.nome)}</div>
+      <div class="meta">Última movimentação: ${mov ? esc(mov.nome) + ' (' + fmt(mov.dataHora) + ')' : 'nenhuma'}</div>${mudou}${alerta}`;
+    lista.appendChild(div);
+  }
 }
 
 (async () => {
-  const { dados, rotulo } = await carregar();
+  const { atual, anterior, rotulo } = await carregar();
   document.getElementById('fonte').textContent = rotulo + ' · protótipo acadêmico';
-  const lista = document.getElementById('lista');
-  const ordenados = dados.map(p => {
-    const mov = [...(p.movimentos || [])].sort((a, b) => new Date(b.dataHora) - new Date(a.dataHora))[0];
-    return { p, mov, parado: mov ? dias(mov.dataHora) : null };
-  }).sort((a, b) => (b.parado ?? 0) - (a.parado ?? 0));
-
-  for (const { p, mov, parado } of ordenados) {
-    const div = document.createElement('div');
-    div.className = 'card';
-    const alerta = parado >= LIMITE_PARADO
-      ? `<div class="alerta">Atenção: parado há ${parado} dias. Motivo do alerta: a última movimentação (${mov.nome}) foi em ${fmt(mov.dataHora)}, e o limite é de ${LIMITE_PARADO} dias.</div>`
-      : `<div class="ok">Em andamento: última movimentação há ${parado} dias.</div>`;
-    div.innerHTML = `<h2>${formataCNJ(p.numeroProcesso)}</h2>
-      <div class="meta">${p.tribunal} · ${p.classe?.nome ?? ''} · ${p.orgaoJulgador?.nome ?? ''}</div>
-      <div class="meta">Última movimentação: ${mov ? mov.nome + ' (' + fmt(mov.dataHora) + ')' : 'nenhuma'}</div>${alerta}`;
-    lista.appendChild(div);
+  const itens = novidades(atual, anterior).sort((a, b) => {
+    const ult = (x) => Math.max(0, ...(x.p.movimentos || []).map((m) => +new Date(m.dataHora)));
+    return ult(a) - ult(b); // mais parados primeiro
+  });
+  const comNovidade = itens.filter((i) => i.novas.length);
+  const totalNovas = comNovidade.reduce((s, i) => s + i.novas.length, 0);
+  const resumo = document.getElementById('resumo');
+  if (anterior.length) {
+    resumo.hidden = false;
+    resumo.innerHTML = `<strong>${comNovidade.length} de ${itens.length} processos com novidades (${totalNovas} novas movimentações)</strong>
+      <label><input type="checkbox" id="filtro"> Mostrar só quem teve novidades</label>`;
+    document.getElementById('filtro').addEventListener('change', (e) => desenhar(itens, e.target.checked));
   }
+  desenhar(itens, false);
 })();
+</script>
+<script type="module">
+import { calcularPrazo } from './prazos.mjs';
+const dataExtenso = (iso) => new Date(iso + 'T00:00:00Z').toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'UTC' });
+const dataCurta = (iso) => new Date(iso + 'T00:00:00Z').toLocaleDateString('pt-BR', { timeZone: 'UTC' });
+const esc2 = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const campo = document.getElementById('c-data');
+campo.value = new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+document.getElementById('c-calcular').addEventListener('click', () => {
+  const saida = document.getElementById('c-saida');
+  try {
+    const dias = Number(document.getElementById('c-dias').value);
+    const dobro = document.getElementById('c-dobro').checked;
+    const r = calcularPrazo({ publicacao: campo.value, dias, dobro });
+    const motivos = [];
+    motivos.push('Publicação em ' + dataCurta(r.publicacao) + ' (esse dia não conta). A contagem começa em ' + dataCurta(r.inicio) + '.');
+    motivos.push(r.totalDiasUteis + ' dias úteis' + (dobro ? ' (prazo em dobro)' : '') + ', contando o dia do vencimento.');
+    if (r.fimDeSemana) motivos.push(r.fimDeSemana + ' dia(s) de fim de semana não contaram.');
+    for (const f of r.feriados) motivos.push(dataCurta(f.data) + ' não contou (' + f.motivo.replace('feriado: ', 'feriado, ') + ').');
+    if (r.recesso) motivos.push('O recesso forense (20/12 a 20/01) suspendeu a contagem.');
+    saida.innerHTML = '<div class="resultado"><strong>Vence em ' + esc2(dataExtenso(r.vencimento)) + '</strong><ul>' + motivos.map((m) => '<li>' + esc2(m) + '</li>').join('') + '</ul></div>';
+  } catch (e) {
+    saida.innerHTML = '<div class="erro">' + esc2(e.message) + '</div>';
+  }
+});
 </script>
 </body>
 </html>

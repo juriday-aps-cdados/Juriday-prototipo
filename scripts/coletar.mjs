@@ -6,7 +6,7 @@
 // tenta de novo sozinho, esperando mais a cada tentativa, e guarda cada
 // resposta boa em docs/dados/cache/. Assim a demonstração nunca depende
 // da API estar no ar.
-import { readFile, writeFile, readdir } from 'node:fs/promises';
+import { readFile, writeFile, readdir, mkdir, copyFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 
 // Chave pública do CNJ. Ela pode mudar: confira em
@@ -67,22 +67,33 @@ if (numeros.length === 0) {
   process.exit(0);
 }
 
+await mkdir('docs/dados/cache/anterior', { recursive: true });
+
 for (const numero of numeros) {
-  const arquivo = `docs/dados/cache/${soDigitos(numero)}.json`;
+  const limpo = soDigitos(numero);
+  const arquivo = `docs/dados/cache/${limpo}.json`;
   if (existsSync(arquivo) && !refresh) { console.log(`ok (já salvo): ${numero}`); continue; }
   console.log(`Buscando ${numero}...`);
   try {
     const dados = await consultar(numero);
+    // Guarda a versão anterior, para o site mostrar o que mudou.
+    if (existsSync(arquivo)) await copyFile(arquivo, `docs/dados/cache/anterior/${limpo}.json`);
     await writeFile(arquivo, JSON.stringify(dados, null, 2));
-    console.log(`  salvo.`);
+    console.log('  salvo.');
   } catch (e) {
     console.log(`  FALHOU: ${e.message}`);
   }
 }
 
-// Junta tudo num arquivo só, que o site lê.
-const arquivos = (await readdir('docs/dados/cache')).filter((f) => f.endsWith('.json'));
-const todos = [];
-for (const f of arquivos) todos.push(JSON.parse(await readFile(`docs/dados/cache/${f}`, 'utf8')));
-await writeFile('docs/dados/processos.json', JSON.stringify(todos, null, 2));
-console.log(`Pronto: ${todos.length} processo(s) em docs/dados/processos.json`);
+// Junta tudo em dois arquivos que o site lê: a coleta atual e a anterior.
+async function juntar(pasta) {
+  const lista = (await readdir(pasta)).filter((f) => f.endsWith('.json'));
+  const todos = [];
+  for (const f of lista) todos.push(JSON.parse(await readFile(`${pasta}/${f}`, 'utf8')));
+  return todos;
+}
+const atual = await juntar('docs/dados/cache');
+const anterior = await juntar('docs/dados/cache/anterior');
+await writeFile('docs/dados/processos.json', JSON.stringify(atual, null, 2));
+await writeFile('docs/dados/processos-anterior.json', JSON.stringify(anterior, null, 2));
+console.log(`Pronto: ${atual.length} processo(s) na coleta atual, ${anterior.length} na anterior.`);

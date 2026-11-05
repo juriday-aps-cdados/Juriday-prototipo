@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "coletar": "node scripts/coletar.mjs",
-    "site": "node scripts/servir.mjs"
+    "site": "node scripts/servir.mjs",
+    "testar": "node scripts/testar-prazos.mjs"
   }
 }

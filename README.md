@@ -27,3 +27,10 @@ Projeto acadêmico: Ciência de Dados Aplicada ao Direito I, Insper, 2026/2. Pro
 - `docs/`: o site (HTML) e os dados que ele lê
 - `scripts/coletar.mjs`: busca processos na API pública do DataJud
 - `scripts/servir.mjs`: abre o site no seu computador
+
+## Cálculo de prazo
+A calculadora (`docs/prazos.mjs`) é feita em código, e não por IA, para o resultado ser sempre o mesmo e poder ser testado (`npm run testar`).
+- Conta só dias úteis, não conta o dia da publicação e inclui o dia do vencimento (CPC, arts. 219 e 224).
+- Desconta fins de semana, feriados nacionais e o recesso forense de 20/12 a 20/01 (CPC, art. 220).
+- Aceita prazo em dobro.
+- Não considera feriados estaduais ou municipais, suspensões decretadas por tribunais nem indisponibilidade de sistema. O advogado confere sempre.
