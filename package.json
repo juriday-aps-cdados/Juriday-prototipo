@@ -8,6 +8,9 @@
     "site": "node scripts/servir.mjs",
     "testar": "node scripts/testar-prazos.mjs",
     "testar-api": "node scripts/testar-api.mjs",
-    "amostra": "node scripts/amostra.mjs"
+    "amostra": "node scripts/amostra.mjs",
+    "base": "node scripts/base.mjs",
+    "base-recentes": "RECENTES=1 node scripts/base.mjs",
+    "normal": "node scripts/normal.mjs"
   }
 }

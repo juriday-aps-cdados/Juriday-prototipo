@@ -14,6 +14,8 @@
   main { max-width:960px; margin:0 auto; padding:16px; }
   .aviso { background:#fff; border-left:4px solid var(--agua); padding:12px 16px; border-radius:8px; margin-bottom:12px; font-size:.9rem; }
   .resumo { background:#fff; border-radius:12px; padding:14px 16px; margin-bottom:12px; box-shadow:0 1px 3px rgba(14,36,64,.08); display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; justify-content:space-between; }
+  .resumo[hidden] { display:none; }
+  .arq-msg { margin-top:10px; padding:8px 12px; border-radius:8px; background:#E2E8F0; color:#475569; font-size:.9rem; }
   .resumo strong { font-size:1rem; }
   .resumo label { font-size:.9rem; cursor:pointer; }
   .card { background:#fff; border-radius:12px; padding:16px; margin-bottom:12px; box-shadow:0 1px 3px rgba(14,36,64,.08); }
@@ -36,6 +38,14 @@
   .calc .resultado ul { margin:6px 0 0; padding-left:18px; }
   .calc .erro { margin-top:12px; padding:10px 12px; border-radius:8px; background:#FEF3C7; color:var(--alerta); font-size:.9rem; }
   .calc .nota { margin-top:10px; font-size:.8rem; opacity:.75; }
+  .termo { margin-top:10px; padding:10px 12px; border-radius:8px; background:#F8FAFC; border:1px solid #e2e8f0; font-size:.88rem; }
+  .termo .barra { position:relative; height:8px; border-radius:4px; background:#e2e8f0; margin:10px 0 6px; }
+  .termo .enche { position:absolute; left:0; top:0; bottom:0; border-radius:4px; }
+  .termo .marca { position:absolute; top:-3px; width:2px; height:14px; background:#64748b; }
+  .termo .nota-t { font-size:.75rem; opacity:.7; }
+  .t-ok .enche { background:var(--agua); } .t-atencao .enche { background:#D97706; } .t-fora .enche { background:#B91C1C; }
+  .mais { display:block; width:100%; font:inherit; padding:10px; border:1px solid #cbd5e1; border-radius:8px; background:#fff; color:var(--marinho); cursor:pointer; margin-bottom:12px; }
+  .resumo select { font:inherit; padding:6px 8px; border:1px solid #cbd5e1; border-radius:8px; background:#fff; color:var(--marinho); }
 </style>
 </head>
 <body>
@@ -43,6 +53,10 @@
 <main>
   <div class="aviso" id="fonte">Carregando…</div>
   <div class="resumo" id="resumo" hidden></div>
+  <div class="resumo" id="visao-box">
+    <label>Ver: <select id="visao"><option value="seus">Processos acompanhados</option><option value="amostra">Amostra de 300 processos reais do TRF3</option></select></label>
+    <span id="visao-info" class="meta"></span>
+  </div>
   <section class="card calc" id="calc">
     <h2>Calculadora de prazo</h2>
     <div class="linha">
@@ -91,15 +105,44 @@ function novidades(atual, anterior) {
   });
 }
 
-function desenhar(itens, soNovidades) {
+let NORMAL = null; // o "normal" de cada tipo de processo (dados/normal.json)
+// Arquivado = no último dia com andamento houve a "Baixa Definitiva" (código 22 da tabela do CNJ).
+const ultimoDia = (p) => { const u = ultimoMov(p); return u ? (p.movimentos || []).filter((m) => String(m.dataHora).slice(0, 10) === String(u.dataHora).slice(0, 10)) : []; };
+const arquivado = (p) => ultimoDia(p).some((m) => m.codigo === 22);
+const ultimoMov = (p) => [...(p.movimentos || [])].sort((a, b) => new Date(b.dataHora) - new Date(a.dataHora))[0];
+// Compara o tempo parado com o normal do tipo de processo: até 3 de 4 = normal; até 9 de 10 = acima; depois = fora.
+function situacao(p) {
+  const n = NORMAL?.classes?.[p.classe?.codigo];
+  const m = ultimoMov(p);
+  if (!n || !m) return null;
+  const parado = dias(m.dataHora);
+  return { n, parado, nivel: arquivado(p) ? 'arquivado' : parado > n.p90 ? 'fora' : parado > n.p75 ? 'atencao' : 'ok' };
+}
+const peso = (p) => { const s = situacao(p); return !s ? 0 : s.nivel === 'arquivado' ? -1 : s.parado / s.n.p90; };
+function termometro(p) {
+  const s = situacao(p);
+  if (!s) return '';
+  const { n, parado, nivel } = s;
+  if (nivel === 'arquivado') return '';
+  const frase = { ok: 'dentro do normal', atencao: 'acima do normal', fora: 'fora do normal' }[nivel];
+  const max = Math.max(n.p90 * 2, 1);
+  const pos = (v) => Math.min(100, (v / max) * 100);
+  return `<div class="termo t-${nivel}"><b>Termômetro: ${frase}.</b> Parado há ${parado} dias. Em processos de ${esc(n.nome)}, em 3 de cada 4 vezes o próximo andamento vem em até ${n.p75} dias, e em 9 de cada 10, em até ${n.p90} dias.
+    <div class="barra"><div class="enche" style="width:${pos(parado)}%"></div><div class="marca" style="left:${pos(n.p75)}%"></div><div class="marca" style="left:${pos(n.p90)}%"></div></div>
+    <div class="nota-t">Referência: ${n.intervalos.toLocaleString('pt-BR')} intervalos entre andamentos, em ${n.processos} processos reais do TRF3. É um apoio; o advogado avalia cada caso.</div></div>`;
+}
+
+function desenhar(itens, soNovidades, limite = Infinity) {
   const lista = document.getElementById('lista');
   lista.innerHTML = '';
   const visiveis = itens.filter((i) => !soNovidades || i.novas.length);
   if (!visiveis.length) { lista.innerHTML = '<div class="aviso">Nenhum processo com novidades desde a coleta anterior.</div>'; return; }
-  for (const { p, novas, primeiraColeta } of visiveis) {
+  for (const { p, novas, primeiraColeta } of visiveis.slice(0, limite)) {
     const mov = [...(p.movimentos || [])].sort((a, b) => new Date(b.dataHora) - new Date(a.dataHora))[0];
     const parado = mov ? dias(mov.dataHora) : null;
-    const alerta = parado !== null && parado >= LIMITE_PARADO
+    const alerta = arquivado(p)
+      ? `<div class="arq-msg">Arquivado: baixa definitiva em ${fmt(mov.dataHora)}. Processo encerrado, sem alerta de parado.</div>`
+      : parado !== null && parado >= LIMITE_PARADO
       ? `<div class="alerta">Atenção: parado há ${parado} dias. Motivo do alerta: a última movimentação (${esc(mov.nome)}) foi em ${fmt(mov.dataHora)}, e o limite é de ${LIMITE_PARADO} dias.</div>`
       : `<div class="ok">Em andamento: última movimentação há ${parado} dias.</div>`;
     const mudou = novas.length
@@ -107,15 +150,23 @@ function desenhar(itens, soNovidades) {
       : '';
     const div = document.createElement('div');
     div.className = 'card';
-    div.innerHTML = `<h2>${formataCNJ(p.numeroProcesso)}${novas.length ? '<span class="tag">novidade</span>' : ''}${primeiraColeta ? '<span class="tag" style="background:#64748b">primeira coleta</span>' : ''}</h2>
+    div.innerHTML = `<h2>${formataCNJ(p.numeroProcesso)}${novas.length ? '<span class="tag">novidade</span>' : ''}${primeiraColeta ? '<span class="tag" style="background:#64748b">primeira coleta</span>' : ''}${arquivado(p) ? '<span class="tag" style="background:#94a3b8">arquivado</span>' : ''}</h2>
       <div class="meta">${esc(p.tribunal)} · ${esc(p.classe?.nome)} · ${esc(p.orgaoJulgador?.nome)}</div>
-      <div class="meta">Última movimentação: ${mov ? esc(mov.nome) + ' (' + fmt(mov.dataHora) + ')' : 'nenhuma'}</div>${mudou}${alerta}`;
+      <div class="meta">Última movimentação: ${mov ? esc(mov.nome) + ' (' + fmt(mov.dataHora) + ')' : 'nenhuma'}</div>${mudou}${alerta}${termometro(p)}`;
     lista.appendChild(div);
+  }
+  if (visiveis.length > limite) {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'mais';
+    b.textContent = `Mostrar mais (${visiveis.length - limite} restantes)`;
+    b.addEventListener('click', () => desenhar(itens, soNovidades, limite + 30));
+    lista.appendChild(b);
   }
 }
 
 (async () => {
   const { atual, anterior, rotulo } = await carregar();
+  NORMAL = await lerJson('dados/normal.json');
   document.getElementById('fonte').textContent = rotulo + ' · protótipo acadêmico';
   const itens = novidades(atual, anterior).sort((a, b) => {
     const ult = (x) => Math.max(0, ...(x.p.movimentos || []).map((m) => +new Date(m.dataHora)));
@@ -131,6 +182,30 @@ function desenhar(itens, soNovidades) {
     document.getElementById('filtro').addEventListener('change', (e) => desenhar(itens, e.target.checked));
   }
   desenhar(itens, false);
+
+  // Visão "amostra": 300 processos reais do TRF3, os mais atrasados primeiro.
+  const visao = document.getElementById('visao');
+  const info = document.getElementById('visao-info');
+  let amostra = null;
+  visao.addEventListener('change', async () => {
+    if (visao.value === 'seus') {
+      document.getElementById('fonte').textContent = rotulo + ' · protótipo acadêmico';
+      resumo.hidden = !anterior.length;
+      info.textContent = '';
+      desenhar(itens, false);
+      return;
+    }
+    info.textContent = 'Carregando a amostra…';
+    amostra = amostra || await lerJson('dados/base-recentes.json');
+    if (!amostra) { info.textContent = 'Não consegui carregar a amostra.'; return; }
+    document.getElementById('fonte').textContent = 'Amostra de ' + amostra.length + ' processos reais do TRF3 (DataJud/CNJ) · protótipo acadêmico';
+    resumo.hidden = true;
+    const lista2 = amostra.map((p) => ({ p, novas: [], primeiraColeta: false })).sort((a, b) => peso(b.p) - peso(a.p));
+    let fora = 0, acima = 0, arq = 0;
+    for (const x of lista2) { const s = situacao(x.p); if (s?.nivel === 'fora') fora++; else if (s?.nivel === 'atencao') acima++; else if (s?.nivel === 'arquivado') arq++; }
+    info.textContent = `${fora} fora do normal, ${acima} acima do normal e ${arq} arquivados, de ${lista2.length}. Os mais atrasados aparecem primeiro; os arquivados ficam por último.`;
+    desenhar(lista2, false, 30);
+  });
 })();
 </script>
 <script type="module">
