@@ -17,13 +17,13 @@ Projeto acadêmico: Ciência de Dados Aplicada ao Direito I, Insper, 2026/2. Pro
 
 ## Como coletar processos reais
 1. Escreva os números (formato CNJ) em `processos.txt`, um por linha.
-2. Rode `npm run coletar`. A API do CNJ às vezes fica sobrecarregada; o script tenta de novo sozinho e guarda cada resposta em `site/dados/cache/`.
+2. Rode `npm run coletar`. A API do CNJ às vezes fica sobrecarregada; o script tenta de novo sozinho e guarda cada resposta em `docs/dados/cache/`.
 
 ## O que o Juriday não faz
 - Não substitui a análise jurídica nem decide pelo advogado.
 - Usa só dados públicos (metadados e movimentações); não acessa documentos dos autos nem processos sigilosos.
 
 ## Estrutura
-- `site/`: o site (HTML) e os dados que ele lê
+- `docs/`: o site (HTML) e os dados que ele lê
 - `scripts/coletar.mjs`: busca processos na API pública do DataJud
 - `scripts/servir.mjs`: abre o site no seu computador

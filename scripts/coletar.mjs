@@ -4,7 +4,7 @@
 //
 // A API do CNJ às vezes fica sobrecarregada (erro 429). Por isso o script
 // tenta de novo sozinho, esperando mais a cada tentativa, e guarda cada
-// resposta boa em site/dados/cache/. Assim a demonstração nunca depende
+// resposta boa em docs/dados/cache/. Assim a demonstração nunca depende
 // da API estar no ar.
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
@@ -68,7 +68,7 @@ if (numeros.length === 0) {
 }
 
 for (const numero of numeros) {
-  const arquivo = `site/dados/cache/${soDigitos(numero)}.json`;
+  const arquivo = `docs/dados/cache/${soDigitos(numero)}.json`;
   if (existsSync(arquivo) && !refresh) { console.log(`ok (já salvo): ${numero}`); continue; }
   console.log(`Buscando ${numero}...`);
   try {
@@ -81,8 +81,8 @@ for (const numero of numeros) {
 }
 
 // Junta tudo num arquivo só, que o site lê.
-const arquivos = (await readdir('site/dados/cache')).filter((f) => f.endsWith('.json'));
+const arquivos = (await readdir('docs/dados/cache')).filter((f) => f.endsWith('.json'));
 const todos = [];
-for (const f of arquivos) todos.push(JSON.parse(await readFile(`site/dados/cache/${f}`, 'utf8')));
-await writeFile('site/dados/processos.json', JSON.stringify(todos, null, 2));
-console.log(`Pronto: ${todos.length} processo(s) em site/dados/processos.json`);
+for (const f of arquivos) todos.push(JSON.parse(await readFile(`docs/dados/cache/${f}`, 'utf8')));
+await writeFile('docs/dados/processos.json', JSON.stringify(todos, null, 2));
+console.log(`Pronto: ${todos.length} processo(s) em docs/dados/processos.json`);
