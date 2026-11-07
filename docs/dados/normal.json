@@ -1,37 +1,37 @@
 {
- "geradoEm": "2026-11-05T16:57:23.381Z",
+ "geradoEm": "2026-11-07T14:09:52.090Z",
  "classes": {
   "7": {
    "nome": "Procedimento Comum Cível",
-   "processos": 999,
-   "intervalos": 55362,
-   "p50": 11,
-   "p75": 42,
-   "p90": 113
+   "processos": 658,
+   "intervalos": 4716,
+   "p50": 6,
+   "p75": 36,
+   "p90": 88
   },
   "120": {
    "nome": "Mandado de Segurança Cível",
-   "processos": 230,
-   "intervalos": 4578,
-   "p50": 7,
-   "p75": 28,
-   "p90": 99
+   "processos": 220,
+   "intervalos": 789,
+   "p50": 3,
+   "p75": 14,
+   "p90": 55
   },
   "156": {
    "nome": "Cumprimento de sentença",
-   "processos": 143,
-   "intervalos": 3492,
-   "p50": 13,
-   "p75": 47,
-   "p90": 123
+   "processos": 83,
+   "intervalos": 383,
+   "p50": 3,
+   "p75": 16,
+   "p90": 57
   },
   "1116": {
    "nome": "Execução Fiscal",
-   "processos": 861,
-   "intervalos": 27129,
-   "p50": 28,
-   "p75": 110,
-   "p90": 307
+   "processos": 668,
+   "intervalos": 2081,
+   "p50": 11,
+   "p75": 78,
+   "p90": 638
   }
  }
 }

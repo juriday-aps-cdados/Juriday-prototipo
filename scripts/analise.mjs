@@ -48,11 +48,17 @@ const tiposOut = Object.entries(tipos).map(([cod, t]) => ({
 // "intervalo longo" = maior que o 75º percentil do mesmo tipo de processo nos últimos 12 meses (por construção, 25% no total)
 const p75Tipo = Object.fromEntries(tiposOut.map((t) => [t.codigo, t.p75]));
 for (const v of Object.values(varas)) v.longos = v.lista.filter(([cod, iv]) => iv > p75Tipo[cod]).length;
-const varasOut = Object.values(varas).filter((v) => v.intervalos >= MIN_INTERVALOS).map((v) => ({
-  nome: v.nome, processos: v.processos.size, intervalos: v.intervalos,
-  pctLongos: +(100 * v.longos / v.intervalos).toFixed(1), mediana: +perc(v.soma, .5).toFixed(1),
-  tipoPrincipal: Object.entries(v.classes).sort((a, b) => b[1] - a[1])[0][0],
-})).sort((a, b) => b.pctLongos - a.pctLongos);
+// "dias a mais que o normal": tempo típico (mediana) da vara menos o tempo típico esperado para o mesmo conjunto de tipos de processo
+const p50Tipo = Object.fromEntries(tiposOut.map((t) => [t.codigo, t.p50]));
+const varasOut = Object.values(varas).filter((v) => v.intervalos >= MIN_INTERVALOS).map((v) => {
+  const tipica = perc(v.soma, .5), esperada = perc(v.lista.map(([cod]) => p50Tipo[cod]), .5);
+  return {
+    nome: v.nome, processos: v.processos.size, intervalos: v.intervalos,
+    pctLongos: +(100 * v.longos / v.intervalos).toFixed(1), mediana: +tipica.toFixed(1),
+    esperada: +esperada.toFixed(1), diasAMais: +(tipica - esperada).toFixed(1),
+    tipoPrincipal: Object.entries(v.classes).sort((a, b) => b[1] - a[1])[0][0],
+  };
+}).sort((a, b) => b.diasAMais - a.diasAMais || b.pctLongos - a.pctLongos);
 
 const saida = {
   geradoEm: hoje.toISOString(), janela: 'últimos 12 meses', totalProcessos,
@@ -62,5 +68,5 @@ const saida = {
 await writeFile('docs/dados/analise.json', JSON.stringify(saida, null, 1));
 console.log(`analise.json gravado: ${totalProcessos} processos, ${saida.totalIntervalos} intervalos, ${varasOut.length} varas comparáveis.`);
 console.log('Tipos (últimos 12 meses):'); for (const t of tiposOut) console.log(`  ${t.nome}: ${t.processos} proc., ${t.intervalos} intervalos, 50%=${t.p50}d, 75%=${t.p75}d, 90%=${t.p90}d`);
-console.log('Varas com mais intervalos longos (esperado: 25%):'); varasOut.slice(0, 5).forEach((v) => console.log(`  ${v.pctLongos}%  ${v.nome.slice(0, 62)} [${v.tipoPrincipal}]`));
-console.log('Varas com menos:'); varasOut.slice(-5).forEach((v) => console.log(`  ${v.pctLongos}%  ${v.nome.slice(0, 62)} [${v.tipoPrincipal}]`));
+console.log('Varas com mais intervalos longos (esperado: 25%):'); varasOut.slice(0, 5).forEach((v) => console.log(`  +${v.diasAMais} dias (tipico ${v.mediana}, esperado ${v.esperada})  ${v.nome.slice(0, 50)} [${v.tipoPrincipal}]`));
+console.log('Varas com menos:'); varasOut.slice(-5).forEach((v) => console.log(`  ${v.diasAMais} dias (tipico ${v.mediana}, esperado ${v.esperada})  ${v.nome.slice(0, 50)} [${v.tipoPrincipal}]`));

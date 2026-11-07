@@ -1,8 +1,8 @@
 {
- "geradoEm": "2026-11-05T16:58:04.766Z",
+ "geradoEm": "2026-11-07T14:09:52.125Z",
  "janela": "últimos 12 meses",
  "totalProcessos": 2340,
- "totalIntervalos": 8107,
+ "totalIntervalos": 7969,
  "minIntervalos": 30,
  "esperado": 25,
  "tipos": [
@@ -10,25 +10,25 @@
    "codigo": 7,
    "nome": "Procedimento Comum Cível",
    "processos": 658,
-   "intervalos": 4787,
+   "intervalos": 4716,
    "p50": 6,
-   "p75": 37,
-   "p90": 91
+   "p75": 36,
+   "p90": 88
   },
   {
    "codigo": 1116,
    "nome": "Execução Fiscal",
-   "processos": 670,
-   "intervalos": 2135,
+   "processos": 668,
+   "intervalos": 2081,
    "p50": 11,
-   "p75": 84,
-   "p90": 645
+   "p75": 78,
+   "p90": 638
   },
   {
    "codigo": 120,
    "nome": "Mandado de Segurança Cível",
    "processos": 220,
-   "intervalos": 800,
+   "intervalos": 789,
    "p50": 3,
    "p75": 14,
    "p90": 55
@@ -37,36 +37,22 @@
    "codigo": 156,
    "nome": "Cumprimento de sentença",
    "processos": 83,
-   "intervalos": 385,
+   "intervalos": 383,
    "p50": 3,
    "p75": 16,
-   "p90": 60
+   "p90": 57
   }
  ],
  "varas": [
   {
-   "nome": "02ª VARA FEDERAL DE PIRACICABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
-   "processos": 35,
-   "intervalos": 134,
-   "pctLongos": 45.5,
-   "mediana": 14,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "05ª VARA FEDERAL DE CAMPINAS",
-   "processos": 23,
-   "intervalos": 33,
-   "pctLongos": 39.4,
-   "mediana": 23,
+   "nome": "03ª VARA FEDERAL DE GUARULHOS",
+   "processos": 22,
+   "intervalos": 56,
+   "pctLongos": 37.5,
+   "mediana": 36,
+   "esperada": 11,
+   "diasAMais": 25,
    "tipoPrincipal": "Execução Fiscal"
-  },
-  {
-   "nome": "04ª VARA FEDERAL DE SANTOS",
-   "processos": 23,
-   "intervalos": 150,
-   "pctLongos": 39.3,
-   "mediana": 15,
-   "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
    "nome": "01ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
@@ -74,159 +60,119 @@
    "intervalos": 68,
    "pctLongos": 38.2,
    "mediana": 33,
-   "tipoPrincipal": "Execução Fiscal"
-  },
-  {
-   "nome": "01ª VARA FEDERAL DE OSASCO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
-   "processos": 14,
-   "intervalos": 40,
-   "pctLongos": 37.5,
-   "mediana": 6,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "03ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
-   "processos": 29,
-   "intervalos": 76,
-   "pctLongos": 35.5,
-   "mediana": 4,
-   "tipoPrincipal": "Execução Fiscal"
-  },
-  {
-   "nome": "01ª VARA FEDERAL DE CAMPO GRANDE",
-   "processos": 7,
-   "intervalos": 35,
-   "pctLongos": 34.3,
-   "mediana": 7,
-   "tipoPrincipal": "Mandado de Segurança Cível"
-  },
-  {
-   "nome": "02ª VARA FEDERAL DE SÃO BERNARDO DO CAMPO",
-   "processos": 28,
-   "intervalos": 79,
-   "pctLongos": 34.2,
-   "mediana": 14,
-   "tipoPrincipal": "Execução Fiscal"
-  },
-  {
-   "nome": "02ª VARA FEDERAL DE SÃO JOSÉ DOS CAMPOS COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
-   "processos": 27,
-   "intervalos": 121,
-   "pctLongos": 33.9,
-   "mediana": 10,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "06ª VARA FEDERAL DE RIBEIRÃO PRETO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
-   "processos": 28,
-   "intervalos": 102,
-   "pctLongos": 33.3,
-   "mediana": 21,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "05ª VARA FEDERAL DE SÃO JOSÉ DO RIO PRETO",
-   "processos": 29,
-   "intervalos": 75,
-   "pctLongos": 33.3,
-   "mediana": 30,
+   "esperada": 11,
+   "diasAMais": 22,
    "tipoPrincipal": "Execução Fiscal"
   },
   {
    "nome": "04ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
    "processos": 25,
-   "intervalos": 201,
-   "pctLongos": 33.3,
-   "mediana": 25,
+   "intervalos": 197,
+   "pctLongos": 35,
+   "mediana": 27,
+   "esperada": 6,
+   "diasAMais": 21,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
-   "nome": "04ª VARA FEDERAL DE SOROCABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
-   "processos": 23,
-   "intervalos": 108,
-   "pctLongos": 32.4,
-   "mediana": 11,
-   "tipoPrincipal": "Procedimento Comum Cível"
+   "nome": "05ª VARA FEDERAL DE SÃO JOSÉ DO RIO PRETO",
+   "processos": 29,
+   "intervalos": 73,
+   "pctLongos": 35.6,
+   "mediana": 31,
+   "esperada": 11,
+   "diasAMais": 20,
+   "tipoPrincipal": "Execução Fiscal"
   },
   {
    "nome": "01ª VARA FEDERAL DE SOROCABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
    "processos": 15,
-   "intervalos": 66,
-   "pctLongos": 31.8,
+   "intervalos": 65,
+   "pctLongos": 32.3,
    "mediana": 24,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "01ª VARA FEDERAL DE SANTOS",
-   "processos": 16,
-   "intervalos": 165,
-   "pctLongos": 31.5,
-   "mediana": 9,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "02ª VARA FEDERAL DE SANTO ANDRÉ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
-   "processos": 28,
-   "intervalos": 168,
-   "pctLongos": 31.5,
-   "mediana": 7,
+   "esperada": 6,
+   "diasAMais": 18,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
    "nome": "06ª VARA FEDERAL DE CAMPO GRANDE",
    "processos": 27,
-   "intervalos": 73,
-   "pctLongos": 31.5,
-   "mediana": 27,
-   "tipoPrincipal": "Execução Fiscal"
-  },
-  {
-   "nome": "03ª VARA FEDERAL DE SANTOS",
-   "processos": 28,
-   "intervalos": 178,
-   "pctLongos": 31.5,
-   "mediana": 10,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "04ª VARA FEDERAL DE RIBEIRÃO PRETO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
-   "processos": 20,
-   "intervalos": 151,
-   "pctLongos": 31.1,
-   "mediana": 7,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "03ª VARA FEDERAL DE GUARULHOS",
-   "processos": 22,
-   "intervalos": 58,
+   "intervalos": 71,
    "pctLongos": 31,
-   "mediana": 36,
+   "mediana": 27,
+   "esperada": 11,
+   "diasAMais": 16,
    "tipoPrincipal": "Execução Fiscal"
   },
   {
-   "nome": "01ª VARA FEDERAL DE PIRACICABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
-   "processos": 9,
-   "intervalos": 49,
-   "pctLongos": 30.6,
-   "mediana": 8,
+   "nome": "06ª VARA FEDERAL DE RIBEIRÃO PRETO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "processos": 28,
+   "intervalos": 100,
+   "pctLongos": 33,
+   "mediana": 21,
+   "esperada": 6,
+   "diasAMais": 15,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "07ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "processos": 27,
+   "intervalos": 88,
+   "pctLongos": 27.3,
+   "mediana": 26,
+   "esperada": 11,
+   "diasAMais": 15,
+   "tipoPrincipal": "Execução Fiscal"
+  },
+  {
+   "nome": "05ª VARA FEDERAL DE CAMPINAS",
+   "processos": 23,
+   "intervalos": 33,
+   "pctLongos": 39.4,
+   "mediana": 23,
+   "esperada": 11,
+   "diasAMais": 12,
+   "tipoPrincipal": "Execução Fiscal"
+  },
+  {
+   "nome": "04ª VARA FEDERAL DE SANTOS",
+   "processos": 23,
+   "intervalos": 147,
+   "pctLongos": 40.1,
+   "mediana": 15,
+   "esperada": 6,
+   "diasAMais": 9,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
    "nome": "04ª VARA FEDERAL DE CAMPO GRANDE",
    "processos": 11,
-   "intervalos": 43,
-   "pctLongos": 30.2,
-   "mediana": 7,
+   "intervalos": 38,
+   "pctLongos": 34.2,
+   "mediana": 15,
+   "esperada": 6,
+   "diasAMais": 9,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
-   "nome": "10ª VARA FEDERAL CÍVEL DE SÃO PAULO",
-   "processos": 12,
-   "intervalos": 67,
-   "pctLongos": 29.9,
-   "mediana": 3,
+   "nome": "02ª VARA FEDERAL DE PIRACICABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "processos": 35,
+   "intervalos": 134,
+   "pctLongos": 45.5,
+   "mediana": 14,
+   "esperada": 6,
+   "diasAMais": 8,
    "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "12ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "processos": 29,
+   "intervalos": 95,
+   "pctLongos": 22.1,
+   "mediana": 18,
+   "esperada": 11,
+   "diasAMais": 7,
+   "tipoPrincipal": "Execução Fiscal"
   },
   {
    "nome": "06ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
@@ -234,118 +180,118 @@
    "intervalos": 145,
    "pctLongos": 29.7,
    "mediana": 11,
+   "esperada": 6,
+   "diasAMais": 5,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
-   "nome": "07ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "nome": "04ª VARA FEDERAL CÍVEL DE SÃO PAULO",
+   "processos": 5,
+   "intervalos": 37,
+   "pctLongos": 27,
+   "mediana": 8,
+   "esperada": 3,
+   "diasAMais": 5,
+   "tipoPrincipal": "Mandado de Segurança Cível"
+  },
+  {
+   "nome": "01ª VARA FEDERAL DE CAMPO GRANDE",
+   "processos": 7,
+   "intervalos": 35,
+   "pctLongos": 34.3,
+   "mediana": 7,
+   "esperada": 3,
+   "diasAMais": 4,
+   "tipoPrincipal": "Mandado de Segurança Cível"
+  },
+  {
+   "nome": "02ª VARA FEDERAL DE SÃO JOSÉ DOS CAMPOS COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
    "processos": 27,
-   "intervalos": 90,
-   "pctLongos": 28.9,
-   "mediana": 28,
-   "tipoPrincipal": "Execução Fiscal"
+   "intervalos": 121,
+   "pctLongos": 33.9,
+   "mediana": 10,
+   "esperada": 6,
+   "diasAMais": 4,
+   "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
-   "nome": "04ª VARA FEDERAL DE SÃO JOSÉ DOS CAMPOS",
-   "processos": 37,
-   "intervalos": 134,
-   "pctLongos": 28.4,
-   "mediana": 11,
-   "tipoPrincipal": "Execução Fiscal"
+   "nome": "04ª VARA FEDERAL DE SOROCABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "processos": 23,
+   "intervalos": 107,
+   "pctLongos": 31.8,
+   "mediana": 10,
+   "esperada": 6,
+   "diasAMais": 4,
+   "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
-   "nome": "13ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "nome": "03ª VARA FEDERAL DE SANTOS",
    "processos": 28,
-   "intervalos": 85,
-   "pctLongos": 28.2,
-   "mediana": 4,
-   "tipoPrincipal": "Execução Fiscal"
+   "intervalos": 178,
+   "pctLongos": 31.5,
+   "mediana": 10,
+   "esperada": 6,
+   "diasAMais": 4,
+   "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
    "nome": "04ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
    "processos": 28,
-   "intervalos": 79,
-   "pctLongos": 27.8,
+   "intervalos": 75,
+   "pctLongos": 26.7,
    "mediana": 15,
+   "esperada": 11,
+   "diasAMais": 4,
    "tipoPrincipal": "Execução Fiscal"
   },
   {
-   "nome": "07ª VARA FEDERAL DE SANTOS",
-   "processos": 23,
-   "intervalos": 80,
-   "pctLongos": 27.5,
-   "mediana": 11,
-   "tipoPrincipal": "Execução Fiscal"
-  },
-  {
-   "nome": "10ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
-   "processos": 27,
-   "intervalos": 84,
-   "pctLongos": 27.4,
-   "mediana": 5,
-   "tipoPrincipal": "Execução Fiscal"
-  },
-  {
-   "nome": "01ª VARA FEDERAL DE SANTO ANDRÉ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
-   "processos": 30,
-   "intervalos": 218,
-   "pctLongos": 27.1,
-   "mediana": 6,
+   "nome": "01ª VARA FEDERAL DE SANTOS",
+   "processos": 16,
+   "intervalos": 162,
+   "pctLongos": 31.5,
+   "mediana": 9,
+   "esperada": 6,
+   "diasAMais": 3,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
-   "nome": "01ª VARA FEDERAL DE LIMEIRA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
-   "processos": 38,
-   "intervalos": 235,
-   "pctLongos": 26.8,
-   "mediana": 7,
+   "nome": "09ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "processos": 28,
+   "intervalos": 92,
+   "pctLongos": 16.3,
+   "mediana": 14,
+   "esperada": 11,
+   "diasAMais": 3,
+   "tipoPrincipal": "Execução Fiscal"
+  },
+  {
+   "nome": "01ª VARA FEDERAL DE PIRACICABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "processos": 9,
+   "intervalos": 49,
+   "pctLongos": 32.7,
+   "mediana": 8,
+   "esperada": 6,
+   "diasAMais": 2,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "04ª VARA FEDERAL DE RIBEIRÃO PRETO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "processos": 20,
+   "intervalos": 148,
+   "pctLongos": 31.8,
+   "mediana": 8,
+   "esperada": 6,
+   "diasAMais": 2,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
    "nome": "01ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO",
    "processos": 28,
    "intervalos": 215,
-   "pctLongos": 26.5,
+   "pctLongos": 27.9,
    "mediana": 8,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "04ª VARA FEDERAL CÍVEL DE SÃO PAULO",
-   "processos": 5,
-   "intervalos": 38,
-   "pctLongos": 26.3,
-   "mediana": 8,
-   "tipoPrincipal": "Mandado de Segurança Cível"
-  },
-  {
-   "nome": "02ª VARA FEDERAL DE CAMPINAS",
-   "processos": 18,
-   "intervalos": 50,
-   "pctLongos": 26,
-   "mediana": 4,
-   "tipoPrincipal": "Mandado de Segurança Cível"
-  },
-  {
-   "nome": "01ª VARA FEDERAL DE JAHU COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO",
-   "processos": 20,
-   "intervalos": 106,
-   "pctLongos": 25.5,
-   "mediana": 5,
-   "tipoPrincipal": "Execução Fiscal"
-  },
-  {
-   "nome": "08ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
-   "processos": 28,
-   "intervalos": 98,
-   "pctLongos": 25.5,
-   "mediana": 11,
-   "tipoPrincipal": "Execução Fiscal"
-  },
-  {
-   "nome": "02ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO",
-   "processos": 29,
-   "intervalos": 233,
-   "pctLongos": 25.3,
-   "mediana": 5,
+   "esperada": 6,
+   "diasAMais": 2,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
@@ -354,38 +300,168 @@
    "intervalos": 108,
    "pctLongos": 25,
    "mediana": 8,
+   "esperada": 6,
+   "diasAMais": 2,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
-   "nome": "02ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
-   "processos": 26,
-   "intervalos": 81,
-   "pctLongos": 24.7,
-   "mediana": 6,
+   "nome": "02ª VARA FEDERAL DE ARAÇATUBA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "processos": 7,
+   "intervalos": 40,
+   "pctLongos": 12.5,
+   "mediana": 13,
+   "esperada": 11,
+   "diasAMais": 2,
    "tipoPrincipal": "Execução Fiscal"
   },
   {
-   "nome": "04ª VARA FEDERAL DE PIRACICABA",
-   "processos": 29,
-   "intervalos": 75,
-   "pctLongos": 24,
-   "mediana": 6,
+   "nome": "02ª VARA FEDERAL DE SÃO BERNARDO DO CAMPO",
+   "processos": 27,
+   "intervalos": 77,
+   "pctLongos": 32.5,
+   "mediana": 12,
+   "esperada": 11,
+   "diasAMais": 1,
    "tipoPrincipal": "Execução Fiscal"
+  },
+  {
+   "nome": "02ª VARA FEDERAL DE SANTO ANDRÉ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "processos": 28,
+   "intervalos": 163,
+   "pctLongos": 31.9,
+   "mediana": 7,
+   "esperada": 6,
+   "diasAMais": 1,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "02ª VARA FEDERAL DE CAMPINAS",
+   "processos": 18,
+   "intervalos": 46,
+   "pctLongos": 30.4,
+   "mediana": 4,
+   "esperada": 3,
+   "diasAMais": 1,
+   "tipoPrincipal": "Mandado de Segurança Cível"
+  },
+  {
+   "nome": "01ª VARA FEDERAL DE LIMEIRA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "processos": 38,
+   "intervalos": 235,
+   "pctLongos": 26.8,
+   "mediana": 7,
+   "esperada": 6,
+   "diasAMais": 1,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "01ª VARA FEDERAL DE OSASCO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "processos": 14,
+   "intervalos": 40,
+   "pctLongos": 40,
+   "mediana": 6,
+   "esperada": 6,
+   "diasAMais": 0,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "04ª VARA FEDERAL DE SÃO JOSÉ DOS CAMPOS",
+   "processos": 37,
+   "intervalos": 133,
+   "pctLongos": 29.3,
+   "mediana": 11,
+   "esperada": 11,
+   "diasAMais": 0,
+   "tipoPrincipal": "Execução Fiscal"
+  },
+  {
+   "nome": "07ª VARA FEDERAL DE SANTOS",
+   "processos": 23,
+   "intervalos": 80,
+   "pctLongos": 27.5,
+   "mediana": 11,
+   "esperada": 11,
+   "diasAMais": 0,
+   "tipoPrincipal": "Execução Fiscal"
+  },
+  {
+   "nome": "01ª VARA FEDERAL DE SANTO ANDRÉ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "processos": 30,
+   "intervalos": 216,
+   "pctLongos": 26.9,
+   "mediana": 6,
+   "esperada": 6,
+   "diasAMais": 0,
+   "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
    "nome": "01ª VARA FEDERAL DE RIBEIRÃO PRETO",
-   "processos": 27,
-   "intervalos": 94,
-   "pctLongos": 23.4,
-   "mediana": 10,
+   "processos": 26,
+   "intervalos": 90,
+   "pctLongos": 24.4,
+   "mediana": 11,
+   "esperada": 11,
+   "diasAMais": 0,
    "tipoPrincipal": "Execução Fiscal"
   },
   {
-   "nome": "06ª VARA FEDERAL DE CAMPINAS",
-   "processos": 25,
-   "intervalos": 91,
-   "pctLongos": 23.1,
+   "nome": "08ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "processos": 28,
+   "intervalos": 94,
+   "pctLongos": 22.3,
+   "mediana": 11,
+   "esperada": 11,
+   "diasAMais": 0,
+   "tipoPrincipal": "Execução Fiscal"
+  },
+  {
+   "nome": "08ª VARA FEDERAL CÍVEL DE SÃO PAULO",
+   "processos": 10,
+   "intervalos": 54,
+   "pctLongos": 22.2,
    "mediana": 3,
+   "esperada": 3,
+   "diasAMais": 0,
+   "tipoPrincipal": "Mandado de Segurança Cível"
+  },
+  {
+   "nome": "02ª VARA FEDERAL DE CAMPO GRANDE",
+   "processos": 8,
+   "intervalos": 51,
+   "pctLongos": 19.6,
+   "mediana": 3,
+   "esperada": 3,
+   "diasAMais": 0,
+   "tipoPrincipal": "Cumprimento de sentença"
+  },
+  {
+   "nome": "09ª VARA FEDERAL DE RIBEIRÃO PRETO",
+   "processos": 33,
+   "intervalos": 115,
+   "pctLongos": 16.5,
+   "mediana": 11,
+   "esperada": 11,
+   "diasAMais": 0,
+   "tipoPrincipal": "Execução Fiscal"
+  },
+  {
+   "nome": "01ª VARA FEDERAL DE JAHU COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO",
+   "processos": 20,
+   "intervalos": 106,
+   "pctLongos": 25.5,
+   "mediana": 5,
+   "esperada": 6,
+   "diasAMais": -1,
+   "tipoPrincipal": "Execução Fiscal"
+  },
+  {
+   "nome": "02ª VARA FEDERAL DE MARÍLIA COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO",
+   "processos": 29,
+   "intervalos": 232,
+   "pctLongos": 25,
+   "mediana": 5,
+   "esperada": 6,
+   "diasAMais": -1,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
@@ -394,31 +470,9 @@
    "intervalos": 54,
    "pctLongos": 22.2,
    "mediana": 2,
+   "esperada": 3,
+   "diasAMais": -1,
    "tipoPrincipal": "Mandado de Segurança Cível"
-  },
-  {
-   "nome": "08ª VARA FEDERAL CÍVEL DE SÃO PAULO",
-   "processos": 10,
-   "intervalos": 54,
-   "pctLongos": 22.2,
-   "mediana": 3,
-   "tipoPrincipal": "Mandado de Segurança Cível"
-  },
-  {
-   "nome": "12ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
-   "processos": 29,
-   "intervalos": 95,
-   "pctLongos": 22.1,
-   "mediana": 18,
-   "tipoPrincipal": "Execução Fiscal"
-  },
-  {
-   "nome": "01ª VARA FEDERAL DE JUNDIAÍ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
-   "processos": 9,
-   "intervalos": 37,
-   "pctLongos": 21.6,
-   "mediana": 3,
-   "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
    "nome": "02ª VARA FEDERAL DE JUNDIAÍ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
@@ -426,46 +480,8 @@
    "intervalos": 53,
    "pctLongos": 20.8,
    "mediana": 5,
-   "tipoPrincipal": "Execução Fiscal"
-  },
-  {
-   "nome": "05ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
-   "processos": 13,
-   "intervalos": 111,
-   "pctLongos": 20.7,
-   "mediana": 3,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "02ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
-   "processos": 14,
-   "intervalos": 113,
-   "pctLongos": 20.4,
-   "mediana": 4,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "01ª VARA FEDERAL DE TUPÃ COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO",
-   "processos": 25,
-   "intervalos": 120,
-   "pctLongos": 20,
-   "mediana": 3,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "01ª VARA FEDERAL DE ITAPEVA COM JUIZADO ESPECIAL ADJUNTO CÍVEL E PREVIDENCIÁRIO",
-   "processos": 10,
-   "intervalos": 50,
-   "pctLongos": 20,
-   "mediana": 3,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "05ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
-   "processos": 27,
-   "intervalos": 115,
-   "pctLongos": 20,
-   "mediana": 7,
+   "esperada": 6,
+   "diasAMais": -1,
    "tipoPrincipal": "Execução Fiscal"
   },
   {
@@ -474,30 +490,108 @@
    "intervalos": 30,
    "pctLongos": 20,
    "mediana": 2,
+   "esperada": 3,
+   "diasAMais": -1,
    "tipoPrincipal": "Mandado de Segurança Cível"
-  },
-  {
-   "nome": "01ª VARA FEDERAL DE SÃO JOÃO DA BOA VISTA COM JUIZADO ESPECIAL ADJUNTO CÍVEL E PREVIDENCIÁRIO",
-   "processos": 7,
-   "intervalos": 50,
-   "pctLongos": 20,
-   "mediana": 2,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "02ª VARA FEDERAL DE CAMPO GRANDE",
-   "processos": 8,
-   "intervalos": 51,
-   "pctLongos": 19.6,
-   "mediana": 3,
-   "tipoPrincipal": "Cumprimento de sentença"
   },
   {
    "nome": "03ª VARA FEDERAL DE SANTO ANDRÉ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
    "processos": 20,
    "intervalos": 202,
-   "pctLongos": 19.3,
+   "pctLongos": 19.8,
    "mediana": 5,
+   "esperada": 6,
+   "diasAMais": -1,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "12ª VARA FEDERAL CÍVEL DE SÃO PAULO",
+   "processos": 6,
+   "intervalos": 37,
+   "pctLongos": 18.9,
+   "mediana": 5,
+   "esperada": 6,
+   "diasAMais": -1,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "03ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "processos": 16,
+   "intervalos": 251,
+   "pctLongos": 12.7,
+   "mediana": 5,
+   "esperada": 6,
+   "diasAMais": -1,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "03ª VARA FEDERAL DE SÃO BERNARDO DO CAMPO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "processos": 9,
+   "intervalos": 35,
+   "pctLongos": 8.6,
+   "mediana": 2,
+   "esperada": 3,
+   "diasAMais": -1,
+   "tipoPrincipal": "Mandado de Segurança Cível"
+  },
+  {
+   "nome": "02ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "processos": 14,
+   "intervalos": 113,
+   "pctLongos": 20.4,
+   "mediana": 4,
+   "esperada": 6,
+   "diasAMais": -2,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "10ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "processos": 21,
+   "intervalos": 281,
+   "pctLongos": 16.7,
+   "mediana": 4,
+   "esperada": 6,
+   "diasAMais": -2,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "10ª VARA FEDERAL CÍVEL DE SÃO PAULO",
+   "processos": 12,
+   "intervalos": 61,
+   "pctLongos": 27.9,
+   "mediana": 3,
+   "esperada": 6,
+   "diasAMais": -3,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "06ª VARA FEDERAL DE CAMPINAS",
+   "processos": 25,
+   "intervalos": 91,
+   "pctLongos": 23.1,
+   "mediana": 3,
+   "esperada": 6,
+   "diasAMais": -3,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "05ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
+   "processos": 13,
+   "intervalos": 110,
+   "pctLongos": 20,
+   "mediana": 3,
+   "esperada": 6,
+   "diasAMais": -3,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "01ª VARA FEDERAL DE JUNDIAÍ COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "processos": 9,
+   "intervalos": 36,
+   "pctLongos": 19.4,
+   "mediana": 3,
+   "esperada": 6,
+   "diasAMais": -3,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
@@ -506,14 +600,8 @@
    "intervalos": 42,
    "pctLongos": 19,
    "mediana": 3,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "03ª VARA FEDERAL DE SOROCABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
-   "processos": 24,
-   "intervalos": 116,
-   "pctLongos": 18.1,
-   "mediana": 2,
+   "esperada": 6,
+   "diasAMais": -3,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
@@ -522,62 +610,78 @@
    "intervalos": 131,
    "pctLongos": 16.8,
    "mediana": 3,
+   "esperada": 6,
+   "diasAMais": -3,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
-   "nome": "12ª VARA FEDERAL CÍVEL DE SÃO PAULO",
-   "processos": 6,
-   "intervalos": 37,
-   "pctLongos": 16.2,
-   "mediana": 5,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "09ª VARA FEDERAL DE RIBEIRÃO PRETO",
-   "processos": 33,
-   "intervalos": 117,
-   "pctLongos": 16.2,
-   "mediana": 11,
-   "tipoPrincipal": "Execução Fiscal"
-  },
-  {
-   "nome": "10ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
-   "processos": 21,
-   "intervalos": 286,
-   "pctLongos": 16.1,
-   "mediana": 5,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "09ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
-   "processos": 28,
-   "intervalos": 93,
-   "pctLongos": 16.1,
-   "mediana": 9,
-   "tipoPrincipal": "Execução Fiscal"
-  },
-  {
-   "nome": "08ª VARA FEDERAL DE CAMPINAS",
-   "processos": 13,
-   "intervalos": 44,
-   "pctLongos": 15.9,
-   "mediana": 2,
+   "nome": "01ª VARA FEDERAL DE TUPÃ COM JUIZADO ESPECIAL FEDERAL CÍVEL E CRIMINAL ADJUNTO",
+   "processos": 25,
+   "intervalos": 111,
+   "pctLongos": 13.5,
+   "mediana": 3,
+   "esperada": 6,
+   "diasAMais": -3,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
    "nome": "02ª VARA FEDERAL DE OSASCO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
    "processos": 15,
-   "intervalos": 55,
-   "pctLongos": 14.5,
+   "intervalos": 54,
+   "pctLongos": 13,
    "mediana": 3,
+   "esperada": 6,
+   "diasAMais": -3,
    "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "01ª VARA FEDERAL DE ITAPEVA COM JUIZADO ESPECIAL ADJUNTO CÍVEL E PREVIDENCIÁRIO",
+   "processos": 10,
+   "intervalos": 40,
+   "pctLongos": 0,
+   "mediana": 3,
+   "esperada": 6,
+   "diasAMais": -3,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "01ª VARA FEDERAL DE SÃO JOÃO DA BOA VISTA COM JUIZADO ESPECIAL ADJUNTO CÍVEL E PREVIDENCIÁRIO",
+   "processos": 7,
+   "intervalos": 50,
+   "pctLongos": 20,
+   "mediana": 2,
+   "esperada": 6,
+   "diasAMais": -4,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "03ª VARA FEDERAL DE SOROCABA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
+   "processos": 24,
+   "intervalos": 115,
+   "pctLongos": 18.3,
+   "mediana": 2,
+   "esperada": 6,
+   "diasAMais": -4,
+   "tipoPrincipal": "Procedimento Comum Cível"
+  },
+  {
+   "nome": "05ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "processos": 27,
+   "intervalos": 108,
+   "pctLongos": 17.6,
+   "mediana": 7,
+   "esperada": 11,
+   "diasAMais": -4,
+   "tipoPrincipal": "Execução Fiscal"
   },
   {
    "nome": "07ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
    "processos": 16,
    "intervalos": 211,
-   "pctLongos": 12.8,
+   "pctLongos": 13.3,
    "mediana": 2,
+   "esperada": 6,
+   "diasAMais": -4,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
@@ -586,39 +690,79 @@
    "intervalos": 207,
    "pctLongos": 12.6,
    "mediana": 2,
+   "esperada": 6,
+   "diasAMais": -4,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
-   "nome": "03ª VARA FEDERAL PREVIDENCIÁRIA DE SÃO PAULO",
-   "processos": 16,
-   "intervalos": 254,
-   "pctLongos": 12.2,
-   "mediana": 5,
-   "tipoPrincipal": "Procedimento Comum Cível"
-  },
-  {
-   "nome": "02ª VARA FEDERAL DE ARAÇATUBA COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
-   "processos": 7,
-   "intervalos": 41,
-   "pctLongos": 12.2,
-   "mediana": 10,
+   "nome": "04ª VARA FEDERAL DE PIRACICABA",
+   "processos": 29,
+   "intervalos": 75,
+   "pctLongos": 24,
+   "mediana": 6,
+   "esperada": 11,
+   "diasAMais": -5,
    "tipoPrincipal": "Execução Fiscal"
+  },
+  {
+   "nome": "02ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "processos": 26,
+   "intervalos": 78,
+   "pctLongos": 23.1,
+   "mediana": 6,
+   "esperada": 11,
+   "diasAMais": -5,
+   "tipoPrincipal": "Execução Fiscal"
+  },
+  {
+   "nome": "08ª VARA FEDERAL DE CAMPINAS",
+   "processos": 13,
+   "intervalos": 40,
+   "pctLongos": 22.5,
+   "mediana": 1,
+   "esperada": 6,
+   "diasAMais": -5,
+   "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
    "nome": "04ª VARA FEDERAL DE CAMPINAS",
    "processos": 25,
-   "intervalos": 97,
-   "pctLongos": 11.3,
+   "intervalos": 96,
+   "pctLongos": 11.5,
    "mediana": 1,
+   "esperada": 6,
+   "diasAMais": -5,
    "tipoPrincipal": "Procedimento Comum Cível"
   },
   {
-   "nome": "03ª VARA FEDERAL DE SÃO BERNARDO DO CAMPO COM JUIZADO ESPECIAL FEDERAL CRIMINAL ADJUNTO",
-   "processos": 9,
-   "intervalos": 36,
-   "pctLongos": 8.3,
-   "mediana": 2,
-   "tipoPrincipal": "Mandado de Segurança Cível"
+   "nome": "10ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "processos": 27,
+   "intervalos": 80,
+   "pctLongos": 27.5,
+   "mediana": 5,
+   "esperada": 11,
+   "diasAMais": -6,
+   "tipoPrincipal": "Execução Fiscal"
+  },
+  {
+   "nome": "03ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "processos": 29,
+   "intervalos": 73,
+   "pctLongos": 32.9,
+   "mediana": 4,
+   "esperada": 11,
+   "diasAMais": -7,
+   "tipoPrincipal": "Execução Fiscal"
+  },
+  {
+   "nome": "13ª VARA FEDERAL DE EXECUÇÕES FISCAIS DE SÃO PAULO",
+   "processos": 28,
+   "intervalos": 81,
+   "pctLongos": 28.4,
+   "mediana": 4,
+   "esperada": 11,
+   "diasAMais": -7,
+   "tipoPrincipal": "Execução Fiscal"
   }
  ]
 }

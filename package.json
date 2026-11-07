@@ -13,6 +13,7 @@
     "base-recentes": "RECENTES=1 node scripts/base.mjs",
     "normal": "node scripts/normal.mjs",
     "base-varas": "node scripts/base-varas.mjs",
-    "analise": "node scripts/analise.mjs"
+    "analise": "node scripts/analise.mjs",
+    "compactar": "node scripts/compactar.mjs"
   }
 }
