@@ -257,7 +257,7 @@ section{scroll-margin-top:132px}
 .chev::before{content:"";display:block;width:7px;height:7px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .2s;margin-top:-4px}
 .ph[open] .chev::before{transform:rotate(-135deg);margin-top:3px}
 .ph .docs{display:flex;flex-wrap:wrap;gap:6px;padding:0 10px 10px 44px}
-.feats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 22px}
+.feats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 28px}
 .screens .feat{grid-row:span 4;grid-template-rows:subgrid}
 @media (max-width:960px){.feats{grid-template-columns:1fr}}
 .feat{display:grid;gap:16px;align-content:start}
@@ -675,7 +675,7 @@ section{scroll-margin-top:132px}
     <div class="wrap">
       <div class="sec-head">
         <span class="eyebrow">as telas</span>
-        <h2 class="feat-title">Três telas que organizam o seu dia.</h2>
+        <h2 class="feat-title">As telas que organizam o seu dia.</h2>
         <p class="lead">Você pede uma vez. A partir daí, elas ficam prontas sozinhas, todos os dias.</p>
       </div>
       <div class="feats">
@@ -750,6 +750,23 @@ section{scroll-margin-top:132px}
           <h3>Linha do tempo do caso</h3>
           <p>As fases passadas resumidas e a atual em destaque. Toque numa fase para ver os documentos e responda ao sócio em dois minutos.</p>
           <div class="askc"><b>Peça quando quiser</b>“Me mostre a linha do tempo do caso Lima Transportes.”</div>
+        </div>
+        <div class="feat">
+          <div class="app rich lift" aria-label="Exemplo da tela Seu ritmo">
+            <div class="rh">
+              <div><span class="k">quarta, 7/10</span><span class="v">Seu ritmo</span></div>
+            </div>
+            <div class="rb">
+              <span class="mt">Quanto tempo você costuma levar</span>
+              <div class="rt-mr"><span>Contestação</span><b>3h</b><small>até 3h50 num dia puxado</small></div>
+              <div class="rt-mr"><span>Revisão de contrato</span><b>1h30</b><small>aprendido de 6 tarefas</small></div>
+              <span class="mt" style="margin-top:8px">Novo caso: defesa em ação nova, até sexta</span>
+              <div class="rt-mv aperta"><b>Cabe, mas aperta</b><small>Pede 6h; você tem 6h40 livres. Num dia puxado faltariam 50 min.</small></div>
+            </div>
+          </div>
+          <h3>Seu ritmo</h3>
+          <p>O Juriday aprende quanto tempo você leva em cada atividade, monta o dia com isso e diz se um caso novo cabe na agenda. Os tempos são seus.</p>
+          <div class="askc"><b>Pergunte antes de aceitar</b>“Posso pegar um caso novo de 6 horas até sexta?”</div>
         </div>
       </div>
 
@@ -1796,12 +1813,13 @@ body.dm-lock{overflow:hidden}
 .rt-v{border-radius:12px;padding:12px 14px;margin-top:12px;font-size:14.5px;line-height:1.5}.rt-v b{display:block;font-size:17px}.rt-v p{margin:6px 0 0}
 .rt-v.cabe{background:#E1F4EC}.rt-v.aperta{background:#FFF4DC}.rt-v.conflita{background:#FBE5E1}
 .rt-wks{margin-top:12px}.rt-wk{display:grid;grid-template-columns:72px minmax(0,1fr) 110px;gap:8px;align-items:center;font-size:13px;margin-bottom:5px}
-.rt-wk.dl .l{font-weight:800}.rt-wk .tr{display:flex;height:12px;background:#E8EDF2;border-radius:6px;overflow:hidden}.rt-wk i.c{background:var(--navy)}.rt-wk i.n{background:var(--teal)}.rt-wk .v{color:var(--muted);font-size:12.5px}
+.rt-wk.pz .l{font-weight:800}.rt-wk .tr{display:flex;height:12px;background:#E8EDF2;border-radius:6px;overflow:hidden}.rt-wk i.c{background:var(--navy)}.rt-wk i.n{background:var(--teal)}.rt-wk .v{color:var(--muted);font-size:12.5px}
 @media(max-width:640px){.rt-wk{grid-template-columns:60px minmax(0,1fr) 84px}}
 .rt-lg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--muted);margin-top:6px}.rt-lg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;background:var(--navy)}.rt-lg i.n{background:var(--teal)}
 .rt-note,.rt-fee{font-size:13.5px;margin:10px 0 0;color:var(--ink)}
 @media(min-width:900px){#dmMain .rt-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}#dmMain .rt-grid .rt-card:nth-child(3){grid-column:1/-1}}
 .dm-tabs{grid-template-columns:repeat(6,minmax(0,1fr))!important}.dm-tabs button{font-size:10.5px!important;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mp-cnt{margin:0 0 10px;font-size:14px;line-height:1.45}
 </style><script>
 /* Dados reais (DataJud/CNJ): Termômetro, Panorama e utilitários usados na página e na demonstração. */
 window.JD = (function(){
@@ -2006,7 +2024,7 @@ window.JD = (function(){
       const painel = sel
         ? `<div class="mp-ph"><b>${esc(sel.k)}</b><span>${sel.L.length} vara${sel.L.length===1?'':'s'} · em média ${esc(dd(Math.round(med(sel))))} que o normal</span></div><div class="mp-l"><div class="dv-row v dv-axis"><span class="l"></span><span class="ax"><em class="ok">◂ mais rápida</em><em class="mid">normal (0)</em><em class="lo">mais lenta ▸</em></span><span></span></div>${[...sel.L].sort((a,b)=>b.v.diasAMais-a.v.diasAMais).map(({v,i})=>rowVara(v,i)).join('')}</div>`
         : `<div class="dv-det dv-hint">Toque num ponto do mapa para ver as varas da cidade. Quanto maior o ponto, mais varas.</div>`;
-      box.innerHTML = `<div class="mp-w">${svg}</div><div class="mp-lg">${lg.map(([c,t])=>`<span><i style="background:${c}"></i>${t}</span>`).join('')}</div><p class="dv-note">Esquema simplificado, sem escala: o contorno é desenhado à mão e as cidades ficam em posições aproximadas. A cor é a média das varas da cidade.</p>${painel}`;
+      const nv = gs.reduce((x,g)=>x+g.L.length,0); box.innerHTML = `<p class="mp-cnt"><b>${nv} vara${nv===1?'':'s'} em ${gs.length} cidade${gs.length===1?'':'s'}.</b> Cada ponto é uma cidade: quanto maior o ponto, mais varas ela tem. A Grande São Paulo tem quase metade das varas.</p><div class="mp-w">${svg}</div><div class="mp-lg">${lg.map(([c,t])=>`<span><i style="background:${c}"></i>${t}</span>`).join('')}</div><p class="dv-note">Esquema simplificado, sem escala: o contorno é desenhado à mão e as cidades ficam em posições aproximadas. A cor é a média das varas da cidade.</p>${painel}`;
       anima(box); wire(box);
     }
     el.addEventListener('keydown', e => { if((e.key==='Enter'||e.key===' ') && e.target.matches && e.target.matches('.mp-g')){ e.preventDefault(); e.target.dispatchEvent(new MouseEvent('click',{bubbles:true})); } });
@@ -2629,16 +2647,16 @@ function rtSimR(){
   const feeTxt = fee>0 ? `<p class="rt-fee">Com honorários de <b>R$ ${fee.toLocaleString("pt-BR")}</b>, o caso rende cerca de <b>R$ ${Math.round(fee/(n50/60)).toLocaleString("pt-BR")} por hora</b> trabalhada (no tempo típico).</p>` : "";
   const ex = rest>0 ? rest : 0;
   const bars = dias.map((x,i)=>{ const pc=v=>Math.min(100,v/RT_CAP*100); const c=Math.min(RT_CAP,x.carga);
-    return `<div class="rt-wk${i===d?" dl":""}"><span class="l">${x.n}</span><span class="tr"><i class="c" style="width:${pc(c)}%"></i><i class="n" style="width:${pc(aloc[i])}%"></i></span><span class="v">${aloc[i]?`+${rtF(aloc[i])}`:i>d?"depois do prazo":rtF(Math.max(0,RT_CAP-x.carga-aloc[i]))+" livres"}</span></div>`; }).join("");
+    return `<div class="rt-wk${i===d?" pz":""}"><span class="l">${x.n}</span><span class="tr"><i class="c" style="width:${pc(c)}%"></i><i class="n" style="width:${pc(aloc[i])}%"></i></span><span class="v">${aloc[i]?`+${rtF(aloc[i])}`:i>d?"depois do prazo":rtF(Math.max(0,RT_CAP-x.carga-aloc[i]))+" livres"}</span></div>`; }).join("");
   box.innerHTML = `<div class="rt-v ${nivel}"><b>${TT[nivel]}</b><p>${motivo}</p>${sug?`<p>${sug}</p>`:""}</div>${feeTxt}<div class="rt-wks" aria-label="Carga prevista por dia">${bars}</div><div class="rt-lg"><span><i class="c"></i>já previsto (reuniões e tarefas)</span><span><i class="n"></i>este caso</span></div>${ex?`<p class="rt-note">Ficam sem espaço ${rtF(ex)} do caso até o prazo.</p>`:""}<p class="rt-note">O Juriday mostra a capacidade da sua agenda. Ele não avalia o mérito do caso, e a decisão de aceitar é sua.</p>`;
 }
 function viewRitmo(){
   return `<div class="dm-h"><div><h2>Seu ritmo</h2><p>O Juriday aprende quanto tempo você leva em cada atividade e monta o seu dia com isso.</p></div></div>
   <p class="rt-ex"><b>Tempos de exemplo.</b> Na demonstração, os tempos são inventados. No uso real, eles começam com a sua estimativa e se ajustam ao que você registra. Só você vê os seus tempos, a menos que libere para o sócio.</p>
   <div class="rt-grid">
-    <section class="rt-card" aria-labelledby="rt1"><span class="rt-n">1</span><h3 id="rt1">Seu tempo em cada atividade</h3><p class="rt-p">Quanto você costuma levar, e quanto leva num dia puxado. Registre uma tarefa e veja o número mudar.</p><div id="rtTempos"></div></section>
-    <section class="rt-card" aria-labelledby="rt2" data-tour="ritmo"><span class="rt-n">2</span><h3 id="rt2">Seu dia, montado</h3><p class="rt-p">Prazos e reuniões primeiro, o resto no que sobra. Cada bloco diz por que está ali.</p><div id="rtDia"></div></section>
-    <section class="rt-card" aria-labelledby="rt3"><span class="rt-n">3</span><h3 id="rt3">Posso pegar este caso?</h3><p class="rt-p">Escolha o tipo de caso e o prazo da primeira entrega. O Juriday compara com a sua agenda.</p>
+    <section class="rt-card" aria-labelledby="rt1" data-tour="ritmo"><span class="rt-n">1</span><h3 id="rt1">Seu tempo em cada atividade</h3><p class="rt-p">Quanto você costuma levar, e quanto leva num dia puxado. Registre uma tarefa e veja o número mudar.</p><div id="rtTempos"></div></section>
+    <section class="rt-card" aria-labelledby="rt2"><span class="rt-n">2</span><h3 id="rt2">Seu dia, montado</h3><p class="rt-p">Prazos e reuniões primeiro, o resto no que sobra. Cada bloco diz por que está ali.</p><div id="rtDia"></div></section>
+    <section class="rt-card" aria-labelledby="rt3" data-tour="ritmo-caso"><span class="rt-n">3</span><h3 id="rt3">Posso pegar este caso?</h3><p class="rt-p">Escolha o tipo de caso e o prazo da primeira entrega. O Juriday compara com a sua agenda.</p>
       <div class="rt-frm sim"><label>Tipo de caso<select id="rtSimT">${Object.entries(RT_TPL).map(([k,v])=>`<option value="${k}">${esc(v.n)}</option>`).join("")}</select></label><label>Prazo da primeira entrega<select id="rtSimD">${["Hoje (qua)","Amanhã (qui)","Sexta","Segunda","Terça"].map((x,i)=>`<option value="${i}">${x}</option>`).join("")}</select></label><label>Honorários (opcional)<input id="rtSimF" type="text" inputmode="numeric" placeholder="R$" autocomplete="off"></label></div>
       <div id="rtSimR"></div></section>
   </div>`;
@@ -2817,6 +2835,8 @@ const STEPS = [
  {go(){ anon=false; render(); openDrawer(dDraft("beta")); }, t:".dr", txt:"A cobrança dos documentos já vem rascunhada, em linguagem clara. A Ana revisa, ajusta e aprova. O Juriday nunca envia sozinho."},
  {go(){ closeDrawer(); S.view="hoje"; render(); }, t:"[data-tour=ask]", txt:"Para criar uma rotina nova, basta pedir em português. O Juriday mostra o plano e só monta depois do seu ok."},
  {go(){ S.view="pedidos"; render(); }, t:"[data-tour=peds]", txt:"Tudo o que a Ana montou fica em Meus pedidos. Dá para ligar, desligar ou ajustar com um novo pedido."},
+ {go(){ closeDrawer(); S.role="associada"; S.view="ritmo"; render(); }, t:"[data-tour=ritmo]", txt:"Agora o Seu ritmo. O Juriday aprende quanto tempo a Ana leva em cada atividade: começa com a estimativa dela e se ajusta a cada tarefa concluída. Aqui os tempos são de exemplo."},
+ {go(){ closeDrawer(); S.role="associada"; S.view="ritmo"; render(); }, t:"[data-tour=ritmo-caso]", txt:"Chegou um caso novo? Antes de aceitar, a Ana vê se ele cabe, aperta ou conflita com a agenda, e por quê. O Juriday não avalia o caso: a decisão é dela."},
  {go(){ closeDrawer(); S.role="associada"; S.view="casos"; render(); }, t:"[data-tour=casos]", txt:"Aqui os processos são reais: dados públicos do DataJud, do CNJ. O Termômetro compara quanto tempo cada um está parado com o normal do mesmo tipo de processo."},
  {go(){ closeDrawer(); S.role="associada"; S.view="prazos"; render(); }, t:"[data-tour=prazos]", txt:"A calculadora de prazos: informe a publicação e o prazo, e o Juriday conta só os dias úteis. O calendário mostra por que venceu naquele dia."},
  {go(){ closeDrawer(); S.view="panorama"; render(); }, t:"[data-tour=panorama]", txt:"E o Panorama mostra o padrão: quanto tempo os andamentos levam em cada tipo de processo e como cada vara se compara."},
