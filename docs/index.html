@@ -590,11 +590,11 @@ section{scroll-margin-top:132px}
       <div class="exp-chips" role="group" aria-label="Atalhos da demonstração">
         <button type="button" class="btn btn-teal" data-open-demo="tour">Fazer o tour de 2 minutos</button>
         <button type="button" class="btn btn-line" data-open-demo="hoje">O dia da Ana</button>
-        <button type="button" class="btn btn-line" data-open-demo="casos">Ver processos parados</button>
-        <button type="button" class="btn btn-line" data-open-demo="prazos">Calcular um prazo</button>
         <button type="button" class="btn btn-line" data-open-demo="ritmo">Seu ritmo</button>
-        <button type="button" class="btn btn-line" data-open-demo="panorama">Ver o panorama</button>
+        <button type="button" class="btn btn-line" data-open-demo="casos">Ver processos parados</button>
         <button type="button" class="btn btn-line" data-open-demo="tempo">Volte no tempo</button>
+        <button type="button" class="btn btn-line" data-open-demo="prazos">Calcular um prazo</button>
+        <button type="button" class="btn btn-line" data-open-demo="panorama">Ver o panorama</button>
       </div>
 <div class="dm dm-inline" id="dm" role="region" aria-label="Demonstração do Juriday, com dados reais do TRF3">
   <div class="dm-flag"><div class="fl-t"><b>Demonstração</b> · alertas, movimentações, <em>Casos</em>, <em>Panorama</em> e <em>Prazos</em> são reais (DataJud e CPC) · agenda, reuniões e clientes do Hoje são fictícios · nada aqui é enviado de verdade</div><button class="dm-fs fs-a js-fs" type="button" aria-pressed="false" aria-label="Alternar tela cheia"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M8.5 1.5h4v4M5.5 12.5h-4v-4M12.5 1.5l-4.5 4.5M1.5 12.5L6 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tela cheia</span></button></div>
@@ -1649,6 +1649,7 @@ body.dm-lock{overflow:hidden}
 .dm-fs.fs-b{display:none}
 .dv-kpis{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
 .dm.dm-inline{scroll-margin-top:136px}
+.exp-chips{scroll-margin-top:140px}
 @media (max-width:860px){.dm-fs.fs-a{display:none}.dm-fs.fs-b{display:inline-flex}.dm-flag .fl-t{text-align:center}}
 
 /* ---- Entenda os preços ---- */
@@ -1820,6 +1821,13 @@ body.dm-lock{overflow:hidden}
 @media(min-width:900px){#dmMain .rt-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}#dmMain .rt-grid .rt-card:nth-child(3){grid-column:1/-1}}
 .dm-tabs{grid-template-columns:repeat(6,minmax(0,1fr))!important}.dm-tabs button{font-size:10.5px!important;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .mp-cnt{margin:0 0 10px;font-size:14px;line-height:1.45}
+.rt-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:10px}
+@media(max-width:640px){.rt-two{grid-template-columns:minmax(0,1fr)}}
+.rt-opt{background:#F3F6F9;border-radius:12px;padding:12px;min-width:0}.rt-opt>b{display:block;font-size:14px;margin-bottom:6px}
+.rt-clock{display:block;font:800 30px/1.1 var(--mono,ui-monospace,monospace);color:var(--navy);margin:2px 0 8px;font-variant-numeric:tabular-nums}
+.rt-sel{display:flex;flex-direction:column;gap:4px;font-size:12.5px;color:var(--muted)}
+.rt-acc{display:flex;gap:6px;align-items:flex-start;font-size:12.5px;color:var(--muted);margin-top:8px}
+.rt-opt .btn[disabled]{opacity:.5;cursor:not-allowed}
 </style><script>
 /* Dados reais (DataJud/CNJ): Termômetro, Panorama e utilitários usados na página e na demonstração. */
 window.JD = (function(){
@@ -2564,7 +2572,7 @@ const RT = {
     { id:"reu", nome:"Reunião com cliente", est:60, hist:[60,75,50,60,90,55] }
   ],
   tasks: [ {id:1,act:"cont",cli:"Construtora Alfa",u:0}, {id:2,act:"manif",cli:"Família Duarte",u:0}, {id:3,act:"rec",cli:"Mercado Sol",u:1}, {id:4,act:"rev",cli:"Grupo Beta",u:2} ],
-  nid: 5, msg: "", flash: null,
+  nid: 5, msg: "", flash: null, tm:{run:false,acc:0,t0:0,act:null,acel:false},
   sim: { tpl:"def", dia:2, fee:"" }
 };
 const RT_WIN = [540,1080], RT_FIX = [ {t:"Reunião · Grupo Beta",s:600,e:660}, {t:"Reunião · revisão da carteira com o sócio",s:900,e:960} ], RT_LUNCH = [750,810], RT_CAP = 450;
@@ -2580,6 +2588,13 @@ const rtF = m => m<60 ? m+" min" : (m%60 ? Math.floor(m/60)+"h"+String(m%60).pad
 const rtH = m => { const t=Math.floor(m/60), r=m%60; return t+"h"+(r?String(r).padStart(2,"0"):""); };
 const rtBase = a => a.hist.length>=5 ? `aprendido de ${a.hist.length} tarefas` : a.hist.length ? `sua estimativa + ${a.hist.length} registro${a.hist.length>1?"s":""}` : "sua estimativa";
 
+
+const rtElapsed = () => RT.tm.acc + (RT.tm.run ? Date.now()-RT.tm.t0 : 0);
+function rtClock(){ const f=RT.tm.acel?300:1; const s=Math.floor(rtElapsed()/1000*(RT.tm.acel?300:1)); const h=Math.floor(s/3600), m=Math.floor(s%3600/60), x=s%60; return [h,m,x].map(n=>String(n).padStart(2,"0")).join(":"); }
+setInterval(()=>{ const el=document.getElementById("rtTmV"); if(el && RT.tm.run) el.textContent=rtClock(); },250);
+function rtRegistra(id,m){ const a=rtAct(id), antes=rtTyp(id); a.hist.push(m); const dep=rtTyp(id); RT.regA=id; RT.flash=id;
+  RT.msg = `${a.nome} (${rtF(m)} registrados): o tempo típico ${dep===antes?`continua em ${rtF(dep)}`:`passou de ${rtF(antes)} para ${rtF(dep)}`} (${rtBase(a)}).`;
+  rtTempos(); rtDia(); rtSimR(); setTimeout(()=>{ RT.flash=null; },1200); }
 function rtPlan(){
   const bl=[...RT_FIX.map(f=>[f.s,f.e]),RT_LUNCH].sort((a,b)=>a[0]-b[0]); let cur=RT_WIN[0]; const free=[];
   for(const [s,e] of bl){ if(s>cur) free.push({a:cur,b:s}); cur=Math.max(cur,e); } if(cur<RT_WIN[1]) free.push({a:cur,b:RT_WIN[1]});
@@ -2626,7 +2641,16 @@ function rtTempos(){
   const box=document.getElementById("rtTempos"); if(!box) return;
   box.innerHTML = `<div class="rt-t head"><span>Atividade</span><span>Tempo típico</span><span>Dia puxado</span><span>De onde vem</span></div>`
     + RT.acts.map(a=>`<div class="rt-t${RT.flash===a.id?" fl":""}"><span><b>${esc(a.nome)}</b></span><span><b>${rtF(rtTyp(a.id))}</b></span><span>até ${rtF(rtPux(a.id))}</span><span class="b">${rtBase(a)}</span></div>`).join("")
-    + `<div class="rt-reg"><span class="k">Registrar uma tarefa concluída</span><div class="rt-frm"><select id="rtRegA" aria-label="Atividade">${RT.acts.map(a=>`<option value="${a.id}">${esc(a.nome)}</option>`).join("")}</select><label class="rt-rng">Levei <b id="rtRegV">${rtF(Number(RT.regM||120))}</b><input id="rtRegM" type="range" min="15" max="480" step="5" value="${RT.regM||120}"></label><button type="button" class="btn btn-teal btn-sm" data-rt="reg">Registrar</button></div><p class="rt-msg" id="rtMsg" role="status">${RT.msg||"Registre quanto tempo levou e veja o tempo típico mudar."}</p></div>`;
+    + `<div class="rt-reg"><span class="k">Registrar uma tarefa concluída</span>
+    <div class="rt-frm"><label class="rt-sel">Atividade<select id="rtRegA" aria-label="Atividade"${RT.tm.run||RT.tm.acc?" disabled":""}>${RT.acts.map(a=>`<option value="${a.id}">${esc(a.nome)}</option>`).join("")}</select></label></div>
+    <div class="rt-two">
+      <div class="rt-opt"><b>Cronômetro</b><span class="rt-clock" id="rtTmV" aria-live="off">${rtClock()}</span>
+        <div class="rt-frm">${!RT.tm.run&&!RT.tm.acc?`<button type="button" class="btn btn-teal btn-sm" data-rt="tstart">Iniciar</button>`:RT.tm.run?`<button type="button" class="btn btn-line btn-sm" data-rt="tpause">Pausar</button>`:`<button type="button" class="btn btn-line btn-sm" data-rt="tstart">Continuar</button>`}<button type="button" class="btn btn-teal btn-sm" data-rt="tstop"${RT.tm.acc||RT.tm.run?"":" disabled"}>Parar e registrar</button>${RT.tm.acc||RT.tm.run?`<button type="button" class="rt-x" data-rt="tclear">Descartar</button>`:""}</div>
+        <label class="rt-acc"><input type="checkbox" id="rtAcc"${RT.tm.acel?" checked":""}> Demonstração: acelerar (1 segundo = 5 minutos)</label></div>
+      <div class="rt-opt"><b>Ou digite o tempo</b><label class="rt-rng">Levei <b id="rtRegV">${rtF(Number(RT.regM||120))}</b><input id="rtRegM" type="range" min="5" max="480" step="5" value="${RT.regM||120}"></label>
+        <div class="rt-frm"><button type="button" class="btn btn-teal btn-sm" data-rt="reg">Registrar</button></div></div>
+    </div>
+    <p class="rt-msg" id="rtMsg" role="status">${RT.msg||"Use o cronômetro ou digite o tempo, e veja o tempo típico mudar."}</p></div>`;
   if(RT.regA) document.getElementById("rtRegA").value=RT.regA;
 }
 function rtSimR(){
@@ -2671,12 +2695,13 @@ document.addEventListener("input", e=>{ const t=e.target; if(!t||!t.id) return;
   if(t.id==="rtRegM"){ RT.regM=t.value; const v=document.getElementById("rtRegV"); if(v) v.textContent=rtF(Number(t.value)); }
   if(t.id==="rtSimF"){ RT.sim.fee=t.value; rtSimR(); } });
 document.addEventListener("change", e=>{ const t=e.target; if(!t||!t.id) return;
-  if(t.id==="rtSimT"){ RT.sim.tpl=t.value; rtSimR(); } if(t.id==="rtSimD"){ RT.sim.dia=t.value; rtSimR(); } if(t.id==="rtRegA") RT.regA=t.value; });
+  if(t.id==="rtSimT"){ RT.sim.tpl=t.value; rtSimR(); } if(t.id==="rtSimD"){ RT.sim.dia=t.value; rtSimR(); } if(t.id==="rtRegA") RT.regA=t.value; if(t.id==="rtAcc"){ const ms=rtElapsed(); RT.tm.acel=t.checked; if(RT.tm.run){ RT.tm.acc=ms-(Date.now()-RT.tm.t0); } rtTempos(); } });
 document.addEventListener("click", e=>{ const b=e.target.closest("[data-rt]"); if(!b) return; const [k,v]=b.dataset.rt.split(":");
-  if(k==="reg"){ const id=document.getElementById("rtRegA").value, m=Number(document.getElementById("rtRegM").value), a=rtAct(id), antes=rtTyp(id);
-    a.hist.push(m); const dep=rtTyp(id); RT.regA=id; RT.flash=id;
-    RT.msg = `${a.nome}: o tempo típico ${dep===antes?`continua em ${rtF(dep)}`:`passou de ${rtF(antes)} para ${rtF(dep)}`} (${rtBase(a)}).`;
-    rtTempos(); rtDia(); rtSimR(); setTimeout(()=>{ RT.flash=null; },1200); }
+  if(k==="reg"){ rtRegistra(document.getElementById("rtRegA").value, Number(document.getElementById("rtRegM").value)); }
+  if(k==="tstart"){ if(!RT.tm.run){ RT.tm.act=RT.tm.act||document.getElementById("rtRegA").value; RT.regA=RT.tm.act; RT.tm.t0=Date.now(); RT.tm.run=true; RT.msg="Cronômetro rodando. Quando terminar, toque em “Parar e registrar”."; rtTempos(); } }
+  if(k==="tpause"){ if(RT.tm.run){ RT.tm.acc+=Date.now()-RT.tm.t0; RT.tm.run=false; RT.msg="Cronômetro pausado."; rtTempos(); } }
+  if(k==="tclear"){ RT.tm={run:false,acc:0,t0:0,act:null,acel:RT.tm.acel}; RT.msg="Cronômetro descartado. Nada foi registrado."; rtTempos(); }
+  if(k==="tstop"){ const ms=rtElapsed(), f=RT.tm.acel?300:1, id=RT.tm.act||document.getElementById("rtRegA").value; const m=Math.max(1,Math.round(ms/60000*f)); RT.tm={run:false,acc:0,t0:0,act:null,acel:RT.tm.acel}; rtRegistra(id,m); }
   if(k==="add"){ const act=document.getElementById("rtAddA").value, cli=document.getElementById("rtAddC").value.trim(), u=Number(document.getElementById("rtAddU").value); RT.tasks.push({id:RT.nid++,act,cli:cli||"sem cliente",u}); rtDia(); rtSimR(); }
   if(k==="rm"){ RT.tasks=RT.tasks.filter(t=>t.id!==Number(v)); rtDia(); rtSimR(); } });
 
@@ -2698,7 +2723,7 @@ function render(){
   $("#dmMain").innerHTML = S.view==="ritmo"?viewRitmo():S.view==="hoje"?viewHoje():S.view==="casos"?viewCasos():S.view==="panorama"?viewPanorama():S.view==="prazos"?viewPrazos():viewPedidos();
   if(S.view==="ritmo") rtMount();
   if(S.view==="prazos") J.calcMount($("#dmMain [data-cx-mount]"));
-  { const COMO = {ritmo:"Os tempos abaixo são de exemplo. Registre uma tarefa para ver o tempo típico mudar, adicione ou tire tarefas do dia, e teste o “Posso pegar este caso?” com outro prazo.", hoje:"Seu dia montado para a função escolhida lá em cima. Toque num alerta para ver por que ele apareceu. Na barra “Peça ao Juriday”, tire uma dúvida ou crie uma rotina.",
+  { const COMO = {ritmo:"Os tempos abaixo são de exemplo. Registre uma tarefa (com o cronômetro ou digitando) para ver o tempo típico mudar, adicione ou tire tarefas do dia, e teste o “Posso pegar este caso?” com outro prazo.", hoje:"Seu dia montado para a função escolhida lá em cima. Toque num alerta para ver por que ele apareceu. Na barra “Peça ao Juriday”, tire uma dúvida ou crie uma rotina.",
       casos:"Processos reais do TRF3. A etiqueta mostra se o tempo sem andamento está dentro do normal para aquele tipo de processo. Filtre por situação, vara ou número e toque num processo para ver o motivo. Nos que tiveram uma pausa longa, use o botão “Volte no tempo”.",
       prazos:"Escolha o tipo de prazo (ou digite os dias), informe a data da publicação e veja quando vence. Toque em qualquer dia do calendário para ver por que ele contou, ou não.",
       panorama:"O que os dados públicos mostram: quantos dias sem andamento são normais em cada tipo de processo e quais varas levam mais dias que o normal. Veja em lista ou no mapa. É um indício, não um veredito."};
@@ -2845,7 +2870,7 @@ const STEPS = [
 function clearHl(){ document.querySelectorAll("#dm .hl").forEach(x=>x.classList.remove("hl")); }
 function showStep(){
   clearHl(); const s=STEPS[step]; s.go();
-  requestAnimationFrame(()=>{ const el=$("#dm "+s.t); if(el){ el.classList.add("hl"); if(!el.closest(".dr")) el.scrollIntoView({block:"nearest",behavior:RM?"auto":"smooth"}); } });
+  requestAnimationFrame(()=>{ const el=$("#dm "+s.t); if(el){ el.classList.add("hl"); { const m=$("#dmMain"); if(m && m.contains(el)){ const r=el.getBoundingClientRect(), mr=m.getBoundingClientRect(); if(r.top<mr.top+8||r.bottom>mr.bottom-8) m.scrollTop += r.top-mr.top-24; } const t2=el.getBoundingClientRect(); if(!el.closest(".dr") && (t2.top>innerHeight-120 || t2.bottom<150)) el.scrollIntoView({block:"nearest",behavior:RM?"auto":"smooth"}); } } });
   const last = step===STEPS.length-1;
   $("#tourBox").innerHTML = `<div class="tour" role="dialog" aria-label="Tour do Juriday"><span class="k">${step+1} de ${STEPS.length}</span><p>${s.txt}</p><div class="tb"><button type="button" class="sk" data-tour-act="end">Sair do tour</button><div>${step?'<button type="button" data-tour-act="prev">Anterior</button>':""}<button type="button" class="nx" data-tour-act="${last?"end":"next"}">${last?"Explorar sozinho":"Próximo"}</button></div></div></div>`;
   $("#tourBox .nx").focus({preventScroll:true});
@@ -2856,17 +2881,18 @@ $("#tourBox").addEventListener("click", e=>{ const b=e.target.closest("[data-tou
 
 /* ---------- abrir e fechar ---------- */
 let lastFocus=null;
+function irApp(){ if(dm.classList.contains("dm-full")) return; const a=document.querySelector("#experimente .exp-chips")||dm; a.scrollIntoView({behavior:RM?"auto":"smooth", block:"start"}); }
 function openDemo(mode){
   const tour = mode==="tour";
   if(mode==="hoje"||mode==="panorama"||mode==="casos"||mode==="prazos"||mode==="ritmo"){ S.role="associada"; S.view=mode; closeDrawer(); render(); }
   if(mode==="tempo"){ S.role="associada"; S.view="casos"; closeDrawer(); render(); RW.num=null; rwEscolher().then(n=>{ if(n) setTimeout(()=>openDrawer(dReplay(n)), RM?50:700); }); }
-  const box = document.getElementById("dm"); if(box) box.scrollIntoView({behavior:RM?"auto":"smooth", block:"start"});
+  irApp();
   if(tour) setTimeout(startTour, RM?50:600);
 }
 function closeDemo(){ closeDrawer(); if(tourOn){ tourOn=false; clearHl(); $("#tourBox").innerHTML=""; } }
 function setFull(on){ dm.classList.toggle("dm-full",on); document.body.classList.toggle("dm-lock",on); document.querySelectorAll(".js-fs").forEach(b=>{ b.setAttribute("aria-pressed",String(on)); b.querySelector("span").textContent=on?"Sair da tela cheia":"Tela cheia"; }); }
 document.querySelectorAll(".js-fs").forEach(b=>b.addEventListener("click",()=>setFull(!dm.classList.contains("dm-full"))));
-window.__jdAsk = text => { S.role="associada"; closeDrawer(); render(); const box=document.getElementById("dm"); if(box) box.scrollIntoView({behavior:RM?"auto":"smooth", block:"start"}); setTimeout(()=>openDrawer(dAsk(text)), RM?50:450); };
+window.__jdAsk = text => { S.role="associada"; closeDrawer(); render(); irApp(); setTimeout(()=>openDrawer(dAsk(text)), RM?50:450); };
 document.querySelectorAll("[data-open-demo]").forEach(b=>b.addEventListener("click", e=>{ e.preventDefault(); openDemo(b.dataset.openDemo); }));
 dm.addEventListener("change", e=>{ const t=e.target.closest("select[data-f]"); if(!t) return; S.f[t.dataset.f]=t.value; S.lim=30; render(); });
 dm.addEventListener("input", e=>{ const t=e.target.closest("input[data-f]"); if(!t) return; S.f.q=t.value; S.lim=30; S.foco="q"; clearTimeout(act.t); act.t=setTimeout(render,250); });
