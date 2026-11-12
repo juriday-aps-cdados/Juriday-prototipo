@@ -1,5 +1,8 @@
 # Juriday
 
+**Site (demonstração):** https://juriday-aps-cdados.github.io/Juriday-prototipo/
+**Relatório de uso de IA:** [Relatorio_IA_Juriday_Fase2.pdf](Relat%C3%B3rio/Relatorio_IA_Juriday_Fase2.pdf)
+
 Monitor de carteira processual com dados públicos do DataJud (CNJ).
 Projeto acadêmico: Ciência de Dados Aplicada ao Direito I, Insper, 2026/2. Produto fictício da LawTech.
 
