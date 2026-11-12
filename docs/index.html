@@ -564,38 +564,57 @@ section{scroll-margin-top:132px}
         </div>
       </div>
 
-      <div class="pj" id="por-tras">
-        <h3 class="pj-h">O que está por trás.</h3>
-        <div class="pj-g">
-          <article class="pj-c">
-            <h4>Por que é feito para advogados</h4>
-            <ul>
-              <li><b>Conta o prazo como o processo conta:</b> dias úteis, feriados e recesso, e mostra dia a dia por que vence naquela data.</li>
-              <li><b>Sabe o que é normal em cada tipo de processo:</b> compara o tempo sem andamento com processos reais do TRF3.</li>
-              <li><b>Conhece a função no escritório:</b> sócio, associado, quem atende cliente e jurídico interno veem telas diferentes.</li>
-              <li><b>Protege o sigilo:</b> nenhum nome de cliente sai do escritório sem ser anonimizado.</li>
-              <li><b>Em resumo:</b> organizar uma agenda qualquer é fácil. O que torna o Juriday diferente é a parte jurídica: prazo, andamento e sigilo.</li>
-            </ul>
-          </article>
-          <article class="pj-c">
-            <h4>De onde vêm as informações</h4>
-            <ul>
-              <li>Das fontes que o escritório já usa: <b>agenda, e-mail, PJe e a planilha</b> de tarefas.</li>
-              <li>O andamento dos processos vem de bases oficiais. Na demonstração, vem do <b>DataJud, do CNJ</b>, com processos reais do <b>TRF3</b>. É uma base pública.</li>
-              <li>Agenda, reuniões e clientes do dia da Ana são fictícios.</li>
-            </ul>
-          </article>
-          <article class="pj-c">
-            <h4>O que já funciona e o que é IA</h4>
-            <ul>
-              <li><b>Já funciona na demonstração: dados e regras.</b> Dados públicos do TRF3, o que é normal em cada tipo de processo, o cálculo de prazo e a montagem do seu dia. Cada resultado vem com o motivo, e dá para conferir.</li>
-              <li><b>Próxima etapa: IA de linguagem.</b> Entender o pedido em português, resumir casos e escrever rascunhos de mensagens e relatórios. Você revisa e envia.</li>
-              <li>Na demonstração, as respostas ao pedido em português são <b>guiadas</b>: uma simulação do que a IA faria.</li>
-              <li>A IA só entra onde há texto para escrever, o que mantém o custo sob controle.</li>
-            </ul>
-          </article>
+      <div class="bh" id="por-tras">
+        <h3 class="bh-h">O que está por trás.</h3>
+        <p class="bh-sub">Três perguntas que todo advogado faz. Toque para ver a resposta.</p>
+        <div class="bh-tabs" role="tablist" aria-label="O que está por trás do Juriday">
+          <button type="button" role="tab" id="bh-t1" aria-controls="bh-p1" aria-selected="true" class="bh-tab on">Por que é para advogados?</button>
+          <button type="button" role="tab" id="bh-t2" aria-controls="bh-p2" aria-selected="false" tabindex="-1" class="bh-tab">De onde vêm os dados?</button>
+          <button type="button" role="tab" id="bh-t3" aria-controls="bh-p3" aria-selected="false" tabindex="-1" class="bh-tab">O que é IA, de verdade?</button>
+        </div>
+        <div class="bh-panels">
+          <div class="bh-p on" role="tabpanel" id="bh-p1" aria-labelledby="bh-t1">
+            <p class="bh-big">Uma agenda comum não sabe o que é prazo processual.</p>
+            <div class="bh-tiles">
+              <div class="bh-tile"><b>Prazo que conta como o processo conta</b><span>Dias úteis, feriados e recesso. Mostra dia a dia por que vence.</span></div>
+              <div class="bh-tile"><b>O que é normal em cada processo</b><span>Compara o tempo sem andamento com processos reais do TRF3.</span></div>
+              <div class="bh-tile"><b>Uma tela para cada função</b><span>Sócio, associado, atendimento e jurídico interno veem o que importa.</span></div>
+              <div class="bh-tile"><b>Sigilo</b><span>Nenhum nome de cliente sai do escritório sem ser anonimizado.</span></div>
+            </div>
+            <p class="bh-foot">Organizar qualquer agenda é fácil. O que diferencia o Juriday é a parte jurídica: prazo, andamento e sigilo.</p>
+          </div>
+          <div class="bh-p" role="tabpanel" id="bh-p2" aria-labelledby="bh-t2" hidden>
+            <p class="bh-big">Das fontes que o escritório já usa.</p>
+            <div class="bh-flow2">
+              <ul class="bh-srcs" aria-label="Fontes"><li>Agenda</li><li>E-mail</li><li>PJe</li><li>Planilha do escritório</li></ul>
+              <span class="bh-arr" aria-hidden="true">→</span>
+              <div class="bh-hub"><b>Juriday</b><span>organiza por função</span></div>
+              <span class="bh-arr" aria-hidden="true">→</span>
+              <div class="bh-out"><b>Seu dia, pronto</b><ul><li>Prazos</li><li>Reuniões</li><li>Alertas com motivo</li><li>Pendências</li></ul></div>
+            </div>
+            <div class="bh-legend">
+              <p><span class="bh-dot real"></span><b>Real na demonstração:</b> processos do TRF3, vindos do DataJud (CNJ), uma base pública.</p>
+              <p><span class="bh-dot fake"></span><b>Fictício:</b> a agenda, as reuniões e os clientes do dia da Ana.</p>
+            </div>
+          </div>
+          <div class="bh-p" role="tabpanel" id="bh-p3" aria-labelledby="bh-t3" hidden>
+            <p class="bh-big">Primeiro dados e regras. Depois a IA.</p>
+            <div class="bh-steps">
+              <div class="bh-st now"><span class="bh-n">1</span><div><span class="bh-tag">Já funciona na demonstração</span><b>Dados e regras</b><ul><li>Dados públicos do TRF3</li><li>O que é normal por tipo de processo</li><li>Cálculo de prazo e montagem do dia</li></ul><small>Cada resultado vem com o motivo.</small></div></div>
+              <span class="bh-then" aria-hidden="true">depois</span>
+              <div class="bh-st next"><span class="bh-n">2</span><div><span class="bh-tag">Próxima etapa</span><b>IA de linguagem</b><ul><li>Entender o pedido em português</li><li>Resumir casos</li><li>Escrever rascunhos e relatórios</li></ul><small>Você revisa e envia.</small></div></div>
+            </div>
+            <p class="bh-note"><b>Hoje,</b> as respostas ao pedido em português são guiadas: uma simulação do que a IA faria. A IA só entra onde há texto para escrever, o que mantém o custo sob controle.</p>
+          </div>
         </div>
       </div>
+      <script>
+      (function(){ const root=document.getElementById("por-tras"); if(!root) return;
+        const tabs=[...root.querySelectorAll(".bh-tab")], ps=[...root.querySelectorAll(".bh-p")];
+        function go(i,foco){ tabs.forEach((t,k)=>{ const on=k===i; t.classList.toggle("on",on); t.setAttribute("aria-selected",on?"true":"false"); t.tabIndex=on?0:-1; ps[k].hidden=!on; ps[k].classList.toggle("on",on); }); if(foco) tabs[i].focus(); }
+        tabs.forEach((t,i)=>{ t.addEventListener("click",()=>go(i,false)); t.addEventListener("keydown",e=>{ if(e.key==="ArrowRight"||e.key==="ArrowDown"){ e.preventDefault(); go((i+1)%tabs.length,true); } if(e.key==="ArrowLeft"||e.key==="ArrowUp"){ e.preventDefault(); go((i+tabs.length-1)%tabs.length,true); } }); });
+      })();
+      </script>
 
     </div>
   </section>
@@ -1879,6 +1898,60 @@ body.dm-lock{overflow:hidden}
 .rt-sw input:focus-visible+.rt-tg{outline:3px solid var(--navy);outline-offset:2px}
 .rt-st b{display:block;font-size:15px}.rt-st small{display:block;color:var(--muted);font-size:13.5px;margin-top:2px;line-height:1.4}
 .rt-lock{background:#F3F6F9;border-radius:12px;padding:14px;font-size:14.5px;line-height:1.5}.rt-lock p{margin:4px 0 0;color:var(--muted)}
+.bh{margin-top:48px}.bh-h{font-size:24px;margin:0}.bh-sub{margin:6px 0 16px;color:var(--muted);font-size:15px}
+.bh-tabs{display:flex;flex-wrap:wrap;gap:8px}
+.bh-tab{border:2px solid var(--navy);background:#fff;color:var(--navy);border-radius:999px;padding:10px 18px;font:700 15px var(--body);cursor:pointer;min-height:44px;transition:background .15s,color .15s}
+.bh-tab:hover{background:var(--teal-soft)}.bh-tab.on{background:var(--navy);color:#fff}
+.bh-tab:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.bh-panels{margin-top:14px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;min-width:0}
+.bh-p[hidden]{display:none}.bh-p.on{animation:bhIn .25s ease}
+@keyframes bhIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.bh-p.on{animation:none}}
+.bh-big{font-size:22px;line-height:1.25;font-weight:800;color:var(--navy);margin:0 0 18px;max-width:30ch}
+.bh-tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.bh-tiles.two{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:16px}
+@media(max-width:900px){.bh-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.bh-tiles,.bh-tiles.two{grid-template-columns:minmax(0,1fr)}.bh-big{font-size:19px}.bh-panels{padding:18px}}
+.bh-tile{background:#F3F6F9;border-radius:14px;padding:14px;min-width:0;border-top:3px solid var(--teal)}
+.bh-tile b{display:block;font-size:15px;line-height:1.3;margin-bottom:6px}.bh-tile span{display:block;font-size:14px;line-height:1.45;color:var(--muted)}
+.bh-foot{margin:16px 0 0;font-size:15px;line-height:1.5;color:var(--ink);max-width:70ch}
+.bh-flow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.bh-src{display:grid;grid-template-columns:repeat(2,auto);gap:6px}.bh-src span{background:#F3F6F9;border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-weight:700;font-size:14px;text-align:center}
+.bh-arr{font-size:26px;color:var(--teal);font-weight:800}
+.bh-hub{background:var(--navy);color:#fff;border-radius:14px;padding:16px 22px;font-weight:800;font-size:17px}
+.bh-out{background:var(--teal);color:#fff;border-radius:14px;padding:16px 22px;font-weight:800;font-size:17px}
+@media(max-width:560px){.bh-flow{flex-direction:column;align-items:stretch}.bh-arr{transform:rotate(90deg);text-align:center}.bh-hub,.bh-out{text-align:center}}
+.bh-layers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}@media(max-width:760px){.bh-layers{grid-template-columns:minmax(0,1fr)}}
+.bh-l{border-radius:16px;padding:16px;min-width:0}.bh-l b{display:block;font-size:18px;margin:6px 0}.bh-l span{font-size:14.5px;line-height:1.5}
+.bh-l.now{background:var(--teal-soft);border:2px solid var(--teal)}
+.bh-l.next{background:#fff;border:2px dashed #9AA8B6}.bh-l.next .bh-tag{background:#E8EDF2;color:var(--ink)}
+.bh-tag{display:inline-block;background:var(--teal);color:#fff;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:800;letter-spacing:.02em}
+.bh-l.now span:last-child,.bh-l.next span:last-child{display:block}
+.bh-tile{border-top:0}.bh-tile::before{content:"";display:block;width:28px;height:4px;border-radius:2px;background:var(--teal);margin-bottom:10px}
+.bh-flow2{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,.8fr) auto minmax(0,1fr);gap:14px;align-items:center}
+.bh-srcs{list-style:none;margin:0;padding:0;display:grid;gap:8px}.bh-srcs li{background:#F3F6F9;border:1px solid var(--line);border-radius:12px;padding:11px 16px;font-weight:700;font-size:15px}
+.bh-flow2 .bh-arr{font-size:28px}
+.bh-flow2 .bh-hub{background:var(--navy);color:#fff;border-radius:18px;padding:26px 18px;text-align:center}.bh-hub b{display:block;font-size:22px}.bh-hub span{display:block;margin-top:4px;font-size:13.5px;color:#B8C6D6}
+.bh-flow2 .bh-out{background:var(--teal-soft);border:2px solid var(--teal);border-radius:18px;padding:16px 18px}.bh-out b{display:block;font-size:17px;margin-bottom:8px;color:var(--navy)}
+.bh-out ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:14.5px}.bh-out li::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--teal);margin-right:9px}
+.bh-legend{margin-top:18px;display:grid;gap:8px}.bh-legend p{margin:0;font-size:15px;line-height:1.45}
+.bh-dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:9px}.bh-dot.real{background:var(--teal)}.bh-dot.fake{background:#fff;border:2px dashed #7C8B9A}
+@media(max-width:860px){.bh-flow2{grid-template-columns:minmax(0,1fr)}.bh-flow2 .bh-arr{transform:rotate(90deg);justify-self:center}}
+.bh-steps{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:14px;align-items:stretch}
+.bh-then{align-self:center;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:760px){.bh-steps{grid-template-columns:minmax(0,1fr)}.bh-then{justify-self:center}}
+.bh-st{display:flex;gap:14px;border-radius:18px;padding:20px;min-width:0}
+.bh-st.now{background:var(--teal-soft);border:2px solid var(--teal)}.bh-st.next{background:#fff;border:2px dashed #9AA8B6}
+.bh-n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+.bh-st b{display:block;font-size:20px;margin:8px 0 10px;color:var(--navy)}
+.bh-st .bh-tag{display:inline-block;background:var(--teal);color:#fff;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:800}
+.bh-st.next .bh-tag{background:#E8EDF2;color:var(--ink)}
+.bh-st ul{list-style:none;margin:0;padding:0;display:grid;gap:7px;font-size:15px}.bh-st li::before{margin-right:9px;font-weight:800;color:var(--teal-ink)}
+.bh-st.now li::before{content:"✓"}.bh-st.next li::before{content:"○";color:#7C8B9A}
+.bh-st small{display:block;margin-top:12px;font-size:14px;color:var(--muted)}
+.bh-note{margin:18px 0 0;padding:14px 16px;background:#F3F6F9;border-left:4px solid var(--teal);border-radius:0 12px 12px 0;font-size:15px;line-height:1.5}
+.bh-flow2{grid-template-columns:230px auto minmax(0,1fr) auto 270px}
+.bh-flow2 .bh-out{color:var(--ink)}.bh-flow2 .bh-out li{color:var(--ink)}
+@media(max-width:860px){.bh-flow2{grid-template-columns:minmax(0,1fr)}}
 </style><script>
 /* Dados reais (DataJud/CNJ): Termômetro, Panorama e utilitários usados na página e na demonstração. */
 window.JD = (function(){
