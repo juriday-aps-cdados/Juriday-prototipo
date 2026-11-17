@@ -396,7 +396,7 @@ section{scroll-margin-top:132px}
 <header class="top" id="top">
   <div class="wrap">
     <a class="logo" href="#topo" aria-label="Juriday, início"><img src="img/juriday.png" alt="Juriday"></a>
-    <a class="btn btn-teal btn-sm" href="#contato"><span class="full">agende uma&nbsp;</span>demonstração</a>
+    <a class="btn-demo" href="#contato"><span class="full">Agende uma&nbsp;</span><span>demonstração</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </div>
   <nav class="chap" aria-label="Seções do site">
     <div class="wrap in" id="chapIn">
@@ -405,7 +405,7 @@ section{scroll-margin-top:132px}
       <a href="#como-funciona">como funciona</a>
       <a href="#telas">as telas</a>
       <a href="#seu-ritmo">seu ritmo</a>
-      <a href="#experimente">experimente</a>
+      <a href="app.html" target="_blank" rel="noopener">experimente ↗</a>
       <a href="#garantias">garantias</a>
       <a href="#limites">o que não faz</a>
       <span class="ind" id="ind" aria-hidden="true"></span>
@@ -418,13 +418,9 @@ section{scroll-margin-top:132px}
   <section class="hero" id="hero">
     <div class="wrap">
       <h1 aria-label="São 8h, e seu dia já está organizado"><span class="l1" aria-hidden="true">São 8h, e seu dia já está</span><span class="rot" aria-hidden="true"><span id="rot">organizado</span><span class="cursor"></span></span></h1>
-      <p class="lead">Prazos, reuniões, alertas e pendências de todos os seus casos numa tela só, montada para a sua função. <strong>Se economizar uma hora por semana, o Juriday já se pagou.</strong></p>
-      <p class="isnot">Não é uma agenda comum: ele acompanha o andamento dos processos e avisa o que precisa de você. Também não resolve o caso por você.</p>
-      <a class="novo" href="#seu-ritmo"><b>Novo</b> O Juriday aprende o seu ritmo de trabalho <span aria-hidden="true">→</span></a>
+      <p class="lead">Prazos, reuniões, alertas e pendências de todos os seus casos, numa tela só.</p>
       <div class="ctas">
-        <a class="btn btn-teal" href="#demo" data-open-demo="tour">Experimente o Juriday</a>
-        <a class="btn btn-line" href="#como-funciona">Ver como funciona</a>
-        <a class="btn btn-line" href="#planos">Ver preços</a>
+        <a class="btn btn-teal" href="app.html" target="_blank" rel="noopener">Experimente o Juriday</a>
       </div>
     </div>
     <div class="hero-shot">
@@ -451,11 +447,6 @@ section{scroll-margin-top:132px}
               <div class="alert"><strong>Lima Transportes</strong> está sem movimentação há 34 dias.<span class="why"><b>Motivo:</b> aguardando documento do cliente desde 3/9.</span></div>
             </div>
           </div>
-          <form class="ask askf" id="heroAsk" autocomplete="off">
-            <input id="heroAskI" type="text" placeholder="quero ver toda segunda os casos parados há mais de 30 dias" aria-label="Peça ao Juriday">
-            <button class="send" type="submit" aria-label="Enviar pedido"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M8.5 4l4 4-4 4" stroke="#0C2340" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          </form>
-          <div class="ask-chips" role="group" aria-label="Exemplos de pedido"><span>Experimente:</span><button type="button">Quais processos estão parados?</button><button type="button">Quando vence uma contestação publicada em 10/11?</button><button type="button">Quais varas são mais lentas?</button><button type="button">Posso pegar um caso novo de 6 horas até sexta?</button></div>
         </div>
       </div>
     </div>
@@ -466,12 +457,11 @@ section{scroll-margin-top:132px}
     <div class="wrap">
       <div class="sec-head">
         <span class="eyebrow">o problema</span>
-        <h2 class="h2">O dia do advogado está espalhado.</h2>
-        <p class="lead">Os prazos ficam no sistema do tribunal, as reuniões na agenda, os pedidos do cliente no e-mail e as tarefas na planilha. E a ferramenta de gestão mostra a mesma tela para o sócio e para o associado.</p>
+        <h2 class="h2">O seu dia está espalhado entre vários aplicativos.</h2>
+        <p class="lead">Os prazos ficam no sistema do tribunal, as reuniões na agenda, os pedidos do cliente no e-mail e as tarefas na planilha.</p>
       </div>
       <div class="pains">
         <div class="pain" data-pop style="--d:0.00s"><span class="pi" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="5" width="7" height="5" rx="2"/><rect x="5" y="14" width="5" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg></span><h3>Informação espalhada</h3><p>Montar o dia vira uma tarefa a mais.</p></div>
-        <div class="pain" data-pop style="--d:0.12s"><span class="pi" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="13" height="10" rx="2"/><rect x="8" y="9" width="13" height="10" rx="2"/></svg></span><h3>Todos veem a mesma tela</h3><p>O sócio precisa ver a carteira; o associado, os próprios prazos.</p></div>
         <div class="pain" data-pop style="--d:0.24s"><span class="pi" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><h3>Prazo escondido</h3><p>O que vence hoje se perde no meio do que vence no mês.</p></div>
         <div class="pain" data-pop style="--d:0.36s"><span class="pi" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10M7 21h10M8 3c0 5 8 5 8 9s-8 4-8 9M16 3c0 5-8 5-8 9"/></svg></span><h3>Tempo sem Direito</h3><p>Horas organizando, procurando e atualizando, sem raciocínio jurídico.</p></div>
       </div>
@@ -484,12 +474,12 @@ section{scroll-margin-top:132px}
       <div class="sec-head">
         <span class="eyebrow">para quem é</span>
         <h2 class="h2">Cada função vê o que importa para ela.</h2>
-        <p class="lead">O Juriday sabe se você é sócio, associado ou atende cliente, e monta a tela a partir disso.</p>
+        <p class="lead">Quatro rotinas diferentes, uma tela para cada uma.</p>
       </div>
       <div class="profiles">
         <article class="prof lift">
           <h3>Sócios e coordenadores</h3>
-          <p>Carteira, carga da equipe e principais movimentações.</p>
+          <p>Saber quem está sobrecarregado e o que mudou na carteira, sem pedir relatório.</p>
           <div class="mini" aria-label="Exemplo: tarefas abertas por pessoa da equipe">
             <span class="mt">Tarefas abertas por pessoa</span>
             <div class="row"><span>Ana</span><span class="bar"><i style="width:60%"></i></span><span class="mono">12 <span class="unit">tarefas</span></span></div>
@@ -500,7 +490,7 @@ section{scroll-margin-top:132px}
         </article>
         <article class="prof lift">
           <h3>Associados</h3>
-          <p>Seus prazos, movimentações, linha do tempo dos casos e alertas.</p>
+          <p>Começar o dia sabendo o que fazer primeiro, com os prazos e alertas dos seus casos.</p>
           <div class="mini" aria-label="Exemplo: lista de prazos">
             <span class="mt">Seus próximos prazos</span>
             <div class="row"><span>Contestação</span><span class="pill hot">hoje</span></div>
@@ -510,7 +500,7 @@ section{scroll-margin-top:132px}
         </article>
         <article class="prof lift">
           <h3>Quem atende cliente</h3>
-          <p>Resumo do caso, pendências, histórico recente e rascunho de resposta.</p>
+          <p>Chegar à reunião sabendo o que aconteceu e o que falta, com o rascunho de resposta pronto.</p>
           <div class="mini" aria-label="Exemplo: resumo de caso">
             <span class="mt">Resumo do caso</span>
             <b>Grupo Beta</b>
@@ -520,7 +510,7 @@ section{scroll-margin-top:132px}
         </article>
         <article class="prof lift">
           <h3>Jurídico interno e setor público</h3>
-          <p>Demandas internas, prazos e relatórios para a diretoria ou a gestão.</p>
+          <p>Mostrar à diretoria ou à gestão a situação das demandas, sem montar planilha.</p>
           <div class="mini" aria-label="Exemplo: relatório para a diretoria">
             <span class="mt">Visão da semana</span>
             <div class="row"><span>Demandas abertas</span><b class="mono">18</b></div>
@@ -529,10 +519,6 @@ section{scroll-margin-top:132px}
           </div>
         </article>
       </div>
-      <div class="foryou">
-        <p class="lead">Feito para o escritório grande, a banca pequena, o departamento jurídico e o órgão público.</p>
-        <p class="fy">Mas, especialmente, <span>para você.</span></p>
-      </div>
     </div>
   </section>
 
@@ -540,15 +526,15 @@ section{scroll-margin-top:132px}
   <section class="sec" id="como-funciona">
     <div class="wrap">
       <div class="sec-head">
-        <span class="eyebrow">o que você constrói com o Juriday</span>
-        <h2 class="h2">Você pede em português. O Juriday monta.</h2>
-        <p class="lead">Você não precisa programar nem configurar telas. Basta descrever o que precisa.</p>
+        <span class="eyebrow">como funciona</span>
+        <h2 class="h2">Um assistente que faz as checagens que você pediria a um estagiário.</h2>
+        <p class="lead">Só que muito mais rápido, e todos os dias, antes de você abrir o computador.</p>
       </div>
 
       <div class="steps">
-        <div class="step"><span class="n">1.</span><h3>Peça</h3><p>Descreva o que precisa, do jeito que falaria com um colega.</p></div>
-        <div class="step"><span class="n">2.</span><h3>Veja o plano</h3><p>Antes de montar qualquer coisa, o Juriday mostra o que vai fazer.</p></div>
-        <div class="step"><span class="n">3.</span><h3>Aprove</h3><p>Com o seu ok, ele passa a fazer sempre do mesmo jeito. Você ajusta quando quiser.</p></div>
+        <div class="step"><span class="n">1.</span><h3>Ele confere</h3><p>Prazos, andamentos, agenda e e-mails, todo dia cedo.</p></div>
+        <div class="step"><span class="n">2.</span><h3>Ele avisa</h3><p>O que vence, o que parou e o que precisa de você, sempre com o motivo.</p></div>
+        <div class="step"><span class="n">3.</span><h3>Você decide</h3><p>Ele sugere e rascunha. Nada é enviado, protocolado ou apagado sem o seu ok.</p></div>
       </div>
 
       <div class="demo2">
@@ -557,64 +543,13 @@ section{scroll-margin-top:132px}
           <div class="chat-body" id="chat" aria-live="polite"></div>
         </div>
         <div class="try">
-          <h3>Isso é só um pedido.</h3>
-          <p>Na demonstração completa, você troca de função, abre os alertas, revisa um rascunho, cria rotinas e vê o que a IA recebe.</p>
-          <a class="btn btn-teal" href="#demo" data-open-demo="tour">Experimente o Juriday</a>
+          <h3>Precisa de algo diferente? É só pedir.</h3>
+          <p>Pedir em português é um detalhe. O essencial o Juriday já faz sozinho.</p>
+          <a class="btn btn-teal" href="app.html" target="_blank" rel="noopener">Experimente o Juriday</a>
           <span class="cap2">Tour guiado · processos reais do TRF3, agenda e clientes fictícios</span>
         </div>
       </div>
 
-      <div class="bh" id="por-tras">
-        <h3 class="bh-h">O que está por trás.</h3>
-        <p class="bh-sub">Três perguntas que todo advogado faz. Toque para ver a resposta.</p>
-        <div class="bh-tabs" role="tablist" aria-label="O que está por trás do Juriday">
-          <button type="button" role="tab" id="bh-t1" aria-controls="bh-p1" aria-selected="true" class="bh-tab on">Por que é para advogados?</button>
-          <button type="button" role="tab" id="bh-t2" aria-controls="bh-p2" aria-selected="false" tabindex="-1" class="bh-tab">De onde vêm os dados?</button>
-          <button type="button" role="tab" id="bh-t3" aria-controls="bh-p3" aria-selected="false" tabindex="-1" class="bh-tab">O que é IA, de verdade?</button>
-        </div>
-        <div class="bh-panels">
-          <div class="bh-p on" role="tabpanel" id="bh-p1" aria-labelledby="bh-t1">
-            <p class="bh-big">Uma agenda comum não sabe o que é prazo processual.</p>
-            <div class="bh-tiles">
-              <div class="bh-tile"><b>Prazo que conta como o processo conta</b><span>Dias úteis, feriados e recesso. Mostra dia a dia por que vence.</span></div>
-              <div class="bh-tile"><b>O que é normal em cada processo</b><span>Compara o tempo sem andamento com processos reais do TRF3.</span></div>
-              <div class="bh-tile"><b>Uma tela para cada função</b><span>Sócio, associado, atendimento e jurídico interno veem o que importa.</span></div>
-              <div class="bh-tile"><b>Sigilo</b><span>Nenhum nome de cliente sai do escritório sem ser anonimizado.</span></div>
-            </div>
-            <p class="bh-foot">Organizar qualquer agenda é fácil. O que diferencia o Juriday é a parte jurídica: prazo, andamento e sigilo.</p>
-          </div>
-          <div class="bh-p" role="tabpanel" id="bh-p2" aria-labelledby="bh-t2" hidden>
-            <p class="bh-big">Das fontes que o escritório já usa.</p>
-            <div class="bh-flow2">
-              <ul class="bh-srcs" aria-label="Fontes"><li>Agenda</li><li>E-mail</li><li>PJe</li><li>Planilha do escritório</li></ul>
-              <span class="bh-arr" aria-hidden="true">→</span>
-              <div class="bh-hub"><b>Juriday</b><span>organiza por função</span></div>
-              <span class="bh-arr" aria-hidden="true">→</span>
-              <div class="bh-out"><b>Seu dia, pronto</b><ul><li>Prazos</li><li>Reuniões</li><li>Alertas com motivo</li><li>Pendências</li></ul></div>
-            </div>
-            <div class="bh-legend">
-              <p><span class="bh-dot real"></span><b>Real na demonstração:</b> processos do TRF3, vindos do DataJud (CNJ), uma base pública.</p>
-              <p><span class="bh-dot fake"></span><b>Fictício:</b> a agenda, as reuniões e os clientes do dia da Ana.</p>
-            </div>
-          </div>
-          <div class="bh-p" role="tabpanel" id="bh-p3" aria-labelledby="bh-t3" hidden>
-            <p class="bh-big">Primeiro dados e regras. Depois a IA.</p>
-            <div class="bh-steps">
-              <div class="bh-st now"><span class="bh-n">1</span><div><span class="bh-tag">Já funciona na demonstração</span><b>Dados e regras</b><ul><li>Dados públicos do TRF3</li><li>O que é normal por tipo de processo</li><li>Cálculo de prazo e montagem do dia</li></ul><small>Cada resultado vem com o motivo.</small></div></div>
-              <span class="bh-then" aria-hidden="true">depois</span>
-              <div class="bh-st next"><span class="bh-n">2</span><div><span class="bh-tag">Próxima etapa</span><b>IA de linguagem</b><ul><li>Entender o pedido em português</li><li>Resumir casos</li><li>Escrever rascunhos e relatórios</li></ul><small>Você revisa e envia.</small></div></div>
-            </div>
-            <p class="bh-note"><b>Hoje,</b> as respostas ao pedido em português são guiadas: uma simulação do que a IA faria. A IA só entra onde há texto para escrever, o que mantém o custo sob controle.</p>
-          </div>
-        </div>
-      </div>
-      <script>
-      (function(){ const root=document.getElementById("por-tras"); if(!root) return;
-        const tabs=[...root.querySelectorAll(".bh-tab")], ps=[...root.querySelectorAll(".bh-p")];
-        function go(i,foco){ tabs.forEach((t,k)=>{ const on=k===i; t.classList.toggle("on",on); t.setAttribute("aria-selected",on?"true":"false"); t.tabIndex=on?0:-1; ps[k].hidden=!on; ps[k].classList.toggle("on",on); }); if(foco) tabs[i].focus(); }
-        tabs.forEach((t,i)=>{ t.addEventListener("click",()=>go(i,false)); t.addEventListener("keydown",e=>{ if(e.key==="ArrowRight"||e.key==="ArrowDown"){ e.preventDefault(); go((i+1)%tabs.length,true); } if(e.key==="ArrowLeft"||e.key==="ArrowUp"){ e.preventDefault(); go((i+tabs.length-1)%tabs.length,true); } }); });
-      })();
-      </script>
 
     </div>
   </section>
@@ -625,7 +560,7 @@ section{scroll-margin-top:132px}
       <div class="sec-head">
         <span class="eyebrow">as telas</span>
         <h2 class="feat-title">As telas que organizam o seu dia.</h2>
-        <p class="lead">Você pede uma vez. A partir daí, elas ficam prontas sozinhas, todos os dias.</p>
+        <p class="lead">Prontas todos os dias, sem você precisar pedir.</p>
       </div>
       <div class="feats">
         <div class="feat">
@@ -636,30 +571,22 @@ section{scroll-margin-top:132px}
             </div>
             <div class="rb">
               <span class="mt">Prazos</span>
-              <div class="dl urg"><i></i><div><b>Contestação</b><small>Construtora Alfa</small></div><span class="cd">vence em 15h</span></div>
+              <div class="dl urg"><i></i><div><b>Contestação</b><small>Construtora Alfa</small></div><span class="cd">hoje</span></div>
               <div class="dl"><i></i><div><b>Recurso</b><small>Mercado Sol</small></div><span class="cd">amanhã</span></div>
               <div class="dl"><i></i><div><b>Certidões do fechamento</b><small>Grupo Beta</small></div><span class="cd">em 5 dias</span></div>
-              <span class="mt" style="margin-top:6px">Quantos prazos vencem em cada dia</span>
-              <div class="week" aria-label="Prazos por dia: segunda 3, terça 5, hoje 6, quinta 2, sexta 4">
-                <div><em>3</em><span style="height:18px"></span>seg</div>
-                <div><em>5</em><span style="height:30px"></span>ter</div>
-                <div class="today"><em>6</em><span style="height:36px"></span>hoje</div>
-                <div><em>2</em><span style="height:12px"></span>qui</div>
-                <div><em>4</em><span style="height:24px"></span>sex</div>
-              </div>
-              <span class="wk-note">Hoje é o dia mais cheio da semana. Vale começar pelos prazos.</span>
+              <div class="rt-tip"><b>Para hoje</b>O recurso de amanhã costuma levar de 3h50 a 4h10. Se der, comece a minuta hoje no tempo que sobrar.</div>
             </div>
           </div>
           <h3>Painel do dia</h3>
           <p>Abra o computador e o dia já está montado: prazos, reuniões, atualizações e pendências numa tela só, do mais urgente para o menos urgente.</p>
-          <div class="askc"><b>Peça uma vez</b>“Toda manhã, monte o meu dia por ordem de urgência.”</div>
+          
         </div>
 
         <div class="feat">
           <div class="app rich lift" aria-label="Exemplo de resumo pré-reunião">
             <div class="rh">
               <div class="who2"><span class="av">GB</span><div><span class="k">reunião às 10h</span><span class="v">Grupo Beta</span></div></div>
-              <span class="tag">pronto às 9h</span>
+              <span class="tag">sempre atualizado</span>
             </div>
             <div class="rb">
               <span class="mt">Aquisição da Fábrica Norte</span>
@@ -675,8 +602,8 @@ section{scroll-margin-top:132px}
             </div>
           </div>
           <h3>Resumo pré-reunião</h3>
-          <p>Uma hora antes de cada reunião, o resumo já está pronto: status, fatos recentes, decisões e o que falta do cliente. Você entra preparado, sem reabrir pastas e e-mails.</p>
-          <div class="askc"><b>Peça uma vez</b>“Antes de cada reunião com cliente, prepare o resumo do caso.”</div>
+          <p>O resumo de cada caso fica sempre pronto: status, fatos recentes, decisões e o que falta do cliente. Antes de qualquer reunião, você entra preparado, sem reabrir pastas e e-mails.</p>
+          
         </div>
 
         <div class="feat">
@@ -698,24 +625,7 @@ section{scroll-margin-top:132px}
           </div>
           <h3>Linha do tempo do caso</h3>
           <p>As fases passadas resumidas e a atual em destaque. Toque numa fase para ver os documentos e responda ao sócio em dois minutos.</p>
-          <div class="askc"><b>Peça quando quiser</b>“Me mostre a linha do tempo do caso Lima Transportes.”</div>
-        </div>
-        <div class="feat">
-          <div class="app rich lift" aria-label="Exemplo da tela Seu ritmo">
-            <div class="rh">
-              <div><span class="k">quarta, 7/10</span><span class="v">Seu ritmo</span></div>
-            </div>
-            <div class="rb">
-              <span class="mt">Quanto tempo você costuma levar</span>
-              <div class="rt-mr"><span>Contestação</span><b>3h</b><small>até 3h50 num dia puxado</small></div>
-              <div class="rt-mr"><span>Revisão de contrato</span><b>1h30</b><small>aprendido de 6 tarefas</small></div>
-              <span class="mt" style="margin-top:8px">Novo caso: defesa em ação nova, até sexta</span>
-              <div class="rt-mv aperta"><b>Cabe, mas aperta</b><small>Pede 6h; você tem 6h40 livres. Num dia puxado faltariam 50 min.</small></div>
-            </div>
-          </div>
-          <h3>Seu ritmo</h3>
-          <p>O Juriday aprende quanto tempo você leva em cada atividade, monta o dia com isso e diz se um caso novo cabe na agenda. Os tempos são seus.</p>
-          <div class="askc"><b>Pergunte antes de aceitar</b>“Posso pegar um caso novo de 6 horas até sexta?”</div>
+          
         </div>
       </div>
 
@@ -734,18 +644,18 @@ section{scroll-margin-top:132px}
   <section class="sec" id="seu-ritmo">
     <div class="wrap">
       <div class="sec-head">
-        <span class="eyebrow">novo no Juriday</span>
+        <span class="eyebrow">seu ritmo</span>
         <h2 class="h2">O Juriday aprende como você trabalha.</h2>
-        <p class="lead">Ele descobre quanto tempo você leva em cada atividade, monta o seu dia com isso e avisa se um caso novo cabe na sua agenda. <strong>Os tempos são seus: só o sócio vê, e só se você liberar.</strong></p>
+        <p class="lead">Ele descobre quanto tempo você leva em cada atividade, monta o seu dia com isso e avisa se um caso novo cabe na sua agenda. <strong>Você vê sempre o que o escritório enxerga sobre o seu ritmo, em Configurações.</strong></p>
       </div>
       <div class="rt-m3">
         <article class="rt-m">
           <span class="rt-n">1</span><h3>Ele aprende o seu tempo</h3>
           <div class="rt-mm" aria-hidden="true">
-            <div class="rt-mr"><span>Contestação</span><b>3h</b><small>até 3h50</small></div>
-            <div class="rt-mr"><span>Revisão de contrato</span><b>1h30</b><small>até 1h50</small></div>
-            <div class="rt-mr"><span>Repasse</span><b>40 min</b><small>até 45 min</small></div>
-            <div class="rt-mr new"><span>Parecer</span><b>2h</b><small>sua estimativa</small></div>
+            <div class="rt-mr"><span>Contestação</span><b>3h10 a 3h30</b><small>em geral</small></div>
+            <div class="rt-mr"><span>Revisão de contrato</span><b>1h35 a 1h40</b><small>em geral</small></div>
+            <div class="rt-mr"><span>Repasse</span><b>38 a 40 min</b><small>em geral</small></div>
+            <div class="rt-mr new"><span>Contrato (redação)</span><b>3h30</b><small>sua estimativa</small></div>
           </div>
           <p>Você informa uma estimativa. A cada tarefa concluída, o tempo se ajusta ao que realmente acontece.</p>
         </article>
@@ -760,81 +670,20 @@ section{scroll-margin-top:132px}
           <p>Prazos primeiro, reuniões respeitadas. Cada bloco diz por que está ali. Se o dia não fecha, ele avisa e você decide o que mexer.</p>
         </article>
         <article class="rt-m">
-          <span class="rt-n">3</span><h3>Ele responde: posso pegar?</h3>
+          <span class="rt-n">3</span><h3>Ele avisa quando não dá</h3>
           <div class="rt-mm" aria-hidden="true">
-            <div class="rt-mv aperta"><b>Cabe, mas aperta</b><small>Pede 6h; você tem 6h40 livres até sexta. Num dia puxado faltariam 50 min.</small></div>
-            <div class="rt-mw"><i style="width:80%"></i><i class="n" style="width:20%"></i></div>
+            <div class="rt-mv aperta"><b>Você está sobrecarregado</b><small>Uma contestação nova pede cerca de 3h; até sexta você tem 2h livres. Que tal verificar com a equipe se alguém consegue assumir?</small></div>
           </div>
-          <p>Antes de aceitar, veja se o caso cabe, aperta ou conflita, e por quê. Ele não avalia o mérito: a decisão é sua.</p>
+          <p>Antes de aceitar uma tarefa, você vê se cabe na agenda e por quê. Ele não avalia o mérito: a decisão é sua.</p>
         </article>
       </div>
       <p class="rt-ex2">Na demonstração, os tempos são de exemplo.</p>
-      <div class="rt-cta"><button type="button" class="btn btn-teal" data-open-demo="ritmo">Experimentar o Seu ritmo no app</button></div>
+      <div class="rt-cta"><a class="btn btn-teal" href="app.html#ritmo" target="_blank" rel="noopener">Experimentar o Seu ritmo no app</a></div>
     </div>
   </section>
 
   <!-- EXPERIMENTE -->
-  <section class="sec mist" id="experimente">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">experimente agora</span>
-        <h2 class="h2">É o Juriday de verdade. Mexa à vontade.</h2>
-        <p class="lead">Troque de função, abra um alerta, calcule um prazo e veja o panorama. Os processos e os números vêm de dados reais do TRF3. A agenda, as reuniões e os clientes são fictícios.</p>
-      </div>
-      <div class="exp-chips" role="group" aria-label="Atalhos da demonstração">
-        <button type="button" class="btn btn-teal" data-open-demo="tour">Fazer o tour</button>
-        <button type="button" class="btn btn-line" data-open-demo="hoje">O dia da Ana</button>
-        <button type="button" class="btn btn-line" data-open-demo="ritmo">Seu ritmo</button>
-        <button type="button" class="btn btn-line" data-open-demo="casos">Ver processos parados</button>
-        <button type="button" class="btn btn-line" data-open-demo="tempo">Volte no tempo</button>
-        <button type="button" class="btn btn-line" data-open-demo="prazos">Calcular um prazo</button>
-        <button type="button" class="btn btn-line" data-open-demo="panorama">Ver o panorama</button>
-      </div>
-<div class="dm dm-inline" id="dm" role="region" aria-label="Demonstração do Juriday, com dados reais do TRF3">
-  <div class="dm-flag"><div class="fl-t"><b>Demonstração</b> · alertas, movimentações, <em>Casos</em>, <em>Panorama</em> e <em>Prazos</em> são reais (DataJud e CPC) · agenda, reuniões e clientes do Hoje são fictícios · nada aqui é enviado de verdade</div><button class="dm-fs fs-a js-fs" type="button" aria-pressed="false" aria-label="Alternar tela cheia"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M8.5 1.5h4v4M5.5 12.5h-4v-4M12.5 1.5l-4.5 4.5M1.5 12.5L6 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tela cheia</span></button></div>
-  <div class="dm-top">
-    <img class="dm-logo" id="dmLogo" alt="Juriday">
-    <div class="roles" id="roles" role="group" aria-label="Ver como" data-tour="role"></div>
-    <form class="dm-ask" id="askF" data-tour="ask" autocomplete="off">
-      <input id="askI" type="text" placeholder="Peça ao Juriday em português…" aria-label="Pedido ao Juriday">
-      <button type="submit" aria-label="Enviar pedido"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M8.5 4l4 4-4 4" stroke="#0C2340" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-      <div class="sugg" id="sugg" hidden></div>
-    </form>
-    <button class="anon-sw" id="anonB" type="button" aria-pressed="false" data-tour="anon"><span class="tgl"></span>Ver o que a IA recebe</button>
-    <button class="tourbtn tourm" type="button" data-act="tour">Fazer o tour</button>
-    <button class="dm-fs fs-b js-fs" type="button" aria-pressed="false" aria-label="Alternar tela cheia"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M8.5 1.5h4v4M5.5 12.5h-4v-4M12.5 1.5l-4.5 4.5M1.5 12.5L6 8" stroke="#0C2340" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tela cheia</span></button>
-  </div>
-  <div class="anon-bar" id="anonBar" hidden>Você está vendo o que sai do escritório: os nomes dos clientes viram códigos antes de chegar à IA.</div>
-  <div id="tourBox"></div>
-  <div class="dm-body" style="position:relative">
-    <aside class="dm-side">
-      <img id="dmLogo2" alt="Juriday">
-      <button class="nv" type="button" data-view="hoje">Hoje</button>
-      <button class="nv" type="button" data-view="ritmo">Seu ritmo</button>
-      <button class="nv" type="button" data-view="casos"><span id="casosLbl">Casos</span></button>
-      <button class="nv" type="button" data-view="prazos">Prazos</button>
-      <button class="nv" type="button" data-view="panorama">Panorama</button>
-      <button class="nv" type="button" data-view="pedidos">Meus pedidos <span class="ct" id="pedCt">0</span></button>
-      <div class="who" id="whoBox"></div>
-    </aside>
-    <main class="dm-main" id="dmMain"></main>
-    <nav class="dm-tabs" aria-label="Telas">
-      <button type="button" data-view="hoje">Hoje</button>
-      <button type="button" data-view="ritmo">Seu ritmo</button>
-      <button type="button" data-view="casos"><span id="casosLbl2">Casos</span></button>
-      <button type="button" data-view="prazos">Prazos</button>
-      <button type="button" data-view="panorama">Panorama</button>
-      <button type="button" data-view="pedidos">Meus pedidos</button>
-    </nav>
-  </div>
-  <div id="drawer"></div>
-  <div id="toastBox"></div>
-</div>
-      <p class="exp-cap">Dica: escreva na barra “Peça ao Juriday” para tirar uma dúvida ou criar uma rotina. É uma simulação guiada; a IA completa é a próxima etapa.</p>
-    </div>
-  </section>
-
-  <!-- 6. GARANTIAS -->
+    <!-- 6. GARANTIAS -->
   <section class="sec navy" id="garantias">
     <div class="wrap">
       <div class="sec-head">
@@ -846,7 +695,7 @@ section{scroll-margin-top:132px}
         <div class="g wide">
           <span class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="4" y="9" width="12" height="8" rx="2" stroke="#0C2340" stroke-width="2"/><path d="M7 9V6.5a3 3 0 0 1 6 0V9" stroke="#0C2340" stroke-width="2"/></svg></span>
           <h3>Sigilo</h3>
-          <p>Nenhum nome de cliente sai do escritório sem ser anonimizado. Seus dados nunca treinam nenhuma IA, nem a nossa nem a de outras empresas, e nenhum outro escritório tem acesso a eles. Dentro do escritório, cada função vê o que importa para ela, e os seus tempos de trabalho só são vistos pelo sócio se você liberar.</p>
+          <p>Nenhum nome de cliente sai do escritório sem ser anonimizado. Seus dados nunca treinam nenhuma IA, nem a nossa nem a de outras empresas, e nenhum outro escritório tem acesso a eles. Dentro do escritório, cada função vê o que importa para ela.</p>
         </div>
         <div class="g">
           <span class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="#00B4A6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
@@ -870,13 +719,13 @@ section{scroll-margin-top:132px}
         </div>
         <div class="g">
           <span class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="6.5" stroke="#00B4A6" stroke-width="2"/><path d="M10 6.5V10l2.5 1.5" stroke="#00B4A6" stroke-width="2" stroke-linecap="round"/></svg></span>
-          <h3>Seus tempos são seus</h3>
-          <p>O tempo que você leva em cada atividade é pessoal. O sócio só vê se você liberar.</p>
+          <h3>Transparência sobre o seu ritmo</h3>
+          <p>O escritório define o que os sócios veem. Você vê exatamente o quê, em Configurações.</p>
         </div>
         <div class="g">
           <span class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="6" cy="10" r="2.5" stroke="#00B4A6" stroke-width="2"/><circle cx="14" cy="5.5" r="2.5" stroke="#00B4A6" stroke-width="2"/><circle cx="14" cy="14.5" r="2.5" stroke="#00B4A6" stroke-width="2"/><path d="M8.2 9l3.6-2.2M8.2 11l3.6 2.2" stroke="#00B4A6" stroke-width="2"/></svg></span>
           <h3>Conecta com o que você já usa</h3>
-          <p>Agenda, e-mail, PJe e a planilha do escritório.</p>
+          <p>Agenda, e-mail e tribunais (PJe, SAJ e eproc), no produto final.</p>
         </div>
       </div>
       <div class="cmp">
@@ -885,12 +734,12 @@ section{scroll-margin-top:132px}
         <div class="cmpw"><table class="cmpt">
           <thead><tr><th scope="col"><span class="sr">Recurso</span></th><th scope="col">Assistente genérico</th><th scope="col">Juriday</th></tr></thead>
           <tbody>
-            <tr><th scope="row">Sabe a sua função no escritório</th><td><span class="no"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8"/></svg>não vem pronto</span></td><td class="jd"><span class="yes"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3 3 7-7.5"/></svg>já vem pronto</span></td></tr>
-            <tr><th scope="row">Mostra o plano antes de agir</th><td><span class="no"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8"/></svg>não vem pronto</span></td><td class="jd"><span class="yes"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3 3 7-7.5"/></svg>já vem pronto</span></td></tr>
             <tr><th scope="row">Nunca envia, protocola ou apaga sem você</th><td><span class="no"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8"/></svg>não vem pronto</span></td><td class="jd"><span class="yes"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3 3 7-7.5"/></svg>já vem pronto</span></td></tr>
             <tr><th scope="row">Anonimiza os nomes dos clientes</th><td><span class="no"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8"/></svg>não vem pronto</span></td><td class="jd"><span class="yes"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3 3 7-7.5"/></svg>já vem pronto</span></td></tr>
-            <tr><th scope="row">Lembra o padrão do escritório</th><td><span class="no"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8"/></svg>não vem pronto</span></td><td class="jd"><span class="yes"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3 3 7-7.5"/></svg>já vem pronto</span></td></tr>
             <tr><th scope="row">Explica o motivo de cada alerta</th><td><span class="no"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8"/></svg>não vem pronto</span></td><td class="jd"><span class="yes"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3 3 7-7.5"/></svg>já vem pronto</span></td></tr>
+            <tr><th scope="row">Sabe a sua função no escritório</th><td><span class="no"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8"/></svg>não vem pronto</span></td><td class="jd"><span class="yes"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3 3 7-7.5"/></svg>já vem pronto</span></td></tr>
+            <tr><th scope="row">Lembra o padrão do escritório</th><td><span class="no"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8"/></svg>não vem pronto</span></td><td class="jd"><span class="yes"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3 3 7-7.5"/></svg>já vem pronto</span></td></tr>
+            <tr><th scope="row">Mostra o plano antes de agir</th><td><span class="no"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8"/></svg>não vem pronto</span></td><td class="jd"><span class="yes"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3 3 7-7.5"/></svg>já vem pronto</span></td></tr>
           </tbody>
         </table></div>
       </div>
@@ -921,8 +770,9 @@ section{scroll-margin-top:132px}
     <div class="wrap">
       <div class="hour1">
         <span class="eyebrow">planos</span>
-        <div class="big">1 hora<span>.</span></div>
-        <p>É o que o Juriday precisa te economizar por semana para se pagar.</p>
+        <div class="big">12 min<span>.</span></div>
+        <p>É quanto o plano Escritório precisa te economizar por mês para se pagar.</p>
+        <small class="h1src">A conta: R$&nbsp;149 dividido por R$&nbsp;765,52, a hora intelectual da <a href="https://www.oabsp.org.br/upload/4194699954.pdf" target="_blank" rel="noopener">tabela de honorários da OAB-SP (2023)</a>. No plano Solo, cerca de 16 min. No plano Banca, cerca de 9 min. É uma comparação com o valor do seu tempo, não uma promessa de economia.</small>
       </div>
       <div class="sec-head">
         <h2 class="h2" style="font-size:clamp(1.8rem,3.6vw,2.8rem)">Preço por advogado. 14 dias grátis.</h2>
@@ -1066,7 +916,7 @@ section{scroll-margin-top:132px}
         <details><summary>Serve para quem não trabalha com contencioso?</summary><p>Sim. Prazos, pendências do cliente, linha do tempo e relatórios também servem para operações, contratos, consultas e demandas internas. Um exemplo de pedido: “liste o que o cliente ainda deve para o fechamento da operação”. Jurídicos internos e órgãos públicos têm um perfil próprio, com demandas internas e relatórios para a diretoria ou a gestão.</p></details>
         <details><summary>Ele envia algo sem a minha autorização?</summary><p>Nunca. O Juriday lê e organiza à vontade, mas não envia e-mail, não protocola e não apaga nada sem você. Quando ele prepara uma mensagem para o cliente, ela fica como rascunho: você revisa, ajusta e envia.</p></details>
         <details><summary>E se ele errar?</summary><p>Como toda IA, ele pode errar. Por isso, tudo o que ele produz passa pela sua revisão, e todo alerta diz por que foi gerado, para você conferir a origem antes de agir.</p></details>
-        <details><summary>Com quais sistemas ele se conecta?</summary><p>Agenda, e-mail, PJe e a planilha do escritório. No plano Corporativo, a implantação é dedicada e inclui a integração com os sistemas da sua organização.</p></details>
+        <details><summary>Com quais sistemas ele se conecta?</summary><p>No produto final: agenda (Google Calendar e Outlook), e-mail (Gmail e Outlook), tribunais (PJe, SAJ e eproc) e a planilha de controle que o escritório já mantém. Na demonstração, só os dados públicos do DataJud são reais. No plano Corporativo, a implantação é dedicada e inclui a integração com os sistemas da sua organização.</p></details>
         <details><summary>Quanto custa e como testar?</summary><p>A cobrança é por advogado, por mês: R$ 199 no Solo (1 advogado), R$ 149 no Escritório (2 a 20), R$ 119 na Banca (21 a 100) e sob consulta no Corporativo (100+ advogados, jurídico interno e setor público). Todos os planos têm 14 dias grátis e 15% de desconto no plano anual.</p></details>
       </div>
     </div>
@@ -2323,738 +2173,7 @@ window.JD = (function(){
   return { D, load, amostra, esc, fmtN, dec, dias, fmt, cnj, bonito, ultimoMov, arquivado, situacao, peso, pill, termo, novidades, ordenados, dash, mount, wire, calcular, calcMount, prazosMod, LIMITE, pausa, diaN, isoDia };
 })();
 </script>
-<script>
-(function(){
-const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
-const $ = s => document.querySelector(s);
-const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
-/* ---------- ícones ---------- */
-const IC = {
- doc:'<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 1.8h5l3 3v9.4H4z"/><path d="M9 1.8v3h3M6 9h4M6 11.5h4"/></svg>',
- shield:'<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M8 1.8l5 2v4c0 3.2-2.2 5.2-5 6.4-2.8-1.2-5-3.2-5-6.4v-4z"/></svg>',
- reply:'<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5L2 7.5l4 4"/><path d="M2 7.5h7a5 5 0 0 1 5 5"/></svg>',
- search:'<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg>',
- scale:'<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v12M5 14h6M3 4.5h10"/><path d="M3 4.5L1.2 9a1.8 1.8 0 0 0 3.6 0zM13 4.5L11.2 9a1.8 1.8 0 0 0 3.6 0z"/></svg>',
- pen:'<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 2.5l3 3L6 13H3v-3z"/></svg>',
- flag:'<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14V2.5h8l-1.5 3 1.5 3H3"/></svg>',
- check:'<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7.5"/></svg>',
- arrow:'<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 7h10M8 3l4 4-4 4"/></svg>',
- bang:'<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 3v5M7 11v.3"/></svg>',
- clock:'<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="8" cy="8" r="6"/><path d="M8 4.8V8l2.2 1.5"/></svg>'
-};
-
-/* ---------- sigilo: nomes reais -> códigos ---------- */
-const ANON = [["Construtora Alfa","Cliente A"],["Grupo Beta","Cliente B"],["Lima Transportes","Cliente C"],["Mercado Sol","Cliente D"],["Família Duarte","Cliente E"],["Hotel Mirante","Cliente F"],["Fábrica Norte","Empresa-alvo"],["Fernanda Reis","Contato do cliente"],["Rogério Lima","Contato do cliente"],["Nuvem Tech","Fornecedor 1"],["0012345-67.2026","Processo 1"],["0023456-78.2026","Processo 2"],["0034567-89.2026","Processo 3"],["0045678-90.2026","Processo 4"]];
-let anon = false;
-function T(s){ let o = esc(s); if(!anon) return o; ANON.forEach(([a,b])=>{ o = o.split(esc(a)).join('<mark class="anon">'+b+'</mark>'); }); return o; }
-function Tplain(s){ if(!anon) return s; let o=s; ANON.forEach(([a,b])=>{ o=o.split(a).join(b); }); return o; }
-
-/* ---------- dados fictícios ---------- */
-const ROLES = {
-  associada:{label:"Associada", name:"Ana", sub:"Associada · contencioso cível"},
-  socia:{label:"Sócia", name:"Marta", sub:"Sócia · coordena a equipe"},
-  atende:{label:"Atende cliente", name:"Bruno", sub:"Associado · relacionamento com clientes"},
-  interno:{label:"Jurídico interno", name:"Paula", sub:"Departamento jurídico de uma empresa"}
-};
-const CASES = [
-  {id:"lima", client:"Lima Transportes", type:"Ação de cobrança", num:"0012345-67.2026", phase:"Perícia", next:"Laudo previsto · 20/10", owner:"Ana",
-   phases:[{ic:"doc",t:"Petição inicial",s:"12/mar · liminar negada",d:["Petição inicial","Procuração"]},{ic:"shield",t:"Contestação",s:"8/mai · réu alegou prescrição",d:["Contestação"]},{ic:"reply",t:"Réplica",s:"3/jul · pedida perícia",d:["Réplica"]},{ic:"search",t:"Perícia",s:"quesitos apresentados · laudo previsto para 20/10",d:["Quesitos","Nomeação do perito"],now:1},{ic:"scale",t:"Sentença",s:"próxima fase",fut:1}]},
-  {id:"alfa", client:"Construtora Alfa", type:"Ação indenizatória", num:"0023456-78.2026", phase:"Contestação", next:"Contestação · vence hoje", owner:"Ana", urg:1,
-   phases:[{ic:"doc",t:"Citação",s:"16/set · prazo de 15 dias úteis",d:["Mandado de citação","Petição inicial do autor"]},{ic:"shield",t:"Contestação",s:"vence hoje, 23h59 · minuta em revisão",d:["Minuta da contestação"],now:1},{ic:"reply",t:"Réplica do autor",s:"próxima fase",fut:1}]},
-  {id:"duarte", client:"Família Duarte", type:"Inventário", num:"0034567-89.2026", phase:"Avaliação de bens", next:"Manifestação sobre o laudo · hoje", owner:"Ana", urg:1,
-   phases:[{ic:"doc",t:"Abertura",s:"fev/26 · inventariante nomeado",d:["Petição de abertura"]},{ic:"pen",t:"Primeiras declarações",s:"abr/26",d:["Primeiras declarações"]},{ic:"search",t:"Avaliação de bens",s:"laudo juntado · manifestação vence hoje",d:["Laudo de avaliação"],now:1},{ic:"scale",t:"Partilha",s:"próxima fase",fut:1}]},
-  {id:"sol", client:"Mercado Sol", type:"Ação revisional de contrato", num:"0045678-90.2026", phase:"Recurso", next:"Recurso · amanhã", owner:"Ana",
-   phases:[{ic:"doc",t:"Petição inicial",s:"nov/25",d:["Petição inicial"]},{ic:"scale",t:"Sentença",s:"set/26 · pedido parcialmente procedente",d:["Sentença"]},{ic:"reply",t:"Recurso",s:"vence amanhã · em preparação",d:["Rascunho do recurso"],now:1}]},
-  {id:"beta", client:"Grupo Beta", type:"Aquisição da Fábrica Norte", num:"", phase:"Minuta", next:"Certidões · em 5 dias", owner:"Bruno",
-   phases:[{ic:"search",t:"Due diligence",s:"jul–set · relatório entregue",d:["Relatório de due diligence"]},{ic:"pen",t:"Minuta do contrato",s:"em negociação · vendedor aceitou ajuste de preço (2/10)",d:["Minuta v4","Quadro de comentários"],now:1},{ic:"check",t:"Assinatura",s:"prevista para 19/10",fut:1},{ic:"flag",t:"Fechamento",s:"depende das certidões e da aprovação do conselho",fut:1}]},
-  {id:"mirante", client:"Hotel Mirante", type:"Contrato de locação", num:"", phase:"Negociação", next:"Retorno do locador · sex", owner:"Carla",
-   phases:[{ic:"doc",t:"Proposta",s:"set/26",d:["Proposta comercial"]},{ic:"pen",t:"Negociação",s:"aguardando retorno do locador",d:["Minuta comentada"],now:1},{ic:"check",t:"Assinatura",s:"próxima fase",fut:1}]}
-];
-const DEMANDS = [
-  {t:"Renovação do contrato de TI com Nuvem Tech", a:"Compras", due:"vence em 10 dias", st:"sem minuta", urg:1},
-  {t:"Revisão de contrato de fornecedor", a:"Compras", due:"quinta"},
-  {t:"Parecer sobre campanha de vendas", a:"Comercial", due:"sexta"},
-  {t:"Política de home office", a:"RH", due:"sexta"},
-  {t:"Notificação de cliente sobre entrega", a:"Comercial", due:"segunda"}
-];
-const REQS = [
-  {id:"parados", kw:["parad","30 dias","sem moviment"], q:"Toda segunda, me mostre os casos parados há mais de 30 dias.", when:"toda segunda, 8h",
-   plan:["Toda segunda, às 8h, verificar todos os seus casos.","Separar os que estão sem movimentação há mais de 30 dias, com a data da última movimentação.","Mostrar a lista no seu painel de Hoje, do mais antigo para o mais recente."],
-   w:{t:"Casos parados há mais de 30 dias", rows:()=>parRows(), cap:"Toda segunda, 8h"}},
-  {id:"relatorio", kw:["relatório","relatorio","carteira","sexta"], q:"Toda sexta, monte o relatório da carteira.", when:"toda sexta, 16h",
-   plan:["Toda sexta, às 16h, reunir as movimentações e pendências da semana de cada caso.","Organizar no formato do escritório: o que andou, o que travou e o que vence na próxima semana.","Deixar o relatório pronto para você revisar antes de enviar."],
-   w:{t:"Relatório da carteira", rows:[["Movimentações na semana","12"],["Pendências abertas","5"]], cap:"Toda sexta, 16h · pronto para revisar"}},
-  {id:"resumo", kw:["reuni","resumo"], q:"Antes de cada reunião com cliente, prepare o resumo do caso.", when:"1h antes de cada reunião",
-   plan:["Olhar a sua agenda e identificar as reuniões com clientes.","Uma hora antes de cada uma, juntar status, fatos recentes, decisões e o que falta do cliente.","Deixar o resumo no seu painel, sempre no mesmo formato."],
-   w:{t:"Resumos pré-reunião", rows:[["10h · Grupo Beta","pronto"]], cap:"1h antes de cada reunião"}},
-  {id:"pendencias", kw:["deve","pendên","pendenc","document","fechamento","cobr"], q:"Me avise quando um cliente estiver devendo documento há mais de 5 dias.", when:"todo dia, 9h",
-   plan:["Todo dia, comparar o que cada cliente precisa enviar com o que já chegou.","Avisar quando um documento estiver pendente há mais de 5 dias, dizendo qual e desde quando.","Preparar um rascunho de cobrança para você revisar e enviar."],
-   w:{t:"Documentos pendentes há mais de 5 dias", rows:[["Grupo Beta · certidões","6 dias"],["Lima Transportes · procuração","34 dias"]], cap:"Todo dia, 9h"}},
-  {id:"carga", kw:["equipe","carga","tarefa","sobrecarreg"], q:"Me avise se alguém da equipe passar de 15 tarefas abertas.", when:"sempre que acontecer",
-   plan:["Acompanhar as tarefas abertas de cada pessoa da equipe.","Avisar quando alguém passar de 15 tarefas, com a lista do que está com a pessoa.","Mostrar quem tem espaço para receber demandas. A decisão de redistribuir é sua."],
-   w:{t:"Carga da equipe acima de 15 tarefas", rows:[["Carla","18 tarefas"]], cap:"Sempre que acontecer"}},
-  {id:"contratos", kw:["contrato","venc","renova"], q:"Toda segunda, liste os contratos que vencem nos próximos 30 dias.", when:"toda segunda, 8h",
-   plan:["Toda segunda, às 8h, verificar a data de término de todos os contratos.","Listar os que vencem nos próximos 30 dias, com a área responsável.","Avisar quando ainda não houver minuta de renovação."],
-   w:{t:"Contratos que vencem em 30 dias", rows:[["Contrato de TI · Nuvem Tech","10 dias"]], cap:"Toda segunda, 8h"}}
-];
-const START = {associada:["parados","resumo"], socia:["relatorio","carga"], atende:["resumo","pendencias"], interno:["contratos"]};
-const SUGG = {associada:["parados","pendencias","relatorio"], socia:["parados","relatorio","carga"], atende:["pendencias","resumo","relatorio"], interno:["contratos","relatorio","pendencias"]};
-
-/* ---------- estado ---------- */
-const S = {role:"associada", view:"hoje", fresh:null, ped:{}, drafts:{}};
-Object.keys(START).forEach(r=>S.ped[r]=START[r].map(id=>({id,on:true})));
-const R = id => REQS.find(r=>r.id===id);
-const C = id => CASES.find(c=>c.id===id);
-
-/* ---------- peças de interface ---------- */
-const rowb = (act, title, sub, go, cls="") => `<button type="button" class="rowb ${cls}" data-act="${act}"><span><b>${T(title)}</b>${sub?`<small>${T(sub)}</small>`:""}</span><span class="go">${go}</span></button>`;
-const wt = (t,n) => `<div class="wt"><span>${t}</span>${n!=null?`<b>${n}</b>`:""}</div>`;
-function hello(name, sub, extra){ return `<div class="w s12 hello" data-tour="day"><div><span class="k">quarta, 7 de outubro · 8h00</span><div class="v">Bom dia, ${name}</div><div class="s">${sub}</div></div>${extra||""}</div>`; }
-const ring = (a,b,lbl) => `<div style="display:flex;align-items:center;gap:10px"><small style="font-size:12px;font-weight:700;text-align:right;line-height:1.2;opacity:.8">${lbl}</small><div style="position:relative;width:60px;height:60px"><svg width="60" height="60" viewBox="0 0 60 60"><circle cx="30" cy="30" r="24" fill="none" stroke="rgba(12,35,64,.18)" stroke-width="6"/><circle cx="30" cy="30" r="24" fill="none" stroke="#0C2340" stroke-width="6" stroke-linecap="round" stroke-dasharray="${(150.8*a/b).toFixed(1)} 150.8" transform="rotate(-90 30 30)"/></svg><b style="position:absolute;inset:0;display:grid;place-items:center;font-family:var(--mono);font-size:13px">${a}/${b}</b></div></div>`;
-function routinesWidget(){
-  const L = S.ped[S.role].filter(p=>p.on);
-  return `<div class="w s12">${wt("Suas rotinas ativas",L.length)}${L.map(p=>`<div class="cap">“${esc(R(p.id).q)}” · ${R(p.id).when}</div>`).join("")}<button type="button" class="rowb" data-act="view:pedidos"><span><b>Ver e ajustar em Meus pedidos</b></span><span class="go">abrir</span></button></div>`;
-}
-function freshWidget(){
-  if(!S.fresh || S.fresh.role!==S.role) return "";
-  const r = R(S.fresh.id);
-  return `<div class="w s12 fresh">${wt("Nova rotina · "+esc(r.w.t))}${(typeof r.w.rows==="function"?r.w.rows():r.w.rows).map(([a,b])=>`<div class="rowb" style="cursor:default"><span><b>${T(a)}</b></span><span class="go">${b}</span></div>`).join("")}<div class="cap">${r.w.cap} · criada agora por você</div></div>`;
-}
-
-/* ---------- telas "Hoje" por função ---------- */
-const HOJE = {
- associada(){ return hello("Ana", ROLES.associada.sub, ring(3,5,"tarefas<br>de hoje")) + freshWidget() + calcCard() +
-   `<div class="w">${wt("Prazos",3)}${rowb("case:alfa","Contestação","Construtora Alfa · vence hoje, 23h59","ver caso","urg")}${rowb("case:duarte","Manifestação sobre o laudo","Família Duarte · vence hoje, 23h59","ver caso","urg")}${rowb("case:sol","Recurso","Mercado Sol · amanhã","ver caso")}</div>`+
-   `<div class="w" data-tour="meet">${wt("Reuniões",2)}${rowb("resumo:beta","10h · Grupo Beta","Aquisição da Fábrica Norte · resumo pronto","abrir resumo")}${rowb("report:socia","15h · Marta, sócia","Revisão da carteira · relatório pronto","abrir")}</div>`+
-   alertaReal(`<div class="w" data-tour="alert">${wt("Alerta",1)}<button type="button" class="rowb alert" data-act="why:lima"><span><b>${T("Lima Transportes")} está parado há 34 dias</b><small class="why"><b>Motivo:</b> aguardando procuração atualizada do cliente desde 3/9.</small></span><span class="go">por quê?</span></button></div>`)+
-   `<div class="w s6">${wt("Pendências do cliente",2)}${rowb("draft:beta","Grupo Beta · certidões negativas","pendente há 6 dias","rascunho pronto")}${rowb("draft:beta","Grupo Beta · aprovação do conselho","pendente há 3 dias","rascunho pronto")}</div>`+
-   movReal(2,"Últimas movimentações",`<div class="w s6">${wt("Movimentações desde ontem",2)}${rowb("case:lima","Lima Transportes","Perito aceitou a nomeação","ver caso")}${rowb("case:beta","Grupo Beta","Vendedor enviou a minuta v4","ver caso")}</div>`)+ routinesWidget(); },
- socia(){ return hello("Marta", ROLES.socia.sub, ring(6,6,"casos<br>em dia")) + freshWidget() +
-   `<div class="w s6">${wt("Carga da equipe · tarefas abertas")}<div class="bars">${[["Ana",12],["Bruno",7],["Carla",18]].map(([n,v])=>`<div class="bar2"><span>${n}</span><span class="tr"><i class="${v>15?"hi":""}" style="width:${v/20*100}%"></i></span><span class="n">${v} tarefas</span></div>`).join("")}</div><button type="button" class="rowb alert" data-act="why:carga"><span><b>Carla passou de 15 tarefas</b><small class="why"><b>Motivo:</b> regra que você criou. Média da equipe: 12.</small></span><span class="go">por quê?</span></button></div>`+
-   movReal(3,"Principais movimentações",`<div class="w s6">${wt("Principais movimentações",3)}${rowb("case:beta","Grupo Beta","Vendedor aceitou o ajuste de preço","ver caso")}${rowb("case:lima","Lima Transportes","Quesitos apresentados; laudo em 20/10","ver caso")}${rowb("case:sol","Mercado Sol","Recurso vence amanhã · com Ana","ver caso","urg")}</div>`)+
-   carteiraReal(`<div class="w s6">${wt("Carteira",CASES.length+" casos")}<div class="kpis"><div class="kpi"><b>2</b><span>prazos hoje</span></div><div class="kpi"><b>1</b><span>caso parado</span></div><div class="kpi"><b>5</b><span>pendências de clientes</span></div></div></div>`)+
-   `<div class="w s6">${wt("Relatório semanal")}${rowb("report:socia","Relatório da carteira","sexta, 16h · pronto para revisar","abrir")}</div>` + routinesWidget(); },
- atende(){ return hello("Bruno", ROLES.atende.sub, ring(1,3,"respostas<br>enviadas")) + freshWidget() +
-   `<div class="w" data-tour="meet">${wt("Reunião de hoje",1)}${rowb("resumo:beta","10h · Grupo Beta","Aquisição da Fábrica Norte · resumo pronto","abrir resumo")}</div>`+
-   `<div class="w">${wt("Rascunhos para revisar",2)}${rowb("draft:beta","Cobrança de documentos","para Grupo Beta","revisar")}${rowb("draft:lima","Atualização do caso","para Lima Transportes","revisar")}</div>`+
-   `<div class="w">${wt("Pendências por cliente",3)}${rowb("draft:beta","Grupo Beta","Certidões negativas · há 6 dias","cobrar")}${rowb("draft:beta","Grupo Beta","Aprovação do conselho · há 3 dias","cobrar")}${rowb("why:lima","Lima Transportes","Procuração atualizada · há 34 dias","por quê?","urg")}</div>`+
-   `<div class="w s12">${wt("Histórico recente com clientes")}${rowb("case:beta","Grupo Beta · 2/10","Ligação com Fernanda Reis: vendedor aceitou o ajuste de preço","ver caso")}${rowb("case:lima","Lima Transportes · 30/9","E-mail para Rogério Lima pedindo a procuração","ver caso")}</div>` + routinesWidget(); },
- interno(){ return hello("Paula", ROLES.interno.sub, ring(4,9,"demandas<br>da semana")) + freshWidget() +
-   `<div class="w s6">${wt("Demandas abertas por área")}<div class="bars">${[["Comercial",7],["Compras",5],["RH",6]].map(([n,v])=>`<div class="bar2" style="grid-template-columns:90px minmax(0,1fr) 92px"><span>${n}</span><span class="tr"><i style="width:${v/8*100}%"></i></span><span class="n">${v} demandas</span></div>`).join("")}</div><div class="cap">18 demandas abertas no total</div></div>`+
-   `<div class="w s6">${wt("Alerta",1)}<button type="button" class="rowb alert" data-act="why:ti"><span><b>Contrato de TI vence em 10 dias sem renovação</b><small class="why"><b>Motivo:</b> nenhuma minuta enviada pela área de Compras.</small></span><span class="go">por quê?</span></button></div>`+
-   `<div class="w s6">${wt("Vencem esta semana",4)}${DEMANDS.slice(1).map(d=>rowb("view:casos",d.t,d.a,d.due)).join("")}</div>`+
-   `<div class="w s6">${wt("Relatório para a diretoria")}${rowb("report:interno","Relatório mensal do jurídico","dia 1 · pronto para revisar","abrir")}</div>` + routinesWidget(); }
-};
-
-function viewHoje(){ return `<div class="dm-h"><div><h2>Hoje</h2><p>Montado para a função: ${ROLES[S.role].label.toLowerCase()}.</p></div><button class="tourbtn" type="button" data-act="tour">Fazer o tour</button></div><div class="grid">${HOJE[S.role]()}</div>`; }
-function viewCasosFict(){
-  if(S.role==="interno") return `<div class="dm-h"><div><h2>Demandas</h2><p>Pedidos das áreas da empresa, com prazo.</p></div></div><div class="tblw"><table class="tbl"><thead><tr><th>Demanda</th><th>Área</th><th>Prazo</th><th>Situação</th></tr></thead><tbody>${DEMANDS.map(d=>`<tr><td><b>${T(d.t)}</b></td><td>${d.a}</td><td>${d.due}</td><td>${d.urg?'<span class="pill hot">sem minuta</span>':'<span class="pill">em andamento</span>'}</td></tr>`).join("")}</tbody></table></div>`;
-  return `<div class="dm-h"><div><h2>Casos</h2><p>Toque num caso para ver a linha do tempo.</p></div></div><div class="tblw"><table class="tbl"><thead><tr><th>Cliente</th><th>Tipo</th><th>Fase</th><th>Próximo passo</th><th>Responsável</th></tr></thead><tbody>${CASES.map(c=>`<tr class="clk" data-act="case:${c.id}" tabindex="0"><td><b>${T(c.client)}</b>${c.num?`<div class="cap">${T(c.num)}</div>`:""}</td><td>${T(c.type)}</td><td>${c.phase}</td><td>${c.urg?'<span class="pill hot">'+c.next+'</span>':c.next}</td><td>${c.owner}</td></tr>`).join("")}</tbody></table></div>`;
-}
-function viewPedidos(){
-  const L = S.ped[S.role];
-  return `<div class="dm-h"><div><h2>Meus pedidos</h2><p>Rotinas que você montou pedindo em português. Ligue, desligue ou ajuste quando quiser.</p></div></div><div style="display:grid;gap:12px" data-tour="peds">${L.map((p,i)=>{const r=R(p.id);return `<div class="pd ${p.on?"":"off"} ${S.fresh&&S.fresh.id===p.id&&S.fresh.role===S.role?"fresh":""}"><div><q>${esc(r.q)}</q><small>${r.when} · ${p.on?"ativa":"pausada"}</small></div><div class="ac"><button type="button" class="tg" role="switch" aria-checked="${p.on}" data-act="toggle:${i}"><span class="tgl"></span>${p.on?"ligada":"desligada"}</button><button type="button" class="adj" data-act="adjust:${p.id}">Ajustar</button></div></div>`;}).join("")}<button type="button" class="rowb" data-act="focusask"><span><b>Criar uma rotina nova</b><small>Escreva na barra “Peça ao Juriday” lá em cima.</small></span><span class="go">pedir</span></button></div>`;
-}
-
-/* ---------- dados reais (DataJud) ---------- */
-const J = window.JD;
-S.modo = "seus"; S.lim = 30;
-const stalled = n => J.ordenados(J.D.proc).filter(p=>{ const s=J.situacao(p); return s && (s.nivel==="fora"||s.nivel==="atencao") && s.parado<=365; }).slice(0,n);
-const recentes = n => [...J.D.proc].filter(p=>J.ultimoMov(p)).sort((a,b)=> new Date(J.ultimoMov(b).dataHora)-new Date(J.ultimoMov(a).dataHora)).slice(0,n);
-const tagReal = ' <span class="realtag">dados reais</span>';
-function alertaReal(fb){ if(!J.D.ready) return fb; const L=stalled(2); if(!L.length) return fb; return `<div class="w" data-tour="alert">${wt("Alerta"+tagReal,L.length)}${L.map(p=>{ const s=J.situacao(p); return `<button type="button" class="rowb alert" data-act="proc:${p.numeroProcesso}"><span><b>${J.cnj(p.numeroProcesso)} está parado há ${s.parado} dias</b><small class="why"><b>Motivo:</b> a última movimentação (${J.esc(s.m.nome)}) foi em ${J.fmt(s.m.dataHora)}. É mais do que o normal para ${J.esc(s.n.nome)}.</small></span><span class="go">por quê?</span></button>`; }).join("")}</div>`; }
-function movReal(n,tit,fb){ if(!J.D.ready) return fb; const L=recentes(n); if(!L.length) return fb; return `<div class="w s6">${wt(tit+tagReal,L.length)}${L.map(p=>{ const mv=J.ultimoMov(p); return rowb("proc:"+p.numeroProcesso, J.cnj(p.numeroProcesso)+" · "+(p.classe?.nome||""), mv.nome+" · "+J.fmt(mv.dataHora), "ver processo"); }).join("")}</div>`; }
-function carteiraReal(fb){ if(!J.D.ready||!J.D.proc.length) return fb; const c={fora:0,atencao:0,ok:0}; J.D.proc.forEach(p=>{ const s=J.situacao(p); if(s&&c[s.nivel]!=null) c[s.nivel]++; }); return `<div class="w s6">${wt("Carteira"+tagReal, J.D.proc.length+" processos")}<div class="kpis"><div class="kpi"><b>${c.fora}</b><span>fora do normal</span></div><div class="kpi"><b>${c.atencao}</b><span>acima do normal</span></div><div class="kpi"><b>${c.ok}</b><span>dentro do normal</span></div></div></div>`; }
-const parRows = () => { const L = J.D.ready ? stalled(3) : []; return L.length ? L.map(p=>[J.cnj(p.numeroProcesso), J.situacao(p).parado+" dias"]) : [["Lima Transportes","34 dias"]]; };
-const linhaProc = p => { const m=J.ultimoMov(p); return `<tr class="clk" data-act="proc:${p.numeroProcesso}" tabindex="0"><td><b class="nw">${J.cnj(p.numeroProcesso)}</b><div class="cap">${J.esc(p.classe?.nome||"")}</div></td><td>${J.esc(J.bonito(p.orgaoJulgador?.nome||""))}</td><td>${m?J.esc(m.nome)+'<div class="cap">'+J.fmt(m.dataHora)+' · há '+J.dias(m.dataHora)+' dias</div>':"—"}</td><td>${J.pill(p)}</td></tr>`; };
-S.f = {sit:"todas", tipo:"todos", vara:"todas", q:"", ord:"recentes"}; S.foco = null;
-const SITS = [["todas","Todas"],["fora","Fora do normal"],["atencao","Acima do normal"],["ok","Dentro do normal"],["arquivado","Arquivados"]];
-const tsUlt = p => { if(p.__t===undefined){ const m=J.ultimoMov(p); p.__t = m ? +new Date(m.dataHora) : 0; } return p.__t; };
-function passa(p, f, semSit){
-  const s=J.situacao(p), nv=s?s.nivel:"sem";
-  if(!semSit && f.sit!=="todas" && nv!==f.sit) return false;
-  if(f.tipo!=="todos" && p.classe?.nome!==f.tipo) return false;
-  if(f.vara!=="todas" && p.orgaoJulgador?.nome!==f.vara) return false;
-  const q=f.q.replace(/\D/g,""); if(q && !p.numeroProcesso.includes(q)) return false;
-  return true;
-}
-function viewCasos(){
-  if(S.role==="interno") return viewCasosFict();
-  const head = `<div class="dm-h"><div><h2>Casos</h2><p>Processos reais, com dados públicos do DataJud (CNJ). Toque num processo para ver o motivo do alerta.</p></div><div class="hb"><button class="calcbtn" type="button" data-act="view:prazos">Calculadora de prazos</button></div></div>`;
-  if(!J.D.ready) return head+`<div class="cap">Carregando os processos…</div>`;
-  const base = S.modo==="base";
-  if(base && !J.D.amostra){ J.amostra().then(()=>{ if(!dm.hidden && S.modo==="base") render(); }); }
-  const lista0 = base ? (J.D.amostra||[]) : J.D.proc;
-  const seg = `<div class="seg" role="group" aria-label="Quais processos ver"><button type="button" data-act="modo:seus" aria-pressed="${!base}">Seus ${J.D.proc.length} processos</button><button type="button" data-act="modo:base" aria-pressed="${base}">Base completa${J.D.amostra?" ("+J.fmtN(J.D.amostra.length)+")":" (2.340)"}</button></div>`;
-  if(base && !J.D.amostra) return `<div data-tour="casos">${head}${seg}<div class="cap">Carregando a base completa…</div></div>`;
-  const f = S.f;
-  const cont = {todas:0,fora:0,atencao:0,ok:0,arquivado:0};
-  lista0.forEach(p=>{ if(passa(p,f,true)){ cont.todas++; const s=J.situacao(p); if(s&&cont[s.nivel]!=null) cont[s.nivel]++; } });
-  const tipos = [...new Set(lista0.map(p=>p.classe?.nome).filter(Boolean))].sort();
-  const varas = [...new Set(lista0.map(p=>p.orgaoJulgador?.nome).filter(Boolean))].sort((a,b)=>J.bonito(a).localeCompare(J.bonito(b),"pt-BR"));
-  let lista = lista0.filter(p=>passa(p,f,false));
-  lista = f.ord==="parados" ? J.ordenados(lista) : [...lista].sort((a,b)=>tsUlt(b)-tsUlt(a));
-  const vis = lista.slice(0,S.lim);
-  const filtros = `<div class="cf">
-    <div class="cf-r"><span class="cf-l">Situação</span><div class="dv-chips" role="group" aria-label="Filtrar por situação">${SITS.map(([k,l])=>`<button type="button" class="dv-chip" data-act="fsit:${k}" aria-pressed="${f.sit===k}">${l}<small>${J.fmtN(cont[k])}</small></button>`).join("")}</div></div>
-    <div class="cf-r"><span class="cf-l">Tipo</span><div class="dv-chips" role="group" aria-label="Filtrar por tipo"><button type="button" class="dv-chip" data-act="ftipo:todos" aria-pressed="${f.tipo==="todos"}">Todos</button>${tipos.map(t=>`<button type="button" class="dv-chip" data-act="ftipo:${J.esc(t)}" aria-pressed="${f.tipo===t}">${J.esc(t)}</button>`).join("")}</div></div>
-    <div class="cf-r"><span class="cf-l">Vara</span><select data-f="vara" aria-label="Filtrar por vara"><option value="todas">Todas as varas (${varas.length})</option>${varas.map(v=>`<option value="${J.esc(v)}"${f.vara===v?" selected":""}>${J.esc(J.bonito(v))}</option>`).join("")}</select><input type="search" data-f="q" placeholder="Buscar pelo número do processo" aria-label="Buscar pelo número" value="${J.esc(f.q)}"></div>
-    <div class="cf-r"><span class="cf-l">Ordem</span><div class="seg" style="margin:0" role="group" aria-label="Ordem"><button type="button" data-act="ford:recentes" aria-pressed="${f.ord==="recentes"}">Mais recentes primeiro</button><button type="button" data-act="ford:parados" aria-pressed="${f.ord==="parados"}">Mais parados primeiro</button></div><button type="button" class="dv-chip" data-act="flimpar">Limpar filtros</button></div>
-  </div>`;
-  let resumo = "";
-  if(!base){
-    const c = {fora:0,atencao:0,arquivado:0}; J.D.proc.forEach(p=>{ const s=J.situacao(p); if(s&&c[s.nivel]!=null) c[s.nivel]++; });
-    resumo = `<div class="kpis" style="grid-template-columns:repeat(auto-fit,minmax(130px,1fr));margin-bottom:14px"><div class="kpi"><b>${J.D.proc.length}</b><span>processos acompanhados</span></div><div class="kpi"><b>${c.fora}</b><span>fora do normal</span></div><div class="kpi"><b>${c.atencao}</b><span>acima do normal</span></div><div class="kpi"><b>${c.arquivado}</b><span>arquivados</span></div></div>`;
-  } else {
-    resumo = `<p class="note2" style="margin-bottom:12px">A base completa mistura, de propósito, processos recentes e parados, de 65 varas do TRF3. Por isso a proporção de “fora do normal” aqui não representa o Judiciário: serve para explorar e testar os filtros.</p>`;
-  }
-  const tabela = vis.length ? `<div class="tblw"><table class="tbl"><thead><tr><th>Processo</th><th>Vara</th><th>Última movimentação</th><th>Termômetro</th></tr></thead><tbody>${vis.map(linhaProc).join("")}</tbody></table></div>` : `<div class="w s12"><div class="cap">Nenhum processo com esses filtros.</div></div>`;
-  return `<div data-tour="casos">${head}${seg}${resumo}${filtros}<p class="cf-n">Mostrando ${J.fmtN(vis.length)} de ${J.fmtN(lista.length)} processos${lista.length!==lista0.length?" (filtrados de "+J.fmtN(lista0.length)+")":""}.</p>${tabela}${lista.length>vis.length?`<button type="button" class="btn btn-line btn-sm maisbtn" data-act="mais">Mostrar mais (${J.fmtN(lista.length-vis.length)} restantes)</button>`:""}</div>`;
-}
-function viewPrazos(){ return `<div class="dm-h"><div><h2>Prazos</h2><p>Informe a publicação e o prazo. O Juriday conta só os dias úteis e mostra a conta, dia a dia.</p></div></div><div data-tour="prazos"><div data-cx-mount></div></div>`; }
-const calcCard = () => `<div class="w s12 cxcard"><div><span class="k">Calculadora de prazos</span><b>Quando vence? Veja a conta, dia a dia.</b><small>Só dias úteis, com feriados nacionais e recesso forense.</small></div><button type="button" class="btn btn-teal btn-sm" data-act="view:prazos">Abrir a calculadora</button></div>`;
-function viewPanorama(){ return `<div class="dm-h"><div><h2>Panorama</h2><p>O que os dados públicos mostram sobre o ritmo dos processos.</p></div></div><div data-tour="panorama"><div data-dv-mount>${J.D.ready?"":'<div class="cap">Carregando…</div>'}</div></div>`; }
-function dProc(num){ return ()=>{
-  const p = J.D.proc.find(x=>x.numeroProcesso===num) || (J.D.amostra||[]).find(x=>x.numeroProcesso===num);
-  if(!p) return shell("Processo","Não encontrado","");
-  const s=J.situacao(p), m=J.ultimoMov(p), nv=J.novidades(p);
-  const seen=new Set(), mov=[...(p.movimentos||[])].sort((a,b)=>new Date(b.dataHora)-new Date(a.dataHora)).filter(x=>{ const k=x.codigo+"|"+x.dataHora; if(seen.has(k)) return false; seen.add(k); return true; }).slice(0,8);
-  const motivo = (s && s.nivel!=="arquivado" && s.parado>=J.LIMITE) ? `<div class="blk"><span class="k">Por que este alerta?</span>${fact("clock",`Última movimentação em <b>${J.fmt(m.dataHora)}</b>: ${J.esc(m.nome)}.`)}${fact("flag",`O limite do alerta é de <b>${J.LIMITE} dias</b> sem movimentação; este processo está há <b>${s.parado}</b>.`)}${fact("search",`Para comparar: em processos de ${J.esc(s.n.nome)}, o normal é até <b>${s.n.p75} dias</b> sem andamento.`)}</div>` : "";
-  const mudou = nv.primeira
-    ? `<div class="blk"><span class="k">O que mudou</span><p class="note2">Esta é a primeira coleta deste processo. Na próxima, o Juriday mostra aqui só o que andou desde esta.</p></div>`
-    : `<div class="blk"><span class="k">O que mudou desde a coleta anterior</span>${nv.novas.length?`<div class="mv">${nv.novas.map(x=>`<div class="m"><span>${J.fmt(x.dataHora)}</span><div>${J.esc(x.nome)}</div></div>`).join("")}</div>`:`<p class="note2">Nada novo.</p>`}</div>`;
-  return shell(J.esc(p.classe?.nome||"Processo"), J.cnj(p.numeroProcesso),
-    `<div class="cap">${J.esc(p.tribunal||"")} · ${J.esc(J.bonito(p.orgaoJulgador?.nome||""))}</div>${J.termo(p)}${rwTeaser(p)}${motivo}${mudou}<div class="blk"><span class="k">Últimas movimentações</span><div class="mv">${mov.map(x=>`<div class="m"><span>${J.fmt(x.dataHora)}</span><div>${J.esc(x.nome)}</div></div>`).join("")}</div></div><p class="note2">Fonte: DataJud (CNJ), dados públicos. O Juriday organiza; quem avalia o caso é o advogado.</p>`,
-    `<button type="button" class="btn btn-navy btn-sm" data-act="close">Fechar</button>`); }; }
-function dCalc(){ return ()=>{ const hoje=new Date(Date.now()-new Date().getTimezoneOffset()*60000).toISOString().slice(0,10);
-  return shell("Calculadora de prazos","Quando vence o prazo?",
-   `<div class="cal"><label>Data da publicação<input id="calcD" type="date" value="${hoje}"></label><label>Prazo, em dias úteis<input id="calcN" type="number" min="1" max="365" value="15"></label><label class="calck"><input id="calcDobro" type="checkbox"> Prazo em dobro</label><div id="calcOut"></div><p class="note2">Conta só dias úteis, sem o dia da publicação (CPC, arts. 219, 220 e 224), com feriados nacionais e recesso forense. Não considera feriados locais nem suspensões de tribunais: confira sempre.</p></div>`,
-   `<button type="button" class="btn btn-teal btn-sm" data-act="calcgo">Calcular</button><button type="button" class="btn btn-line btn-sm" data-act="close">Fechar</button>`); }; }
-
-/* ---------- respostas guiadas (simulação) ---------- */
-const SUGGQ = ["Quais processos estão parados?", "Quando vence uma contestação publicada em 10/11?", "Quais varas são mais lentas?"];
-const SIMNOTA = '<p class="note2">Resposta guiada de demonstração, montada com os dados reais desta página. A IA completa é a próxima etapa do produto.</p>';
-const semAcento = t => String(t).normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
-function dAskGuiado(text){
-  const low = semAcento(text);
-  if(/\b(toda|todo|todas|todos|sempre|me avise|avise|antes de cada)\b/.test(low) || /contrato/.test(low)) return null; // vira rotina
-  const eu = `<div class="bub2 me">${J.esc(text)}</div>`;
-  const resp = (titulo, corpo, foot="") => ()=> shell("Peça ao Juriday", titulo, eu + corpo + SIMNOTA, foot);
-  // 0) posso pegar este caso?
-  if(/pegar|aceitar|caso novo|cabe na minha agenda/.test(low) && /hora|\dh\b|caso/.test(low)){
-    const mh = low.match(/(\d+(?:[,.]\d+)?)\s*(?:h\b|horas?)/); const horas = mh ? Math.min(40, Number(mh[1].replace(",","."))) : 6;
-    const dd = /hoje/.test(low)?0:/amanha/.test(low)?1:/quinta/.test(low)?1:/sexta/.test(low)?2:/segunda/.test(low)?3:/terca/.test(low)?4:1;
-    const A = rtAvalia(horas*60, Math.round(horas*60*1.25), dd);
-    const TT = {cabe:"Cabe na sua agenda", aperta:"Cabe, mas aperta", conflita:"Conflita com a sua agenda"};
-    return resp(TT[A.nivel], `<div class="bub2 ai"><span class="h">${TT[A.nivel]}.</span><p>Um caso de ${rtF(horas*60)} até ${A.dia} pede cerca de ${rtF(A.n50)} (até ${rtF(A.n80)} num dia puxado). Pelos seus tempos de exemplo, você tem ${rtF(A.livre)} livres até lá${A.nivel==="aperta"?`, e faltariam ${rtF(A.n80-A.livre)} num dia puxado`:A.nivel==="conflita"?`, então faltam ${rtF(A.n50-A.livre)}`:""}.</p><p>Ele mostra a capacidade da agenda, não avalia o caso. A decisão de aceitar é sua.</p></div>`, `<button type="button" class="btn btn-teal btn-sm" data-act="view:ritmo">Abrir Seu ritmo</button>`);
-  }
-  // 1) número de processo
-  const dig = String(text).replace(/\D/g,"");
-  const mNum = String(text).match(/\d{7}-?\d{2}\.?\d{4}\.?\d\.?\d{2}\.?\d{4}/);
-  if(mNum || dig.length===20){
-    const num = (mNum ? mNum[0] : dig).replace(/\D/g,"");
-    const p = [...(J.D.proc||[]), ...(J.D.amostra||[])].find(x=>x.numeroProcesso===num);
-    if(p) return dProc(num);
-    return resp("Não encontrei esse processo", `<div class="bub2 ai"><span class="h">Esse número não está entre os processos reais desta demonstração.</span><p>Abra a aba Casos para ver os que estão disponíveis.</p></div>`, `<button type="button" class="btn btn-teal btn-sm" data-act="view:casos">Abrir Casos</button>`);
-  }
-  // 2) prazo
-  if(/prazo|vence|vencimento|contesta|replica|apela|agravo|embargos|manifesta/.test(low)){
-    const m = J.prazosMod();
-    if(!m) return resp("Calculando…", `<div class="bub2 ai"><span class="h">A calculadora ainda está carregando.</span><p>Tente de novo em instantes.</p></div>`);
-    const hoje = new Date(Date.now()-new Date().getTimezoneOffset()*60000);
-    const pad = n => String(n).padStart(2,"0"), isoD = d => d.toISOString().slice(0,10);
-    let pub = isoD(hoje), nota = "Você não informou a data, então usei hoje.";
-    const md = String(text).match(/(\d{1,2})[\/.\-](\d{1,2})(?:[\/.\-](\d{2,4}))?/);
-    if(md){ let a = md[3] ? Number(md[3]) : hoje.getUTCFullYear(); if(a<100) a+=2000; pub = `${a}-${pad(md[2])}-${pad(md[1])}`; nota = ""; }
-    else if(/amanha/.test(low)){ pub = isoD(new Date(hoje.getTime()+86400000)); nota = ""; }
-    else if(/ontem/.test(low)){ pub = isoD(new Date(hoje.getTime()-86400000)); nota = ""; }
-    else if(/\bhoje\b/.test(low)) nota = "";
-    const tipos = [[/contest/,15,"Contestação"],[/replica/,15,"Réplica"],[/apela/,15,"Apelação"],[/agravo/,15,"Agravo de instrumento"],[/embargos/,5,"Embargos de declaração"],[/manifesta/,5,"Manifestação sem prazo fixado"]];
-    const t = tipos.find(x=>x[0].test(low)); const mn = low.match(/(\d{1,3})\s*dias/);
-    let n = mn ? Number(mn[1]) : (t ? t[1] : 15), nome = t ? t[2] : "Prazo", nota2 = (!mn && !t) ? "Você não disse o tipo nem os dias, então usei 15 dias úteis." : "";
-    const dobro = /dobro/.test(low);
-    let r; try { r = m.calcularPrazo({ publicacao: pub, dias: n, dobro, sp: true }); } catch(e){ return resp("Não consegui calcular", `<div class="bub2 ai"><span class="h">${J.esc(e.message)}</span><p>Escreva a data assim: 10/11/2026.</p></div>`); }
-    const exts = iso => new Date(iso+"T00:00:00Z").toLocaleDateString("pt-BR",{weekday:"long",day:"2-digit",month:"2-digit",year:"numeric",timeZone:"UTC"});
-    const cur = iso => new Date(iso+"T00:00:00Z").toLocaleDateString("pt-BR",{timeZone:"UTC"});
-    const fer = r.feriados.map(f=>`${cur(f.data).slice(0,5)} (${J.esc(f.nome)})`);
-    window.__calcPre = { pub, n, dobro };
-    return resp(`Vence em ${exts(r.vencimento)}`, `<div class="bub2 ai"><span class="h">${J.esc(nome)}: vence em ${exts(r.vencimento)}</span><p>${r.totalDiasUteis} dias úteis${dobro?" (prazo em dobro)":""}, a partir da publicação em ${cur(pub)}. A contagem começa em ${cur(r.inicio)}.</p><p>Não contaram: ${r.fimDeSemana} dia${r.fimDeSemana===1?"":"s"} de fim de semana${fer.length?` e ${fer.join(", ")}`:""}${r.recesso?", mais o recesso forense":""}.</p>${[nota,nota2].filter(Boolean).map(x=>`<p class="dv-note">${x}</p>`).join("")}</div>`,
-      `<button type="button" class="btn btn-teal btn-sm" data-act="goprazos">Ver o calendário</button>`);
-  }
-  // 3) varas
-  if(/\bvara|varas\b/.test(low) || /lent|rapid/.test(low)){
-    const A = J.D.A; if(!A) return null;
-    const v = [...A.varas].sort((a,b)=>b.diasAMais-a.diasAMais);
-    const dd = n => (n>0?"+":n<0?"−":"")+J.fmtN(Math.abs(n))+" dias";
-    const lin = L => L.map(x=>`<li><b>${J.esc(J.bonito(x.nome))}</b>: ${dd(x.diasAMais)} em relação ao normal</li>`).join("");
-    return resp("As varas mais lentas e mais rápidas", `<div class="bub2 ai"><span class="h">Entre as ${A.varas.length} varas comparadas</span><p>Mais lentas que o normal para os processos delas:</p><ul class="ask-ul">${lin(v.slice(0,3))}</ul><p>Mais rápidas:</p><ul class="ask-ul">${lin(v.slice(-3).reverse())}</ul><p class="dv-note">É um indício, não um veredito.</p></div>`,
-      `<button type="button" class="btn btn-teal btn-sm" data-act="view:panorama">Abrir o Panorama</button>`);
-  }
-  // 4) quanto tempo é normal
-  if(/normal|quantos dias|costuma|demora/.test(low) && !/parad/.test(low)){
-    const A = J.D.A; if(!A) return null;
-    const t = A.tipos.find(x=>low.includes(semAcento(x.nome).split(" ")[0]));
-    const L = t ? [t] : A.tipos;
-    return resp("Quantos dias sem andamento é normal", `<div class="bub2 ai"><span class="h">${t?J.esc(t.nome):"Por tipo de processo"}</span><ul class="ask-ul">${L.map(x=>`<li><b>${J.esc(x.nome)}</b>: normal até ${x.p75} dias; fora do normal acima de ${x.p90} dias</li>`).join("")}</ul></div>`,
-      `<button type="button" class="btn btn-teal btn-sm" data-act="view:panorama">Ver no Panorama</button>`);
-  }
-  // 5) parados / sem andamento
-  if(/parad|sem andamento|sem movimenta|atrasad|travad/.test(low)){
-    if(!J.D.ready) return null;
-    const L = stalled(5);
-    if(!L.length) return resp("Nenhum processo parado", `<div class="bub2 ai"><span class="h">Nenhum processo da carteira está acima do normal agora.</span></div>`);
-    const rows = L.map(p=>{ const s=J.situacao(p); return `<button type="button" class="ask-row" data-act="proc:${p.numeroProcesso}"><span><b class="nw">${J.cnj(p.numeroProcesso)}</b><small>${J.esc(p.classe?.nome||"")} · parado há ${s.parado} dias</small></span>${J.pill(p)}</button>`; }).join("");
-    return resp("Processos parados", `<div class="bub2 ai"><span class="h">Estes são os mais parados da sua carteira</span><p>Comparados com o normal do tipo de processo de cada um. Toque para ver o motivo.</p></div><div class="ask-rows">${rows}</div>`,
-      `<button type="button" class="btn btn-teal btn-sm" data-act="view:casos">Ver todos em Casos</button>`);
-  }
-  return null;
-}
-
-
-/* ---------- Volte no tempo ---------- */
-const RW = { num:null, off:0, t:null };
-const rwBR = n => { const i=J.isoDia(n); return i.slice(8,10)+"/"+i.slice(5,7)+"/"+i.slice(0,4); };
-const rwPl = (n,u) => n+" "+u+(n===1?"":"s");
-function rwTeaser(p){ const g = J.pausa(p); if(!g) return "";
-  return `<div class="blk rw-tz"><span class="k">Volte no tempo</span><p class="note2">${g.aberta?`Este processo está há <b>${g.dias} dias</b> sem andamento, acima do normal.`:`Este processo ficou <b>${g.dias} dias</b> sem andamento, acima do normal.`} Veja em que dia o Juriday teria avisado.</p><button type="button" class="btn btn-teal btn-sm" data-act="replay:${J.esc(p.numeroProcesso)}">Volte no tempo</button></div>`; }
-function rwFind(num){ return J.D.proc.find(x=>x.numeroProcesso===num) || (J.D.amostra||[]).find(x=>x.numeroProcesso===num); }
-function rwGeo(g){ const ws=g.ini-15, we=g.aberta?g.hoje:Math.min(g.fim+15,g.hoje), tot=Math.max(we-ws,1); return { ws, we, tot, a1:g.ini+g.n.p75+1, a2:g.ini+g.n.p90+1 }; }
-function rwConta(g,t){ let last=null; for(const d of g.ds){ const n=J.diaN(d); if(n<=t) last=n; else break; } return last===null?0:t-last; }
-function rwNivel(g,c){ return c>g.n.p90?"fora":c>g.n.p75?"atencao":"ok"; }
-function dReplay(num){ return ()=>{
-  const p = rwFind(num), g = p && J.pausa(p);
-  if(!g) return dProc(num)();
-  if(RW.num!==num){ RW.num=num; RW.off=0; }
-  const G = rwGeo(g), pc = n => Math.min(100,Math.max(0,(n-G.ws)/G.tot*100)), fimG = g.aberta?G.we:g.fim;
-  const o1=pc(g.ini), o2=pc(Math.min(g.ini+g.n.p75,fimG)), o3=pc(Math.min(g.ini+g.n.p90,fimG)), o4=pc(fimG);
-  const grad = `linear-gradient(90deg,#D3DBE6 0 ${o1}%,#00968A ${o1}% ${o2}%,#E3A857 ${o2}% ${o3}%,#C2672A ${o3}% ${o4}%,#D3DBE6 ${o4}% 100%)`;
-  const dots = g.ds.map(J.diaN).filter(n=>n>=G.ws&&n<=G.we).map(n=>`<i class="rw-d" style="left:${pc(n)}%"></i>`).join("");
-  const cl = v => Math.min(92,Math.max(8,v));
-  const alvo = Math.min(G.a1, G.we);
-  const res = g.aberta
-    ? `O processo passou de ${g.n.p75} dias sem andamento em <b>${rwBR(G.a1)}</b>. Nesse dia o Juriday teria avisado. Hoje ele segue parado há <b>${rwPl(g.dias,"dia")}</b>.`
-    : `O processo passou de ${g.n.p75} dias sem andamento em <b>${rwBR(G.a1)}</b>. O Juriday teria avisado nesse dia, <b>${rwPl(g.fim-G.a1,"dia")}</b> antes do andamento seguinte, em ${rwBR(g.fim)}.`;
-  const body = `<div class="cap">${J.esc(p.tribunal||"")} · ${J.esc(J.bonito(p.orgaoJulgador?.nome||""))} · ${J.esc(g.n.nome)}</div>
-    <div class="rw">
-      <div class="rw-top"><div class="rw-big"><b id="rwN">0</b><span>dias sem andamento</span></div><div class="rw-date"><small>Data</small><b id="rwD"></b></div></div>
-      <p class="rw-s" id="rwS"></p>
-      <div class="rw-wrap">
-        <span class="rw-flag" style="left:${cl(pc(alvo))}%"><b>aviso</b></span>
-        <div class="rw-bar" style="background:${grad}">${dots}</div>
-        <input type="range" id="rwSl" min="0" max="${G.tot}" value="${RW.off}" aria-label="Escolha o dia" aria-describedby="rwS">
-        <span class="rw-lb l" style="left:${pc(g.ini)}%">último andamento<br>${rwBR(g.ini)}</span>
-        ${g.aberta?`<span class="rw-lb r" style="left:100%">hoje<br>${rwBR(g.hoje)}</span>`:`<span class="rw-lb r" style="left:${pc(g.fim)}%">próximo andamento<br>${rwBR(g.fim)}</span>`}
-      </div>
-      <div class="rw-leg"><span><i style="background:#00968A"></i>normal (até ${g.n.p75} dias)</span><span><i style="background:#E3A857"></i>acima do normal</span><span><i style="background:#C2672A"></i>fora do normal (mais de ${g.n.p90} dias)</span><span><i class="dot"></i>andamentos</span></div>
-      <div class="rw-btns"><button type="button" class="btn btn-teal btn-sm" data-act="rwplay" id="rwPlay">Reproduzir</button><button type="button" class="btn btn-line btn-sm" data-act="rwgo">Ir para o aviso</button></div>
-      <div class="rw-res"><span class="k">O que o Juriday teria feito</span><p>${res}</p></div>
-    </div>
-    <p class="note2">Reconstrução com dados públicos do DataJud (CNJ), usando o normal do tipo de processo. Não indica que alguém perderia prazo. O Juriday organiza; quem avalia o caso é o advogado.</p>`;
-  setTimeout(()=>rwUpd(RW.off),0);
-  return shell("Volte no tempo", J.cnj(p.numeroProcesso), body, `<button type="button" class="btn btn-line btn-sm" data-act="proc:${J.esc(num)}">Voltar ao processo</button><button type="button" class="btn btn-navy btn-sm" data-act="close">Fechar</button>`); }; }
-function rwUpd(off){
-  const sl=document.getElementById("rwSl"); if(!sl) return; const p=rwFind(RW.num), g=p&&J.pausa(p); if(!g) return;
-  RW.off=off; const G=rwGeo(g), t=G.ws+off, c=rwConta(g,t), nv=rwNivel(g,c);
-  document.getElementById("rwN").textContent=c; document.getElementById("rwD").textContent=rwBR(t);
-  const S_=document.getElementById("rwS"); S_.className="rw-s n-"+nv;
-  S_.innerHTML = nv==="ok" ? `Dentro do normal para ${J.esc(g.n.nome)} (até ${g.n.p75} dias sem andamento).`
-    : nv==="atencao" ? `<b>Acima do normal.</b> A partir daqui o Juriday avisa.`
-    : `<b>Fora do normal</b> (mais de ${g.n.p90} dias). O processo subiria para o topo do painel do dia.`;
-  sl.value=off;
-}
-document.addEventListener("input", e=>{ if(e.target && e.target.id==="rwSl") { rwStop(); rwUpd(+e.target.value); } });
-function rwStop(){ if(RW.t){ clearInterval(RW.t); RW.t=null; } const b=document.getElementById("rwPlay"); if(b) b.textContent="Reproduzir"; }
-function rwGo(){ rwStop(); const p=rwFind(RW.num), g=p&&J.pausa(p); if(!g) return; const G=rwGeo(g); rwUpd(Math.min(G.a1,G.we)-G.ws); }
-function rwPlay(){
-  if(RW.t) return rwStop();
-  const p=rwFind(RW.num), g=p&&J.pausa(p); if(!g) return; const G=rwGeo(g);
-  if(RW.off>=G.tot-1) rwUpd(0);
-  const b=document.getElementById("rwPlay"); if(b) b.textContent="Pausar";
-  const step=Math.max(1,Math.ceil(G.tot/110));
-  RW.t=setInterval(()=>{ const sl=document.getElementById("rwSl"); if(!sl){ rwStop(); return; } const n=Math.min(G.tot,RW.off+step); rwUpd(n); if(n>=G.tot) rwStop(); },45);
-}
-async function rwEscolher(){
-  await J.load(); let L=J.D.proc.filter(x=>J.pausa(x)&&!J.pausa(x).aberta);
-  if(!L.length){ const A=await J.amostra(); L=A.filter(x=>{ const g=J.pausa(x); return g&&!g.aberta&&g.dias>=120&&g.dias<=260&&g.fim>=J.diaN("2026-01-01"); }); }
-  if(!L.length) L=J.D.proc.filter(x=>J.pausa(x));
-  return L.length?L[0].numeroProcesso:null;
-}
-
-/* ---------- Seu ritmo (tempos aprendidos, agenda do dia, posso pegar este caso?) ---------- */
-const RT = {
-  acts: [
-    { id:"cont", nome:"Contestação", est:180, hist:[170,190,200,180,210,175,230] },
-    { id:"manif", nome:"Manifestação sobre laudo", est:90, hist:[80,95,90,100,85] },
-    { id:"rec", nome:"Recurso", est:240, hist:[200,230,250,210,240] },
-    { id:"pet", nome:"Petição inicial", est:210, hist:[200,220,240,210,260,230] },
-    { id:"rev", nome:"Revisão de contrato", est:90, hist:[75,90,100,85,110,95] },
-    { id:"par", nome:"Parecer", est:120, hist:[130,140] },
-    { id:"ctr", nome:"Contrato (redação)", est:210, hist:[] },
-    { id:"rep", nome:"Repasse de caso", est:40, hist:[30,40,35,45,38,30] },
-    { id:"cli", nome:"Atualização ao cliente", est:25, hist:[20,25,30,22,25] },
-    { id:"reu", nome:"Reunião com cliente", est:60, hist:[60,75,50,60,90,55] }
-  ],
-  tasks: [ {id:1,act:"cont",cli:"Construtora Alfa",u:0}, {id:2,act:"manif",cli:"Família Duarte",u:0}, {id:3,act:"rec",cli:"Mercado Sol",u:1}, {id:4,act:"rev",cli:"Grupo Beta",u:2} ],
-  nid: 5, msg: "", flash: null, priv:{tempos:false,agenda:false}, tm:{run:false,acc:0,t0:0,act:null,acel:false},
-  sim: { tpl:"def", dia:2, fee:"" }
-};
-const RT_WIN = [540,1080], RT_FIX = [ {t:"Reunião · Grupo Beta",s:600,e:660}, {t:"Reunião · revisão da carteira com o sócio",s:900,e:960} ], RT_LUNCH = [750,810], RT_CAP = 450;
-const RT_U = ["Prazo hoje","Prazo amanhã","Esta semana","Sem prazo"];
-const RT_DIAS = [ {n:"Hoje (qua)",carga:null}, {n:"Qui",carga:300}, {n:"Sex",carga:210}, {n:"Seg",carga:390}, {n:"Ter",carga:180} ];
-const RT_TPL = { def:{n:"Defesa em ação nova",a:["cont","reu","cli"]}, cob:{n:"Cobrança: petição inicial",a:["pet","cli"]}, rec:{n:"Recurso",a:["rec"]}, par:{n:"Parecer",a:["par","cli"]}, ctr:{n:"Contrato para revisar",a:["rev","cli"]} };
-const rtAct = id => RT.acts.find(a=>a.id===id);
-const rtObs = a => a.hist.length>=5 ? a.hist : [a.est,a.est,...a.hist];
-const rtPerc = (v,q) => { const s=[...v].sort((x,y)=>x-y); return s[Math.min(s.length-1,Math.floor(q*s.length))]; };
-const rtTyp = id => rtPerc(rtObs(rtAct(id)),.5);
-const rtPux = id => rtPerc(rtObs(rtAct(id)),.8);
-const rtF = m => m<60 ? m+" min" : (m%60 ? Math.floor(m/60)+"h"+String(m%60).padStart(2,"0") : Math.floor(m/60)+"h");
-const rtH = m => { const t=Math.floor(m/60), r=m%60; return t+"h"+(r?String(r).padStart(2,"0"):""); };
-const rtBase = a => a.hist.length>=5 ? `aprendido de ${a.hist.length} tarefas` : a.hist.length ? `sua estimativa + ${a.hist.length} registro${a.hist.length>1?"s":""}` : "sua estimativa";
-
-
-const rtElapsed = () => RT.tm.acc + (RT.tm.run ? Date.now()-RT.tm.t0 : 0);
-function rtClock(){ const f=RT.tm.acel?300:1; const s=Math.floor(rtElapsed()/1000*(RT.tm.acel?300:1)); const h=Math.floor(s/3600), m=Math.floor(s%3600/60), x=s%60; return [h,m,x].map(n=>String(n).padStart(2,"0")).join(":"); }
-setInterval(()=>{ const el=document.getElementById("rtTmV"); if(el && RT.tm.run) el.textContent=rtClock(); },250);
-function rtRegistra(id,m){ const a=rtAct(id), antes=rtTyp(id); a.hist.push(m); const dep=rtTyp(id); RT.regA=id; RT.flash=id;
-  RT.msg = `${a.nome} (${rtF(m)} registrados): o tempo típico ${dep===antes?`continua em ${rtF(dep)}`:`passou de ${rtF(antes)} para ${rtF(dep)}`} (${rtBase(a)}).`;
-  rtTempos(); rtDia(); rtSimR(); setTimeout(()=>{ RT.flash=null; },1200); }
-function rtPlan(){
-  const bl=[...RT_FIX.map(f=>[f.s,f.e]),RT_LUNCH].sort((a,b)=>a[0]-b[0]); let cur=RT_WIN[0]; const free=[];
-  for(const [s,e] of bl){ if(s>cur) free.push({a:cur,b:s}); cur=Math.max(cur,e); } if(cur<RT_WIN[1]) free.push({a:cur,b:RT_WIN[1]});
-  const livreTotal = free.reduce((x,f)=>x+f.b-f.a,0);
-  const T=[...RT.tasks].sort((x,y)=>x.u-y.u || rtTyp(y.act)-rtTyp(x.act));
-  const blocks=[], fica=[]; let falta=0;
-  for(const t of T){
-    const need=rtTyp(t.act); const tot=free.reduce((x,f)=>x+Math.max(0,f.b-f.a),0);
-    const i=free.findIndex(f=>f.b-f.a>=need);
-    if(i>=0){ const f=free[i]; blocks.push({t,s:f.a,e:f.a+need,n:1}); f.a+=need; continue; }
-    if(t.u>0 && tot<need){ fica.push(t); continue; }
-    const ord=free.map((f,k)=>k); let rest=need; const parts=[];
-    for(const k of ord){ const f=free[k], len=f.b-f.a; if(len<30) continue; const take=Math.min(len,rest); parts.push([f.a,f.a+take]); f.a+=take; rest-=take; if(rest<=0) break; }
-    parts.sort((p,q)=>p[0]-q[0]); parts.forEach((p,j)=>blocks.push({t,s:p[0],e:p[1],n:parts.length,j:j+1}));
-    if(rest>0){ falta+=rest; t.__falta=rest; } else t.__falta=0;
-  }
-  const feito = blocks.reduce((x,b)=>x+b.e-b.s,0), reun = RT_FIX.reduce((x,f)=>x+f.e-f.s,0);
-  const sobra = free.reduce((x,f)=>x+Math.max(0,f.b-f.a),0);
-  return { blocks, fica, falta, feito, reun, sobra, free, livreTotal };
-}
-function rtRowsDia(P,ro){
-  const itens=[ ...RT_FIX.map(f=>({s:f.s,e:f.e,k:"fix",t:f.t})), {s:RT_LUNCH[0],e:RT_LUNCH[1],k:"alm",t:"Almoço"}, ...P.blocks.map(b=>({s:b.s,e:b.e,k:"tar",b})), ...P.free.filter(f=>f.b-f.a>=15).map(f=>({s:f.a,e:f.b,k:"liv",t:"Livre"})) ].sort((x,y)=>x.s-y.s);
-  const hh = m => String(Math.floor(m/60)).padStart(2,"0")+"h"+(m%60?String(m%60).padStart(2,"0"):"");
-  return itens.map(it=>{
-    const hora=`<span class="rt-h">${hh(it.s)}–${hh(it.e)}</span>`;
-    if(it.k==="tar"){ const b=it.b, a=rtAct(b.t.act), why = b.t.u===0?"vence hoje":b.t.u===1?"vence amanhã e havia espaço, então adiantei":b.t.u===2?"é desta semana e havia espaço":"sem prazo, encaixei no que sobrou";
-      return `<div class="rt-r tar u${b.t.u}">${hora}<div><b>${esc(a.nome)}</b> · ${esc(b.t.cli||"")}<small>${b.n>1?`bloco ${b.j} de ${b.n} · `:""}${esc(why)} · tempo típico ${rtF(rtTyp(b.t.act))}, até ${rtF(rtPux(b.t.act))} num dia puxado</small></div>${ro?"":`<button type="button" class="rt-x" data-rt="rm:${b.t.id}" aria-label="Tirar ${esc(a.nome)} do dia">Tirar</button>`}</div>`; }
-    if(it.k==="fix") return `<div class="rt-r fix">${hora}<div><b>${esc(it.t)}</b><small>compromisso fixo</small></div></div>`;
-    if(it.k==="alm") return `<div class="rt-r alm">${hora}<div><small>${it.t}</small></div></div>`;
-    return `<div class="rt-r liv">${hora}<div><small>livre (${rtF(it.e-it.s)})</small></div></div>`;
-  }).join("");
-}
-function rtDia(){
-  const P=rtPlan(), box=document.getElementById("rtDia"); if(!box) return P;
-  const aviso = P.falta>0
-    ? `<div class="rt-warn bad"><b>O dia não fecha.</b> Os prazos de hoje pedem mais tempo do que você tem livre: faltam <b>${rtF(P.falta)}</b>. O Juriday não mexe em prazo sozinho. Você decide se pede ajuda, negocia ou reorganiza.</div>`
-    : P.sobra<60 ? `<div class="rt-warn mid"><b>Dia cheio.</b> Sobra só ${rtF(P.sobra)}. Se uma tarefa passar do tempo típico, o dia estoura.</div>` : "";
-  const fica = P.fica.length ? `<div class="rt-warn mid"><b>Não coube hoje:</b> ${P.fica.map(t=>`${esc(rtAct(t.act).nome)} · ${esc(t.cli||"")} (${RT_U[t.u].toLowerCase()}, ${rtF(rtTyp(t.act))})`).join("; ")}. ${P.fica.some(t=>t.u===1)?"Como o prazo é amanhã, comece cedo amanhã.":""}</div>` : "";
-  box.innerHTML = `<div class="rt-sum"><span><b>${rtF(P.feito)}</b> de trabalho</span><span><b>${rtF(P.reun)}</b> de reuniões</span><span><b>${rtF(P.sobra)}</b> livres</span></div>${aviso}${fica}<div class="rt-list">${rtRowsDia(P)}</div>
-  <div class="rt-add"><span class="k">Adicionar ao dia</span><div class="rt-frm"><select id="rtAddA" aria-label="Atividade">${RT.acts.filter(a=>a.id!=="reu").map(a=>`<option value="${a.id}">${esc(a.nome)}</option>`).join("")}</select><input id="rtAddC" type="text" placeholder="Cliente ou assunto (opcional)" aria-label="Cliente ou assunto"><select id="rtAddU" aria-label="Prazo">${RT_U.map((u,i)=>`<option value="${i}">${u}</option>`).join("")}</select><button type="button" class="btn btn-teal btn-sm" data-rt="add">Adicionar</button></div></div>`;
-  return P;
-}
-function rtTempos(){
-  const box=document.getElementById("rtTempos"); if(!box) return;
-  box.innerHTML = `<div class="rt-t head"><span>Atividade</span><span>Tempo típico</span><span>Dia puxado</span><span>De onde vem</span></div>`
-    + RT.acts.map(a=>`<div class="rt-t${RT.flash===a.id?" fl":""}"><span><b>${esc(a.nome)}</b></span><span><b>${rtF(rtTyp(a.id))}</b></span><span>até ${rtF(rtPux(a.id))}</span><span class="b">${rtBase(a)}</span></div>`).join("")
-    + `<div class="rt-reg"><span class="k">Registrar uma tarefa concluída</span>
-    <div class="rt-frm"><label class="rt-sel">Atividade<select id="rtRegA" aria-label="Atividade"${RT.tm.run||RT.tm.acc?" disabled":""}>${RT.acts.map(a=>`<option value="${a.id}">${esc(a.nome)}</option>`).join("")}</select></label></div>
-    <div class="rt-two">
-      <div class="rt-opt"><b>Cronômetro</b><span class="rt-clock" id="rtTmV" aria-live="off">${rtClock()}</span>
-        <div class="rt-frm">${!RT.tm.run&&!RT.tm.acc?`<button type="button" class="btn btn-teal btn-sm" data-rt="tstart">Iniciar</button>`:RT.tm.run?`<button type="button" class="btn btn-line btn-sm" data-rt="tpause">Pausar</button>`:`<button type="button" class="btn btn-line btn-sm" data-rt="tstart">Continuar</button>`}<button type="button" class="btn btn-teal btn-sm" data-rt="tstop"${RT.tm.acc||RT.tm.run?"":" disabled"}>Parar e registrar</button>${RT.tm.acc||RT.tm.run?`<button type="button" class="rt-x" data-rt="tclear">Descartar</button>`:""}</div>
-        <label class="rt-acc"><input type="checkbox" id="rtAcc"${RT.tm.acel?" checked":""}> Demonstração: acelerar (1 segundo = 5 minutos)</label></div>
-      <div class="rt-opt"><b>Ou digite o tempo</b><label class="rt-rng">Levei <b id="rtRegV">${rtF(Number(RT.regM||120))}</b><input id="rtRegM" type="range" min="5" max="480" step="5" value="${RT.regM||120}"></label>
-        <div class="rt-frm"><button type="button" class="btn btn-teal btn-sm" data-rt="reg">Registrar</button></div></div>
-    </div>
-    <p class="rt-msg" id="rtMsg" role="status">${RT.msg||"Use o cronômetro ou digite o tempo, e veja o tempo típico mudar."}</p></div>`;
-  if(RT.regA) document.getElementById("rtRegA").value=RT.regA;
-}
-function rtSimR(){
-  const box=document.getElementById("rtSimR"); if(!box) return;
-  const P=rtPlan(), S_=RT.sim, tpl=RT_TPL[S_.tpl], n50=tpl.a.reduce((x,id)=>x+rtTyp(id),0), n80=tpl.a.reduce((x,id)=>x+rtPux(id),0);
-  const dias=RT_DIAS.map((d,i)=>({n:d.n,carga:i===0?P.reun+P.feito:d.carga}));
-  const d=Number(S_.dia); let livre=0; dias.forEach((x,i)=>{ if(i<=d) livre+=Math.max(0,RT_CAP-x.carga); });
-  let rest=n50; const aloc=dias.map((x,i)=>{ if(i>d) return 0; const f=Math.max(0,RT_CAP-x.carga), u=Math.min(f,rest); rest-=u; return u; });
-  const nivel = n80<=livre?"cabe":n50<=livre?"aperta":"conflita";
-  const TT={cabe:"Cabe na sua agenda",aperta:"Cabe, mas aperta",conflita:"Conflita com a sua agenda"};
-  const prazoTxt=["hoje","amanhã","sexta","segunda","terça"][d];
-  const mais = dias.reduce((m,x,i)=> i<=d && x.carga>m.carga ? {n:x.n,carga:x.carga} : m, {n:"",carga:0});
-  const motivo = nivel==="cabe" ? `O caso pede cerca de ${rtF(n50)} (até ${rtF(n80)} num dia puxado) e você tem ${rtF(livre)} livres até ${prazoTxt}.`
-    : nivel==="aperta" ? `O caso pede cerca de ${rtF(n50)} e você tem ${rtF(livre)} livres até ${prazoTxt}. Num dia puxado ele pode chegar a ${rtF(n80)}, e faltariam ${rtF(n80-livre)}.`
-    : `O caso pede cerca de ${rtF(n50)}, mas você tem só ${rtF(livre)} livres até ${prazoTxt}. Faltam ${rtF(n50-livre)}.`;
-  const sug = nivel!=="cabe" ? (() => { const L=RT.tasks.filter(t=>t.u>=2); return L.length?`Para abrir espaço, daria para adiar: ${L.map(t=>esc(rtAct(t.act).nome)+" · "+esc(t.cli||"")).join(", ")}. Ou combinar um prazo maior com o cliente.`:`Para caber, seria preciso combinar um prazo maior com o cliente ou pedir ajuda.`; })() : "";
-  const fee=Number(String(S_.fee).replace(/\./g,"").replace(",","."));
-  const feeTxt = fee>0 ? `<p class="rt-fee">Com honorários de <b>R$ ${fee.toLocaleString("pt-BR")}</b>, o caso rende cerca de <b>R$ ${Math.round(fee/(n50/60)).toLocaleString("pt-BR")} por hora</b> trabalhada (no tempo típico).</p>` : "";
-  const ex = rest>0 ? rest : 0;
-  const bars = dias.map((x,i)=>{ const pc=v=>Math.min(100,v/RT_CAP*100); const c=Math.min(RT_CAP,x.carga);
-    return `<div class="rt-wk${i===d?" pz":""}"><span class="l">${x.n}</span><span class="tr"><i class="c" style="width:${pc(c)}%"></i><i class="n" style="width:${pc(aloc[i])}%"></i></span><span class="v">${aloc[i]?`+${rtF(aloc[i])}`:i>d?"depois do prazo":rtF(Math.max(0,RT_CAP-x.carga-aloc[i]))+" livres"}</span></div>`; }).join("");
-  box.innerHTML = `<div class="rt-v ${nivel}"><b>${TT[nivel]}</b><p>${motivo}</p>${sug?`<p>${sug}</p>`:""}</div>${feeTxt}<div class="rt-wks" aria-label="Carga prevista por dia">${bars}</div><div class="rt-lg"><span><i class="c"></i>já previsto (reuniões e tarefas)</span><span><i class="n"></i>este caso</span></div>${ex?`<p class="rt-note">Ficam sem espaço ${rtF(ex)} do caso até o prazo.</p>`:""}<p class="rt-note">O Juriday mostra a capacidade da sua agenda. Ele não avalia o mérito do caso, e a decisão de aceitar é sua.</p>`;
-}
-function viewRitmo(){
-  if(S.role==="socia") return viewRitmoSocia();
-  return `<div class="dm-h"><div><h2>Seu ritmo</h2><p>O Juriday aprende quanto tempo você leva em cada atividade e monta o seu dia com isso.</p></div></div>
-  <p class="rt-ex"><b>Tempos de exemplo.</b> Na demonstração, os tempos são inventados. No uso real, eles começam com a sua estimativa e se ajustam ao que você registra. Só você vê os seus tempos, a menos que libere para o sócio. <button type="button" class="rt-lk" data-view="config">Privacidade</button></p>
-  <div class="rt-grid">
-    <section class="rt-card" aria-labelledby="rt1" data-tour="ritmo"><span class="rt-n">1</span><h3 id="rt1">Seu tempo em cada atividade</h3><p class="rt-p">Quanto você costuma levar, e quanto leva num dia puxado. Registre uma tarefa e veja o número mudar.</p><div id="rtTempos"></div></section>
-    <section class="rt-card" aria-labelledby="rt2"><span class="rt-n">2</span><h3 id="rt2">Seu dia, montado</h3><p class="rt-p">Prazos e reuniões primeiro, o resto no que sobra. Cada bloco diz por que está ali.</p><div id="rtDia"></div></section>
-    <section class="rt-card" aria-labelledby="rt3" data-tour="ritmo-caso"><span class="rt-n">3</span><h3 id="rt3">Posso pegar este caso?</h3><p class="rt-p">Escolha o tipo de caso e o prazo da primeira entrega. O Juriday compara com a sua agenda.</p>
-      <div class="rt-frm sim"><label>Tipo de caso<select id="rtSimT">${Object.entries(RT_TPL).map(([k,v])=>`<option value="${k}">${esc(v.n)}</option>`).join("")}</select></label><label>Prazo da primeira entrega<select id="rtSimD">${["Hoje (qua)","Amanhã (qui)","Sexta","Segunda","Terça"].map((x,i)=>`<option value="${i}">${x}</option>`).join("")}</select></label><label>Honorários (opcional)<input id="rtSimF" type="text" inputmode="numeric" placeholder="R$" autocomplete="off"></label></div>
-      <div id="rtSimR"></div></section>
-  </div>`;
-}
-function rtMount(){
-  rtTempos(); rtDia();
-  const t=document.getElementById("rtSimT"), d=document.getElementById("rtSimD"), f=document.getElementById("rtSimF");
-  if(t){ t.value=RT.sim.tpl; d.value=RT.sim.dia; f.value=RT.sim.fee; }
-  rtSimR();
-}
-document.addEventListener("input", e=>{ const t=e.target; if(!t||!t.id) return;
-  if(t.id==="rtRegM"){ RT.regM=t.value; const v=document.getElementById("rtRegV"); if(v) v.textContent=rtF(Number(t.value)); }
-  if(t.id==="rtSimF"){ RT.sim.fee=t.value; rtSimR(); } });
-document.addEventListener("change", e=>{ const t=e.target; if(!t||!t.id) return;
-  if(t.id==="rtSimT"){ RT.sim.tpl=t.value; rtSimR(); } if(t.id==="rtSimD"){ RT.sim.dia=t.value; rtSimR(); } if(t.id==="rtRegA") RT.regA=t.value; if(t.id==="rtAcc"){ const ms=rtElapsed(); RT.tm.acel=t.checked; if(RT.tm.run){ RT.tm.acc=ms-(Date.now()-RT.tm.t0); } rtTempos(); } });
-document.addEventListener("click", e=>{ const b=e.target.closest("[data-rt]"); if(!b) return; const [k,v]=b.dataset.rt.split(":");
-  if(k==="reg"){ rtRegistra(document.getElementById("rtRegA").value, Number(document.getElementById("rtRegM").value)); }
-  if(k==="tstart"){ if(!RT.tm.run){ RT.tm.act=RT.tm.act||document.getElementById("rtRegA").value; RT.regA=RT.tm.act; RT.tm.t0=Date.now(); RT.tm.run=true; RT.msg="Cronômetro rodando. Quando terminar, toque em “Parar e registrar”."; rtTempos(); } }
-  if(k==="tpause"){ if(RT.tm.run){ RT.tm.acc+=Date.now()-RT.tm.t0; RT.tm.run=false; RT.msg="Cronômetro pausado."; rtTempos(); } }
-  if(k==="tclear"){ RT.tm={run:false,acc:0,t0:0,act:null,acel:RT.tm.acel}; RT.msg="Cronômetro descartado. Nada foi registrado."; rtTempos(); }
-  if(k==="tstop"){ const ms=rtElapsed(), f=RT.tm.acel?300:1, id=RT.tm.act||document.getElementById("rtRegA").value; const m=Math.max(1,Math.round(ms/60000*f)); RT.tm={run:false,acc:0,t0:0,act:null,acel:RT.tm.acel}; rtRegistra(id,m); }
-  if(k==="add"){ const act=document.getElementById("rtAddA").value, cli=document.getElementById("rtAddC").value.trim(), u=Number(document.getElementById("rtAddU").value); RT.tasks.push({id:RT.nid++,act,cli:cli||"sem cliente",u}); rtDia(); rtSimR(); }
-  if(k==="rm"){ RT.tasks=RT.tasks.filter(t=>t.id!==Number(v)); rtDia(); rtSimR(); } });
-
-function rtAvalia(n50,n80,d){
-  const P=rtPlan(); const dias=RT_DIAS.map((x,i)=>({n:x.n,carga:i===0?P.reun+P.feito:x.carga}));
-  let livre=0; dias.forEach((x,i)=>{ if(i<=d) livre+=Math.max(0,RT_CAP-x.carga); });
-  const nivel = n80<=livre?"cabe":n50<=livre?"aperta":"conflita";
-  return {nivel,livre,n50,n80,dia:["hoje","amanhã (quinta)","sexta","segunda","terça"][d]};
-}
-
-function rtSw(id,on,t,d){ return `<label class="rt-sw"><input type="checkbox" role="switch" id="${id}"${on?" checked":""}><span class="rt-tg" aria-hidden="true"></span><span class="rt-st"><b>${t}</b><small>${d}</small></span></label>`; }
-function viewConfig(){
-  if(S.role==="socia") return `<div class="dm-h"><div><h2>Configurações</h2><p>Privacidade e compartilhamento.</p></div></div>
-  <section class="rt-card"><h3>Quem escolhe é cada advogado</h3><p class="rt-p">Os tempos de trabalho e a agenda pessoal só aparecem para você quando o advogado libera. Para ver as configurações da Ana, troque para a função Associada.</p><div class="rt-frm"><button type="button" class="btn btn-teal btn-sm" data-rt="vana">Ver como a Ana</button></div></section>`;
-  const p=RT.priv, st = p.tempos||p.agenda ? `Hoje, a sócia vê: ${[p.tempos?"seus tempos de trabalho":"",p.agenda?"a sua agenda do dia":""].filter(Boolean).join(" e ")}.` : "Hoje, só você vê o seu ritmo.";
-  return `<div class="dm-h"><div><h2>Configurações</h2><p>Privacidade: você escolhe o que os colegas veem.</p></div></div>
-  <section class="rt-card"><h3>Quem vê o seu ritmo</h3><p class="rt-p">Tudo começa desligado. Você pode mudar quando quiser.</p>
-    ${rtSw("rtP1",p.tempos,"Mostrar meus tempos de trabalho à sócia","O tempo típico e o “dia puxado” de cada atividade. Desligado, só você vê.")}
-    ${rtSw("rtP2",p.agenda,"Mostrar a minha agenda do dia à sócia","Os blocos do seu dia, montados a partir do seu ritmo. Desligado, só você vê.")}
-    <p class="rt-msg" role="status"><b>${st}</b></p>
-    <div class="rt-frm"><button type="button" class="btn btn-teal btn-sm" data-rt="vsocia">Ver como a sócia</button></div>
-    <p class="rt-note">A carga da equipe (casos e tarefas por pessoa) continua aparecendo para a sócia no Hoje dela, porque faz parte da função. Na demonstração, estas escolhas valem só nesta tela.</p></section>`;
-}
-function viewRitmoSocia(){
-  const p=RT.priv, ana = RT.acts.map(a=>`<div class="rt-t"><span><b>${esc(a.nome)}</b></span><span><b>${rtF(rtTyp(a.id))}</b></span><span>até ${rtF(rtPux(a.id))}</span><span class="b">${rtBase(a)}</span></div>`).join("");
-  const tempos = p.tempos ? `<div class="rt-t head"><span>Atividade</span><span>Tempo típico</span><span>Dia puxado</span><span>De onde vem</span></div>${ana}<p class="rt-note">Você vê porque a Ana liberou. Ela pode desligar quando quiser. Tempos de exemplo.</p>`
-    : `<div class="rt-lock"><b>A Ana ainda não liberou os tempos dela.</b><p>Cada advogado escolhe se mostra o próprio ritmo. Quando ela liberar, os tempos aparecem aqui.</p></div>`;
-  const agenda = p.agenda ? `<div class="rt-list">${rtRowsDia(rtPlan(),true)}</div>` : `<div class="rt-lock"><b>A agenda do dia da Ana não está compartilhada.</b><p>Ela pode liberar em Configurações.</p></div>`;
-  return `<div class="dm-h"><div><h2>Seu ritmo</h2><p>O ritmo de trabalho dos advogados da equipe, só do que eles liberaram.</p></div></div>
-  <div class="rt-grid"><section class="rt-card"><span class="rt-n">A</span><h3>Ana · tempos de trabalho</h3><p class="rt-p">Quanto tempo ela costuma levar em cada atividade.</p>${tempos}</section>
-  <section class="rt-card"><span class="rt-n">A</span><h3>Ana · agenda do dia</h3><p class="rt-p">O dia dela, montado a partir do ritmo.</p>${agenda}</section></div>
-  <div class="rt-frm" style="margin-top:12px"><button type="button" class="btn btn-line btn-sm" data-rt="vana">Voltar para a função Associada</button></div>`;
-}
-document.addEventListener("change", e=>{ const t=e.target; if(!t||!t.id) return;
-  if(t.id==="rtP1"){ RT.priv.tempos=t.checked; render(); } if(t.id==="rtP2"){ RT.priv.agenda=t.checked; render(); } });
-document.addEventListener("click", e=>{ const b=e.target.closest("[data-rt]"); if(!b) return; const k=b.dataset.rt;
-  if(k==="vsocia"){ S.role="socia"; S.view="ritmo"; render(); } if(k==="vana"){ S.role="associada"; S.view="config"; render(); } });
-
-/* ---------- render ---------- */
-function render(){
-  $("#roles").innerHTML = Object.entries(ROLES).map(([k,v])=>`<button type="button" data-role="${k}" aria-pressed="${k===S.role}">${v.label}</button>`).join("");
-  document.querySelectorAll("#dm [data-view]").forEach(b=>b.setAttribute("aria-current", b.dataset.view===S.view?"page":"false"));
-  const lbl = S.role==="interno"?"Demandas":"Casos"; $("#casosLbl").textContent=lbl; $("#casosLbl2").textContent=lbl;
-  $("#pedCt").textContent = S.ped[S.role].filter(p=>p.on).length;
-  $("#whoBox").innerHTML = `<b>${ROLES[S.role].name}</b>${ROLES[S.role].sub}<button type="button" class="rt-cfg" data-view="config">Configurações</button>`;
-  $("#anonB").setAttribute("aria-pressed", anon); $("#anonBar").hidden = !anon;
-  $("#dmMain").innerHTML = S.view==="config"?viewConfig():S.view==="ritmo"?viewRitmo():S.view==="hoje"?viewHoje():S.view==="casos"?viewCasos():S.view==="panorama"?viewPanorama():S.view==="prazos"?viewPrazos():viewPedidos();
-  if(S.view==="ritmo") rtMount();
-  if(S.view==="prazos") J.calcMount($("#dmMain [data-cx-mount]"));
-  { const COMO = {ritmoS:"Você só vê o que cada advogado liberou em Configurações. Ligue as opções na função Associada e volte para ver a diferença.", config:"Escolha o que os colegas veem do seu ritmo. Tudo começa desligado, e só você vê. Ligue uma opção e use “Ver como a sócia” para ver o efeito.", ritmo:"Os tempos abaixo são de exemplo. Registre uma tarefa (com o cronômetro ou digitando) para ver o tempo típico mudar, adicione ou tire tarefas do dia, e teste o “Posso pegar este caso?” com outro prazo.", hoje:"Seu dia montado para a função escolhida lá em cima. Toque num alerta para ver por que ele apareceu. Na barra “Peça ao Juriday”, tire uma dúvida ou crie uma rotina.",
-      casos:"Processos reais do TRF3. A etiqueta mostra se o tempo sem andamento está dentro do normal para aquele tipo de processo. Filtre por situação, vara ou número e toque num processo para ver o motivo. Nos que tiveram uma pausa longa, use o botão “Volte no tempo”.",
-      prazos:"Escolha o tipo de prazo (ou digite os dias), informe a data da publicação e veja quando vence. Toque em qualquer dia do calendário para ver por que ele contou, ou não.",
-      panorama:"O que os dados públicos mostram: quantos dias sem andamento são normais em cada tipo de processo e quais varas levam mais dias que o normal. Veja em lista ou no mapa. É um indício, não um veredito."};
-    const hd = $("#dmMain .dm-h"); const ck = S.view==="ritmo"&&S.role==="socia"?"ritmoS":S.view; if(hd && COMO[ck]) hd.insertAdjacentHTML("afterend", `<p class="how"><b>Como ler:</b> ${COMO[ck]}</p>`); }
-  if(S.foco==="q"){ const iq=$("#dmMain input[data-f=q]"); if(iq){ iq.focus(); iq.setSelectionRange(iq.value.length,iq.value.length); } S.foco=null; }
-  if(S.view==="panorama"){ const mt=$("#dmMain [data-dv-mount]"); if(mt && J.D.ready) J.mount(mt); }
-  if(drawerFn) $("#drawer").innerHTML = drawerFn();
-}
-
-/* ---------- gaveta lateral ---------- */
-let drawerFn = null;
-function openDrawer(fn){ drawerFn = fn; $("#drawer").innerHTML = fn(); const x=$("#drawer .dr-x"); if(x) x.focus({preventScroll:true}); }
-function closeDrawer(){ drawerFn = null; $("#drawer").innerHTML = ""; }
-const shell = (k,h,body,foot="") => `<div class="dr-bg" data-act="close"></div><div class="dr" role="dialog" aria-label="${esc(h)}"><div class="dr-h"><div><span class="k">${k}</span><h3>${h}</h3></div><button type="button" class="dm-x dr-x" data-act="close" aria-label="Fechar"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 2l10 10M12 2L2 12" stroke="#0C2340" stroke-width="2" stroke-linecap="round"/></svg></button></div><div class="dr-b">${body}</div>${foot?`<div class="dr-f">${foot}</div>`:""}</div>`;
-const fact = (ic,txt) => `<div class="fact"><span class="si">${IC[ic]}</span><div>${txt}</div></div>`;
-
-function dCase(id){ const c=C(id); return ()=> shell(c.type, T(c.client),
-  `${c.num?`<div class="cap">${T(c.num)} · responsável: ${c.owner}</div>`:`<div class="cap">Responsável: ${c.owner}</div>`}
-   <div class="tl2">${c.phases.map(p=> p.fut ? `<div class="ph fut"><div class="sm"><span class="nd">${IC[p.ic]}</span><span class="tt"><b>${p.t}</b><small>${p.s}</small></span></div></div>`
-     : `<details class="ph ${p.now?"now":"done"}"${p.now?" open":""}><summary><span class="nd">${IC[p.ic]}</span><span class="tt"><b>${p.t}${p.now?" · fase atual":""}</b><small>${T(p.s)}</small></span><span class="chev"></span></summary><div class="docs">${p.d.map(x=>`<span class="doc">${x}</span>`).join("")}</div></details>`).join("")}</div>`,
-  `<button type="button" class="btn btn-navy btn-sm" data-act="close">Fechar</button>`); }
-
-const WHY = {
- lima:{k:"Por que este alerta?", h:"Lima Transportes parado há 34 dias", rule:"parados", facts:[["clock","Última movimentação em <b>3/9</b>: juntada dos quesitos."],["doc","Falta do cliente: <b>procuração atualizada</b>, pedida por e-mail em 3/9 e cobrada em 30/9."],["flag","Próximo passo do processo depende do laudo, previsto para <b>20/10</b>."]], acts:[["case:lima","Ver linha do tempo"],["draft:lima","Rascunho para o cliente"]]},
- carga:{k:"Por que este alerta?", h:"Carla passou de 15 tarefas", rule:"carga", facts:[["clock","Carla tem <b>18 tarefas abertas</b>; a média da equipe é 12."],["doc","4 delas vencem até sexta, incluindo o retorno do Hotel Mirante."],["check","Bruno tem <b>7 tarefas</b> e espaço para receber demandas."]], acts:[["case:mirante","Ver caso do Hotel Mirante"]], note:"O Juriday mostra os números. Redistribuir ou não é decisão sua."},
- ti:{k:"Por que este alerta?", h:"Contrato de TI vence em 10 dias", rule:"contratos", facts:[["clock","Término do contrato com Nuvem Tech: <b>17/10</b>."],["doc","Nenhuma minuta de renovação foi enviada pela área de <b>Compras</b>."],["flag","Sem renovação, o serviço de TI fica sem cobertura contratual."]], acts:[["view:casos","Ver demandas"]]}
-};
-function dWhy(id){ const w=WHY[id]; return ()=> shell(w.k, T(w.h),
-  `<div class="blk"><span class="k">Gerado pela regra</span><div class="rule">Você pediu: <q>“${esc(R(w.rule).q)}”</q></div></div>
-   <div class="blk"><span class="k">De onde veio a informação</span>${w.facts.map(([i,t])=>fact(i,T(t).replace(/&lt;(\/?)b&gt;/g,"<$1b>"))).join("")}</div>${w.note?`<p class="note2">${w.note}</p>`:""}`,
-  w.acts.map(([a,l],i)=>`<button type="button" class="btn ${i?"btn-line":"btn-navy"} btn-sm" data-act="${a}">${l}</button>`).join("")); }
-
-function dResumo(){ return shell("Resumo pré-reunião · pronto às 9h", "10h · "+T("Grupo Beta"),
-  `<div class="cap">${T("Aquisição da Fábrica Norte")} · contato: ${T("Fernanda Reis")}</div>
-   <div class="stp"><div class="d"><span></span>Due diligence</div><div class="c"><span></span>Minuta</div><div><span></span>Assinatura</div></div>
-   <div class="blk"><span class="k">Status</span><p>Due diligence concluída. Minuta do contrato em negociação (versão 4).</p></div>
-   <div class="blk"><span class="k">Fatos recentes</span>${fact("arrow","Vendedor aceitou o ajuste de preço (2/10).")}${fact("arrow","Vendedor enviou a minuta v4 com comentários (6/10).")}</div>
-   <div class="blk"><span class="k">Decisões já tomadas</span>${fact("check",T("Grupo Beta")+" aprovou a cláusula de não concorrência de 3 anos.")}</div>
-   <div class="blk"><span class="k">O que falta do cliente</span>${fact("bang","Certidões negativas atualizadas · pendente há 6 dias")}${fact("bang","Aprovação do conselho · pendente há 3 dias")}</div>
-   <div class="blk"><span class="k">Sugestão de pauta</span><p>1. Comentários da minuta v4. 2. Prazo das certidões. 3. Data da reunião do conselho.</p></div>`,
-  `<button type="button" class="btn btn-navy btn-sm" data-act="draft:beta">Rascunho de cobrança</button><button type="button" class="btn btn-line btn-sm" data-act="case:beta">Linha do tempo</button>`); }
-
-const DRAFT = {
- beta:{to:"Fernanda Reis · Grupo Beta", subj:"Documentos pendentes para o fechamento", body:"Olá, Fernanda, tudo bem?\n\nPara mantermos a assinatura prevista para 19/10, ainda precisamos de dois itens:\n\n1. Certidões negativas atualizadas do Grupo Beta;\n2. Ata com a aprovação do conselho.\n\nSe preferir, podemos conversar sobre isso na reunião de hoje, às 10h.\n\nUm abraço,\nAna"},
- lima:{to:"Rogério Lima · Lima Transportes", subj:"Atualização do processo e procuração", body:"Olá, Rogério, tudo bem?\n\nO processo está na fase de perícia: o perito aceitou a nomeação, e o laudo está previsto para 20/10.\n\nPara seguirmos sem atraso, ainda precisamos da procuração atualizada, que pedimos em 3/9. Pode nos enviar até sexta?\n\nUm abraço,\nAna"}
-};
-function dDraft(id){ return ()=>{ const d=DRAFT[id]; const st=S.drafts[id]||{};
-  if(st.sent) return shell("Mensagem para o cliente", T(d.subj), `<div class="okmsg">Enviado por você às 11h02. O Juriday preparou o rascunho; você revisou, ajustou e aprovou o envio.</div><p class="note2">Na demonstração, nada é enviado de verdade.</p>`, `<button type="button" class="btn btn-navy btn-sm" data-act="close">Fechar</button>`);
-  return shell("Rascunho do Juriday · você revisa e envia", T(d.subj),
-  `<div class="cap">Para: ${T(d.to)}</div><textarea class="draft" id="draftT" aria-label="Texto da mensagem">${esc(Tplain(st.text||d.body))}</textarea><p class="note2">Linguagem clara, sem juridiquês. Edite o que quiser: o Juriday nunca envia nada sem a sua aprovação.</p>`,
-  `<button type="button" class="btn btn-teal btn-sm" data-act="send:${id}">Aprovar e enviar</button><button type="button" class="btn btn-line btn-sm" data-act="close">Guardar rascunho</button>`); }; }
-
-function dReport(kind){ return ()=> kind==="interno"
-  ? shell("Relatório mensal · pronto para revisar","Jurídico para a diretoria",
-   `<div class="kpis"><div class="kpi"><b>23</b><span>demandas concluídas no mês</span></div><div class="kpi"><b>18</b><span>demandas abertas</span></div><div class="kpi"><b>1</b><span>contrato em risco</span></div></div>
-    <div class="blk"><span class="k">Destaques</span>${fact("check","Política de home office em revisão final com o RH.")}${fact("bang",T("Contrato de TI com Nuvem Tech")+" vence em 10 dias sem minuta de renovação.")}${fact("arrow","Comercial concentra a maior parte dos pedidos: 7 demandas abertas.")}</div>`,
-   `<button type="button" class="btn btn-navy btn-sm" data-act="close">Revisar depois</button>`)
-  : shell("Relatório da carteira · sexta, 16h","Semana de 30/9 a 4/10",
-   `<div class="kpis"><div class="kpi"><b>12</b><span>movimentações</span></div><div class="kpi"><b>5</b><span>pendências abertas</span></div><div class="kpi"><b>3</b><span>vencem na próxima semana</span></div></div>
-    <div class="blk"><span class="k">O que andou</span>${fact("check",T("Grupo Beta")+": vendedor aceitou o ajuste de preço.")}${fact("check",T("Lima Transportes")+": perito aceitou a nomeação.")}</div>
-    <div class="blk"><span class="k">O que travou</span>${fact("bang",T("Lima Transportes")+": procuração do cliente pendente há 34 dias.")}</div>
-    <div class="blk"><span class="k">Vence na próxima semana</span>${fact("clock","Contestação · "+T("Construtora Alfa"))}${fact("clock","Recurso · "+T("Mercado Sol"))}${fact("clock","Certidões do fechamento · "+T("Grupo Beta"))}</div>`,
-   `<button type="button" class="btn btn-navy btn-sm" data-act="close">Revisar depois</button>`); }
-
-function dAsk(text){ const g = dAskGuiado(text); if(g) return g; return ()=>{
-  const low = text.toLowerCase();
-  let best=null, sc=0; REQS.forEach(r=>{ const s=r.kw.filter(k=>low.includes(k)).length; if(s>sc){sc=s;best=r;} });
-  if(!best) return shell("Peça ao Juriday","Ainda não sei montar isso aqui",
-    `<div class="bub2 me">${esc(text)}</div><div class="bub2 ai"><span class="h">Na demonstração, eu entendo pedidos como estes:</span><div class="chipr">${SUGGQ.map((q,i)=>`<button type="button" data-act="askq:${i}">${esc(q)}</button>`).join("")}${SUGG[S.role].map(id=>`<button type="button" data-act="ask:${id}">${esc(R(id).q)}</button>`).join("")}</div></div>`);
-  const has = S.ped[S.role].some(p=>p.id===best.id);
-  return shell("Peça ao Juriday","Este é o plano. Posso montar?",
-    `<div class="bub2 me">${esc(text)}</div><div class="bub2 ai"><span class="h">Entendi: “${esc(best.q)}”</span><ol class="plan">${best.plan.map(p=>`<li>${esc(p)}</li>`).join("")}</ol></div>${has?`<p class="note2">Você já tem essa rotina. Aprovar vai atualizá-la.</p>`:""}<p class="note2">Nada é montado sem o seu ok.</p>`,
-    `<button type="button" class="btn btn-teal btn-sm" data-act="approve:${best.id}">Aprovar</button><button type="button" class="btn btn-line btn-sm" data-act="refine">Ajustar o pedido</button>`); }; }
-
-/* ---------- ações ---------- */
-function toast(msg){ const b=$("#toastBox"); b.innerHTML=`<div class="toast" role="status">${msg}</div>`; clearTimeout(toast.t); toast.t=setTimeout(()=>b.innerHTML="",3200); }
-function act(a, el){
-  const [k,v] = a.split(":");
-  if(k==="close") return closeDrawer();
-  if(k==="case") return openDrawer(dCase(v));
-  if(k==="why") return openDrawer(dWhy(v));
-  if(k==="resumo") return openDrawer(dResumo);
-  if(k==="draft") return openDrawer(dDraft(v));
-  if(k==="report") return openDrawer(dReport(v));
-  if(k==="send"){ const t=$("#draftT"); S.drafts[v]={sent:true,text:t?t.value:""}; openDrawer(dDraft(v)); return; }
-  if(k==="view"){ closeDrawer(); S.view=v; render(); $("#dmMain").scrollTop=0; return; }
-  if(k==="toggle"){ const p=S.ped[S.role][+v]; p.on=!p.on; render(); return; }
-  if(k==="adjust"){ const i=$("#askI"); i.value=R(v).q+" "; i.focus(); toast("Escreva o ajuste no fim do pedido e envie."); return; }
-  if(k==="focusask"){ $("#askI").focus(); showSugg(true); return; }
-  if(k==="ask"){ showSugg(false); openDrawer(dAsk(R(v).q)); return; }
-  if(k==="askq"){ showSugg(false); openDrawer(dAsk(SUGGQ[+v])); return; }
-  if(k==="goprazos"){ closeDrawer(); S.view="prazos"; render(); const m=$("#dmMain"); if(m) m.scrollTop=0; return; }
-  if(k==="replay"){ RW.num=null; return openDrawer(dReplay(v)); }
-  if(k==="rwplay") return rwPlay();
-  if(k==="rwgo") return rwGo();
-  if(k==="refine"){ closeDrawer(); const i=$("#askI"); i.focus(); toast("Reescreva o pedido do seu jeito e envie de novo."); return; }
-  if(k==="approve"){ const L=S.ped[S.role]; const f=L.find(p=>p.id===v); if(f) f.on=true; else L.unshift({id:v,on:true}); S.fresh={id:v,role:S.role}; closeDrawer(); S.view="hoje"; render(); $("#dmMain").scrollTop=0; toast("Rotina criada. Ela já aparece no seu painel e em Meus pedidos."); return; }
-  if(k==="proc") return openDrawer(dProc(v));
-  if(k==="calc") return openDrawer(dCalc());
-  if(k==="calcgo"){ const o=$("#calcOut"); if(!o) return; o.innerHTML='<div class="cap">Calculando…</div>'; J.calcular($("#calcD").value, Number($("#calcN").value), $("#calcDobro").checked).then(x=>{ o.innerHTML=x; }); return; }
-  if(k==="modo"){ S.modo=v; S.lim=30; render(); return; }
-  if(k==="mais"){ S.lim+=30; render(); return; }
-  if(k==="fsit"){ S.f.sit=v; S.lim=30; render(); return; }
-  if(k==="ftipo"){ S.f.tipo=v; S.lim=30; render(); return; }
-  if(k==="ford"){ S.f.ord=v; S.lim=30; render(); return; }
-  if(k==="flimpar"){ S.f={sit:"todas",tipo:"todos",vara:"todas",q:"",ord:"recentes"}; S.lim=30; render(); return; }
-  if(k==="tour") return startTour();
-}
-const dm = $("#dm");
-dm.addEventListener("click", e=>{
-  const r = e.target.closest("[data-role]"); if(r){ S.role=r.dataset.role; S.view= S.view; closeDrawer(); render(); return; }
-  const nv = e.target.closest("[data-view]"); if(nv){ closeDrawer(); S.view=nv.dataset.view; render(); $("#dmMain").scrollTop=0; return; }
-  const a = e.target.closest("[data-act]"); if(a){ act(a.dataset.act,a); }
-  if(!e.target.closest("#askF")) showSugg(false);
-});
-dm.addEventListener("keydown", e=>{
-  if(e.key==="Escape"){ if(drawerFn) closeDrawer(); else if(tourOn) closeDemo(); else if(dm.classList.contains("dm-full")) setFull(false); }
-  if(e.key==="Enter"){ const tr=e.target.closest("tr[data-act]"); if(tr) act(tr.dataset.act,tr); }
-});
-function showSugg(on){ const s=$("#sugg"); if(!on){ s.hidden=true; return; } s.innerHTML = `<span>Experimente perguntar ou pedir</span>`+SUGGQ.map((q,i)=>`<button type="button" data-act="askq:${i}">${esc(q)}</button>`).join("")+SUGG[S.role].slice(0,2).map(id=>`<button type="button" data-act="ask:${id}">${esc(R(id).q)}</button>`).join(""); s.hidden=false; }
-$("#askI").addEventListener("focus",()=>showSugg(true));
-$("#askI").addEventListener("input",e=>showSugg(!e.target.value));
-$("#askF").addEventListener("submit", e=>{ e.preventDefault(); const v=$("#askI").value.trim(); showSugg(false); if(!v){ showSugg(true); return; } openDrawer(dAsk(v)); $("#askI").value=""; });
-$("#anonB").addEventListener("click", ()=>{ const t=$("#draftT"); if(t && drawerFn){ /* guarda edições do rascunho */ } anon=!anon; render(); });
-
-/* ---------- tour ---------- */
-let tourOn=false, step=0;
-const STEPS = [
- {go(){ S.role="associada"; S.view="hoje"; closeDrawer(); anon=false; render(); }, t:"[data-tour=day]", txt:"São 8h. A Ana, associada, abre o Juriday e o dia dela já está montado: prazos, reuniões, alertas e pendências numa tela só."},
- {go(){ closeDrawer(); }, t:"[data-tour=alert]", txt:"Todo alerta diz o motivo. Este é um processo real do TRF3: o Termômetro compara o tempo parado com o normal do tipo de processo."},
- {go(){ const p=J.D.ready?stalled(1)[0]:null; if(p) openDrawer(dProc(p.numeroProcesso)); else openDrawer(dWhy("lima")); }, t:".dr", txt:"Aqui está a origem: a última movimentação, o limite de dias e a comparação com o normal. Nada de notificação genérica."},
- {go(){ openDrawer(dResumo); }, t:".dr", txt:"A reunião das 10h já tem resumo pronto: status, fatos recentes, decisões e o que falta do cliente."},
- {go(){ anon=true; render(); }, t:"[data-tour=anon]", txt:"Sigilo na prática: é assim que o resumo sai do escritório. Os nomes dos clientes viram códigos antes de chegar à IA."},
- {go(){ anon=false; render(); openDrawer(dDraft("beta")); }, t:".dr", txt:"A cobrança dos documentos já vem rascunhada, em linguagem clara. A Ana revisa, ajusta e aprova. O Juriday nunca envia sozinho."},
- {go(){ closeDrawer(); S.view="hoje"; render(); }, t:"[data-tour=ask]", txt:"Para criar uma rotina nova, basta pedir em português. O Juriday mostra o plano e só monta depois do seu ok."},
- {go(){ S.view="pedidos"; render(); }, t:"[data-tour=peds]", txt:"Tudo o que a Ana montou fica em Meus pedidos. Dá para ligar, desligar ou ajustar com um novo pedido."},
- {go(){ closeDrawer(); S.role="associada"; S.view="ritmo"; render(); }, t:"[data-tour=ritmo]", txt:"Agora o Seu ritmo. O Juriday aprende quanto tempo a Ana leva em cada atividade: começa com a estimativa dela e se ajusta a cada tarefa concluída. Aqui os tempos são de exemplo."},
- {go(){ closeDrawer(); S.role="associada"; S.view="ritmo"; render(); }, t:"[data-tour=ritmo-caso]", txt:"Chegou um caso novo? Antes de aceitar, a Ana vê se ele cabe, aperta ou conflita com a agenda, e por quê. O Juriday não avalia o caso: a decisão é dela."},
- {go(){ closeDrawer(); S.role="associada"; S.view="casos"; render(); }, t:"[data-tour=casos]", txt:"Aqui os processos são reais: dados públicos do DataJud, do CNJ. O Termômetro compara quanto tempo cada um está parado com o normal do mesmo tipo de processo."},
- {go(){ closeDrawer(); S.role="associada"; S.view="prazos"; render(); }, t:"[data-tour=prazos]", txt:"A calculadora de prazos: informe a publicação e o prazo, e o Juriday conta só os dias úteis. O calendário mostra por que venceu naquele dia."},
- {go(){ closeDrawer(); S.view="panorama"; render(); }, t:"[data-tour=panorama]", txt:"E o Panorama mostra o padrão: quanto tempo os andamentos levam em cada tipo de processo e como cada vara se compara."},
- {go(){ closeDrawer(); S.role="socia"; S.view="hoje"; render(); }, t:"[data-tour=role]", txt:"Agora o mesmo escritório visto pela sócia: carga da equipe, carteira e principais movimentações. Cada função vê o que importa para ela."}
-];
-function clearHl(){ document.querySelectorAll("#dm .hl").forEach(x=>x.classList.remove("hl")); }
-function showStep(){
-  clearHl(); const s=STEPS[step]; s.go();
-  requestAnimationFrame(()=>{ const el=$("#dm "+s.t); if(el){ el.classList.add("hl"); { const m=$("#dmMain"); if(m && m.contains(el)){ const r=el.getBoundingClientRect(), mr=m.getBoundingClientRect(); if(r.top<mr.top+8||r.bottom>mr.bottom-8) m.scrollTop += r.top-mr.top-24; } const t2=el.getBoundingClientRect(); if(!el.closest(".dr") && (t2.top>innerHeight-120 || t2.bottom<150)) el.scrollIntoView({block:"nearest",behavior:RM?"auto":"smooth"}); } } });
-  const last = step===STEPS.length-1;
-  $("#tourBox").innerHTML = `<div class="tour" role="dialog" aria-label="Tour do Juriday"><span class="k">${step+1} de ${STEPS.length}</span><p>${s.txt}</p><div class="tb"><button type="button" class="sk" data-tour-act="end">Sair do tour</button><div>${step?'<button type="button" data-tour-act="prev">Anterior</button>':""}<button type="button" class="nx" data-tour-act="${last?"end":"next"}">${last?"Explorar sozinho":"Próximo"}</button></div></div></div>`;
-  $("#tourBox .nx").focus({preventScroll:true});
-}
-function startTour(){ tourOn=true; step=0; showStep(); }
-function endTour(){ tourOn=false; clearHl(); $("#tourBox").innerHTML=""; toast("Agora é com você: troque de função, abra os alertas e faça um pedido."); }
-$("#tourBox").addEventListener("click", e=>{ const b=e.target.closest("[data-tour-act]"); if(!b) return; const a=b.dataset.tourAct; if(a==="next"){step++;showStep();} else if(a==="prev"){step--;showStep();} else endTour(); });
-
-/* ---------- abrir e fechar ---------- */
-let lastFocus=null;
-function irApp(){ if(dm.classList.contains("dm-full")) return; const a=document.querySelector("#experimente .exp-chips")||dm; a.scrollIntoView({behavior:RM?"auto":"smooth", block:"start"}); }
-function openDemo(mode){
-  const tour = mode==="tour";
-  if(mode==="hoje"||mode==="panorama"||mode==="casos"||mode==="prazos"||mode==="ritmo"){ S.role="associada"; S.view=mode; closeDrawer(); render(); }
-  if(mode==="tempo"){ S.role="associada"; S.view="casos"; closeDrawer(); render(); RW.num=null; rwEscolher().then(n=>{ if(n) setTimeout(()=>openDrawer(dReplay(n)), RM?50:700); }); }
-  irApp();
-  if(tour) setTimeout(startTour, RM?50:600);
-}
-function closeDemo(){ closeDrawer(); if(tourOn){ tourOn=false; clearHl(); $("#tourBox").innerHTML=""; } }
-function setFull(on){ dm.classList.toggle("dm-full",on); document.body.classList.toggle("dm-lock",on); document.querySelectorAll(".js-fs").forEach(b=>{ b.setAttribute("aria-pressed",String(on)); b.querySelector("span").textContent=on?"Sair da tela cheia":"Tela cheia"; }); }
-document.querySelectorAll(".js-fs").forEach(b=>b.addEventListener("click",()=>setFull(!dm.classList.contains("dm-full"))));
-window.__jdAsk = text => { S.role="associada"; closeDrawer(); render(); irApp(); setTimeout(()=>openDrawer(dAsk(text)), RM?50:450); };
-document.querySelectorAll("[data-open-demo]").forEach(b=>b.addEventListener("click", e=>{ e.preventDefault(); openDemo(b.dataset.openDemo); }));
-dm.addEventListener("change", e=>{ const t=e.target.closest("select[data-f]"); if(!t) return; S.f[t.dataset.f]=t.value; S.lim=30; render(); });
-dm.addEventListener("input", e=>{ const t=e.target.closest("input[data-f]"); if(!t) return; S.f.q=t.value; S.lim=30; S.foco="q"; clearTimeout(act.t); act.t=setTimeout(render,250); });
-{ const src=document.querySelector(".logo img").src; $("#dmLogo").src=src; $("#dmLogo2").src=src; }
-render(); J.load().then(()=>render());
-if(location.hash==="#demo") openDemo(false);
-addEventListener("hashchange", ()=>{ if(location.hash==="#demo") openDemo(false); });
-})();
-</script>
 
 <script>
 (function(){
@@ -3196,4 +2315,24 @@ addEventListener("hashchange", ()=>{ if(location.hash==="#demo") openDemo(false)
   })();
 })();
 </script>
+<style id="r4">
+.btn-demo{display:inline-flex;align-items:center;gap:0;white-space:nowrap;min-height:46px;padding:0 20px 0 22px;border-radius:999px;background:linear-gradient(135deg,#22D3BE 0%,#14B8A6 55%,#0E9F90 100%);color:#062033;font:800 16px/1 var(--body);letter-spacing:-.005em;text-decoration:none;box-shadow:0 8px 22px -8px rgba(20,184,166,.75),inset 0 1px 0 rgba(255,255,255,.45);transition:transform .2s ease,box-shadow .2s ease}
+.btn-demo svg{transition:transform .2s ease;flex:none;margin-left:9px}
+.btn-demo:hover{transform:translateY(-1px);box-shadow:0 12px 26px -8px rgba(20,184,166,.9),inset 0 1px 0 rgba(255,255,255,.5)}
+.btn-demo:hover svg{transform:translateX(3px)}
+.btn-demo:focus-visible{outline:3px solid #062033;outline-offset:2px}
+@media(max-width:640px){.btn-demo{min-height:42px;padding:0 16px;font-size:15px}.btn-demo .full{display:none}.btn-demo span:nth-child(2){text-transform:capitalize}}
+.lift:hover{transform:none!important}
+.pains{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:860px){.pains{grid-template-columns:1fr}}
+.bh-srcs li small{display:block;font-weight:500;font-size:12.5px;color:var(--muted);margin-top:2px}
+.feat{grid-row:span 3}
+.feat>h3{order:-2;margin:0}
+.feat>p{order:-1;margin:0}
+@media(min-width:1100px){.feats{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.rt-tip{margin-top:10px;background:#E9F8F5;border:1px solid #BDEBE3;border-radius:12px;padding:11px 13px;font-size:14px;line-height:1.45;color:var(--ink)}
+.rt-tip b{display:block;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:#0E7F73;margin-bottom:3px}
+.hour1 .h1src{display:block;max-width:62ch;font-size:15px;line-height:1.5;color:var(--muted);font-weight:500}
+.hour1 .h1src a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+</style>
 </body></html>
