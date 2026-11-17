@@ -1131,7 +1131,7 @@ body.dm-lock{overflow:hidden}
     <img class="dm-logo" id="dmLogo" alt="Juriday">
     <div class="roles" id="roles" role="group" aria-label="Ver como" data-tour="role"></div>
     <form class="dm-ask" id="askF" data-tour="ask" autocomplete="off">
-      <input id="askI" type="text" placeholder="Peça ao Juriday em português…" aria-label="Pedido ao Juriday">
+      <input id="askI" type="text" placeholder="Pedir algo ao Juriday…" aria-label="Pedido ao Juriday">
       <button type="submit" aria-label="Enviar pedido"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M8.5 4l4 4-4 4" stroke="#0C2340" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <div class="sugg" id="sugg" hidden></div>
     </form>
@@ -1694,7 +1694,7 @@ function passa(p, f, semSit){
 }
 function viewCasos(){
   if(S.role==="interno") return viewCasosFict();
-  const head = `<div class="dm-h"><div><h2>Casos</h2><p>Processos reais, com dados públicos do DataJud (CNJ). Toque num processo para ver o motivo do alerta.</p></div><div class="hb"><button class="calcbtn" type="button" data-act="view:prazos">Calculadora de prazos</button></div></div>`;
+  const head = `<div class="dm-h"><div><h2>Casos</h2><p><span class="ap-badge">Dados reais do TRF3</span> Processos reais, com dados públicos do DataJud (CNJ). Toque num processo para ver o motivo do alerta.</p></div><div class="hb"><button class="calcbtn" type="button" data-act="view:prazos">Calculadora de prazos</button></div></div>`;
   if(!J.D.ready) return head+`<div class="cap">Carregando os processos…</div>`;
   const base = S.modo==="base";
   if(base && !J.D.amostra){ J.amostra().then(()=>{ if(!dm.hidden && S.modo==="base") render(); }); }
@@ -1727,7 +1727,7 @@ function viewCasos(){
 }
 function viewPrazos(){ return `<div class="dm-h"><div><h2>Prazos</h2><p>Informe a publicação e o prazo. O Juriday conta só os dias úteis e mostra a conta, dia a dia.</p></div></div><div data-tour="prazos"><div data-cx-mount></div></div>`; }
 const calcCard = () => `<div class="w s12 cxcard"><div><span class="k">Calculadora de prazos</span><b>Quando vence? Veja a conta, dia a dia.</b><small>Só dias úteis, com feriados nacionais e recesso forense.</small></div><button type="button" class="btn btn-teal btn-sm" data-act="view:prazos">Abrir a calculadora</button></div>`;
-function viewPanorama(){ return `<div class="dm-h"><div><h2>Panorama</h2><p>O que os dados públicos mostram sobre o ritmo dos processos.</p></div></div><div data-tour="panorama"><div data-dv-mount>${J.D.ready?"":'<div class="cap">Carregando…</div>'}</div></div>`; }
+function viewPanorama(){ return `<div class="dm-h"><div><h2>Panorama</h2><p><span class="ap-badge">Dados reais do TRF3</span> O que os dados públicos mostram sobre o ritmo dos processos.</p></div></div><div data-tour="panorama"><div data-dv-mount>${J.D.ready?"":'<div class="cap">Carregando…</div>'}</div></div>`; }
 function dProc(num){ return ()=>{
   const p = J.D.proc.find(x=>x.numeroProcesso===num) || (J.D.amostra||[]).find(x=>x.numeroProcesso===num);
   if(!p) return shell("Processo","Não encontrado","");
@@ -2152,6 +2152,25 @@ const APX = { casos: `<details class="ap-ex"><summary>O que é o Termômetro e a
   <p><b>Termômetro.</b> Para cada tipo de processo, o Juriday calcula com os dados públicos do TRF3 quantos dias sem andamento são normais. <b>Dentro do normal:</b> até o tempo que 3 em cada 4 processos do mesmo tipo levam entre andamentos. <b>Acima do normal:</b> passou disso. <b>Fora do normal:</b> passou do tempo que 9 em cada 10 levam. É um indício, não um veredito.</p>
   <p><b>Base completa.</b> São os 2.340 processos que coletamos do TRF3, em 72 varas, e não só os do escritório. Serve para explorar e ver como a régua funciona.</p></details>` };
 
+
+/* ---------- depois da reunião (simulação) ---------- */
+function dPos(){ return shell("Depois da reunião · simulação", "10h · "+T("Grupo Beta"),
+  `<div class="ap-sim"><b>Próxima etapa.</b> Hoje o Juriday não grava nem transcreve reuniões. Esta tela mostra como ficaria: a Ana grava a reunião ou conecta a ferramenta que o escritório já usa, e o Juriday prepara o material abaixo para ela revisar. Exige aviso e consentimento dos participantes e cuidado com o sigilo (LGPD). Conteúdo de exemplo.</div>
+   <div class="blk"><span class="k">Ata (rascunho)</span><p class="note2">Presentes: ${T("Fernanda Reis")} (${T("Grupo Beta")}) e Ana.</p>${fact("check","Minuta v4: o cliente aceitou os comentários do vendedor, com uma ressalva sobre o prazo de pagamento.")}${fact("check","Certidões negativas e ata do conselho passam a ter prazo até sexta.")}</div>
+   <div class="blk"><span class="k">E-mail para o cliente (rascunho)</span><p class="ap-mail">Olá, Fernanda, obrigada pela reunião de hoje. Registramos que a minuta v4 foi aceita, com uma ressalva sobre o prazo de pagamento, que vamos tratar com o vendedor. Para mantermos a assinatura, ficamos aguardando até sexta as certidões negativas e a ata do conselho. Um abraço, Ana</p></div>
+   <div class="blk"><span class="k">Tarefas para a agenda da equipe</span>
+     <div class="ap-tk"><b>Enviar a minuta v5 ao vendedor</b><small>Ana · quinta</small></div>
+     <div class="ap-tk"><b>Cobrar certidões negativas e ata do conselho</b><small>Bruno · sexta</small></div>
+     <div class="ap-tk"><b>Tratar o prazo de pagamento com o vendedor</b><small>Ana · sexta</small></div></div>`,
+  `<button type="button" class="btn btn-teal btn-sm" data-act="tasks">Revisar e adicionar à agenda</button><button type="button" class="btn btn-line btn-sm" data-act="close">Fechar</button>`); }
+
+/* ---------- Hoje da sócia: um destaque ---------- */
+const _apSocia = HOJE.socia;
+HOJE.socia = function(){ let o=_apSocia();
+  o=o.replace(/<button type="button" class="rowb alert" data-act="why:carga">.*?<\/button>/s,"");
+  const hl=`<div class="w s12 ap-hl" data-tour="carga"><span class="ap-k">Para hoje</span><h3>Carla está acima da média da equipe.</h3><p>Ela tem <b>18 tarefas abertas</b>, e a média é 12. Bruno tem <b>7</b> e espaço para receber demandas.</p><p class="ap-s">Redistribuir ou não é decisão sua. O Juriday só mostra os números.</p><div class="ap-bt"><button type="button" data-act="why:carga">Ver por quê</button><button type="button" class="ln" data-view="ritmo">Ver o ritmo da equipe</button></div></div>`;
+  const i=o.indexOf('<div class="w s6">'); return i<0 ? o+hl : o.slice(0,i)+hl+o.slice(i); };
+
 /* ---------- render ---------- */
 function render(){
   $("#roles").innerHTML = Object.entries(ROLES).map(([k,v])=>`<button type="button" data-role="${k}" aria-pressed="${k===S.role}">${v.label}</button>`).join("");
@@ -2204,7 +2223,7 @@ function dResumo(){ return shell("Resumo do caso · sempre atualizado", "10h · 
    <div class="blk"><span class="k">Decisões já tomadas</span>${fact("check",T("Grupo Beta")+" aprovou a cláusula de não concorrência de 3 anos.")}</div>
    <div class="blk"><span class="k">O que falta do cliente</span>${fact("bang","Certidões negativas atualizadas · pendente há 6 dias")}${fact("bang","Aprovação do conselho · pendente há 3 dias")}</div>
    <div class="blk"><span class="k">Sugestão de pauta</span><p>1. Comentários da minuta v4. 2. Prazo das certidões. 3. Data da reunião do conselho.</p></div>`,
-  `<button type="button" class="btn btn-navy btn-sm" data-act="draft:beta">Rascunho de cobrança</button><button type="button" class="btn btn-line btn-sm" data-act="case:beta">Linha do tempo</button>`); }
+  `<button type="button" class="btn btn-navy btn-sm" data-act="draft:beta">Rascunho de cobrança</button><button type="button" class="btn btn-line btn-sm" data-act="case:beta">Linha do tempo</button><button type="button" class="btn btn-line btn-sm" data-act="pos">Depois da reunião</button>`); }
 
 const DRAFT = {
  beta:{to:"Fernanda Reis · Grupo Beta", subj:"Documentos pendentes para o fechamento", body:"Olá, Fernanda, tudo bem?\n\nPara mantermos a assinatura prevista para 19/10, ainda precisamos de dois itens:\n\n1. Certidões negativas atualizadas do Grupo Beta;\n2. Ata com a aprovação do conselho.\n\nSe preferir, podemos conversar sobre isso na reunião de hoje, às 10h.\n\nUm abraço,\nAna"},
@@ -2246,6 +2265,8 @@ function act(a, el){
   if(k==="case") return openDrawer(dCase(v));
   if(k==="why") return openDrawer(dWhy(v));
   if(k==="resumo") return openDrawer(dResumo);
+  if(k==="pos") return openDrawer(dPos);
+  if(k==="tasks"){ toast("Simulação: nada foi criado nem enviado."); return; }
   if(k==="draft") return openDrawer(dDraft(v));
   if(k==="report") return openDrawer(dReport(v));
   if(k==="send"){ const t=$("#draftT"); S.drafts[v]={sent:true,text:t?t.value:""}; openDrawer(dDraft(v)); return; }
@@ -2379,5 +2400,13 @@ render(); J.load().then(()=>render());
 .dm-h .rt-lk{display:block;margin-bottom:6px}
 </style>
 
+<style id="r6">
+.ap-badge{display:inline-block;margin-right:8px;padding:3px 10px;border-radius:999px;background:#E1F5F1;color:#0E7F73;font-weight:800;font-size:12.5px;white-space:nowrap}
+.ap-sim{background:#FFF4DC;border-radius:12px;padding:12px 14px;font-size:14px;line-height:1.5;margin-bottom:14px}
+.ap-mail{margin:0;background:#F3F6F9;border-radius:12px;padding:12px 14px;font-size:14px;line-height:1.55}
+.ap-tk{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#F3F6F9;border-radius:12px;padding:10px 14px;margin-top:8px}
+.ap-tk b{font-size:14.5px}.ap-tk small{color:var(--muted);white-space:nowrap}
+@media(min-width:861px){.dm-ask{flex:0 1 260px}.dm-ask:focus-within{flex:1 1 560px}}
+</style>
 </body>
 </html>
